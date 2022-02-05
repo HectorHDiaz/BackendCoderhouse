@@ -1,4 +1,4 @@
-const {Contenedor} = require('./productos')
+const {Contenedor} = require('./productos.js')
 const express = require('express')
 
 const app = express()
