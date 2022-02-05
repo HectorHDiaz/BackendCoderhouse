@@ -1,9 +1,9 @@
-import Contenedor, {productos} from './productos.js'
-import express from 'express'
+const {Contenedor} = require('./productos')
+const express = require('express')
 
-const PORT = process.env.PORT || 8080
 const app = express()
-const productoss = new Contenedor("productos.txt")
+const PORT = process.env.PORT || 8080
+const productos = new Contenedor("productos.txt")
 
 
 app.listen(PORT, ()=>{

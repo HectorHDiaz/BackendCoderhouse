@@ -1,4 +1,4 @@
-import * as fs from 'fs/promises'
+const fs = require('fs/promises')
 
 class Contenedor{
     constructor(fileName){
@@ -54,7 +54,7 @@ class Contenedor{
         await this.write(newContent)
     }
 }
-export const productos = new Contenedor("productos.txt")
 
-
-export default Contenedor;
+module.exports={
+    Contenedor
+}
