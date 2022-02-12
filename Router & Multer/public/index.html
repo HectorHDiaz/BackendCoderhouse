@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./logo.svg" class="logo" alt="logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <!-- social media -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-behance"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-sketch"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Products Form -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <div><h3 style="text-align: center; margin-top: 16px;"> Agrega un producto! </h3></div>
+      <form action="/api/products" method="post">
+        <div style="margin-bottom: 16px;">
+          <div style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+            <label for="nombre"> Nombre: </label>
+            <br>
+            <input type="text" name="name" id="nombre" style="margin-bottom: 16px;" class="input-file">
+          </div>
+          <div style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+            <label for="descripcion"> Description: </label>
+            <br>
+            <textarea name="description" id="descripcion" cols="30" rows="10" style="margin-bottom: 16px;" class="input-file"></textarea>
+          </div>
+          <div style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+            <label for="precio"> Precio: </label>
+            <br>
+            <input type="number" name="price" id="precio" style="margin-bottom: 16px;" step=".01" class="input-file">
+          </div>
+          <div style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+            <label for="imagen"> URL Imagen: </label>
+            <br>
+            <input type="text" name="image" id="imagen" style="margin-bottom: 16px;" class="input-file">
+          </div>
+          <div style="display: flex; justify-content: center; align-items: center;"><input type="submit" value="Crear producto" class="submit-button"></div>
+        </div>
+      </form>
+    </div>
+    <div><h3 style="text-align: center; margin-top: 16px;"> Sube tus archivos! </h3></div>
+    <!-- Single File -->
+    <div class="single-file-form">
+      <form action='/api/files/single' enctype="multipart/form-data" method="POST">
+          <input type="file" id="archivo" name="single-file" class="input-file"><span onclick="clearFile('single')" class="clear-button">X</span>
+        <div><input type="submit" value="Upload File" class="submit-button"></div>
+      </form>
+    </div>
+    <!-- Multiple Files -->
+    <div class="multiple-files-form">
+      <form action='/api/archivos' enctype="multipart/form-data" method="POST">
+          <input type="file" id="archivos" name="archivos" multiple class="input-file"><span onclick="clearFile('multiple')" class="clear-button">X</span>
+          <div><input type="submit" value="Upload Files" class="submit-button"></div>
+      </form>
+    </div>
+    <!-- javascript -->
+    <script src="./browser-app.js"></script>
+  </body>
+</html>
