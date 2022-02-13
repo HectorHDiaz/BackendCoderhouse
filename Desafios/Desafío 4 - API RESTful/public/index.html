@@ -9,19 +9,13 @@
 <body>
     <div style="display: flex; flex-direction: column; align-items: center;margin:0 auto">
         <div><h3> Agrega un producto! </h3></div>
-        <form action="" method="post">
+        <form action="/api/products" method="post">
           <div>
               
             <div>
               <label for="nombre"> Nombre: </label>
               <br>
-              <input type="text" name="name" id="nombre" style="margin-bottom: 16px;" class="input-file">
-            </div>
-
-            <div>
-              <label for="descripcion"> Description: </label>
-              <br>
-              <textarea name="description" id="descripcion" cols="30" rows="10" style="margin-bottom: 16px;" class="input-file"></textarea>
+              <input type="text" name="title" id="nombre" style="margin-bottom: 16px;" class="input-file">
             </div>
 
             <div>

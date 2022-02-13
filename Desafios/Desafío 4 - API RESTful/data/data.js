@@ -1,4 +1,4 @@
-const productos = [
+const products = [
     {
         title: "Fodera Victor Wooten's Bass - Best Bass Player of History",
         price: 50000,
@@ -26,4 +26,4 @@ const productos = [
     },
 ]
 
-module.exports = productos
+module.exports = {products}
