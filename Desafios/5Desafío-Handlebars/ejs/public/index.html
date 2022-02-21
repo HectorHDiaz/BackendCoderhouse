@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Restful</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center;margin:0 auto">
+        <div><h3> Agrega un producto! </h3></div>
+        <form action="/api/products" method="post">
+          <div>
+              
+            <div>
+              <label for="nombre"> Nombre: </label>
+              <br>
+              <input type="text" name="title" id="nombre" style="margin-bottom: 16px;" class="input-file">
+            </div>
+
+            <div>
+              <label for="precio"> Precio: </label>
+              <br>
+              <input type="number" name="price" id="precio" style="margin-bottom: 16px;" step=".01" class="input-file">
+            </div>
+
+            <div>
+              <label for="imagen"> URL Imagen: </label>
+              <br>
+              <input type="text" name="image" id="imagen" style="margin-bottom: 16px;" class="input-file">
+            </div>
+
+            <div><input type="submit" value="Crear producto" class="submit-button"></div>
+
+          </div>
+        </form>
+      </div>
+</body>
+</html>

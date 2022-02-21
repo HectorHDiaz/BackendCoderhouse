@@ -1,0 +1,25 @@
+html
+  head
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+    title PUG
+
+body
+  div(class="jumbotron container mt-3")
+
+    h3 Ingrese Datos
+    form(action="/products" method="post")
+        div(class="form-group")
+        label(for="title") Titulo
+        input(type="text" name="title" id="title" class="form-control")
+        
+        div(class="form-group")
+        label(for="price") Precio
+        input(type="number" name="price" id="price" class="form-control")
+        
+        div(class="form-group")
+        label(for="thumbnail") Imagen
+        input(type="text" name="thumbnail" id="thumbnail" class="form-control")
+        
+        input(type="submit" value="Enviar" class="btn btn-success")
+        a(class="btn btn-primary" href="/products") Productos
+

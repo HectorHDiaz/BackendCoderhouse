@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%const style="color:crimson;";%>
+    <% if (showSaludo) { %>
+        <h1 style=<%=style %>>Hola!</h1>
+    <% } %>
+
+    <% arreglo.forEach(item=>{%>
+        <li><%=`Item ${item}`%></li>
+    <%})%>
+    <%- include('./partials/imagen.ejs', {url:"https://www.batiburrillo.net/wp-content/uploads/2019/07/Ampliacio%CC%81n-de-imagen-en-li%CC%81nea-sin-perder-calidad.jpg"}) %>
+</body>
+</html>

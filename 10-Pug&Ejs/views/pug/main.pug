@@ -1,0 +1,9 @@
+extends ./layout 
+block main  
+  h1(style='color:red;')!=`<i>Buenaaaaas ${nombre}</i>`
+  if showList
+    ul
+      each item in array  
+        li=`Item ${item}`
+  h1(style='color:blue')!=titulo 
+  meter(value=nivel,min=min,max=max)
