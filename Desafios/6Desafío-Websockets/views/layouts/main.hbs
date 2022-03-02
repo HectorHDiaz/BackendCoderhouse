@@ -9,7 +9,13 @@
 </head>
 <body>
     <div class="jumbotron container mt-3">
-        {{{body}}}
+        {{>form}}
+        {{>products}}
+
     </div>
+        {{>chat}}
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

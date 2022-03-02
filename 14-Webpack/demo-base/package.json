@@ -1,0 +1,21 @@
+{
+  "name": "demo-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "build - prod": "webpack ./a1.js ./a2.js ./a3.js --mode=production",
+    "build - dev": "webpack ./a1.js ./a2.js ./a3.js --mode=dev",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
+}

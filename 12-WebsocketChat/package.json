@@ -1,0 +1,21 @@
+{
+  "name": "demo_pb_12",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engine": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.4.1"
+  },
+  "description": ""
+}
