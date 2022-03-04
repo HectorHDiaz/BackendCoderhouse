@@ -36,6 +36,7 @@ httpServer.listen(PORT, ()=>{
 
 // Websockets - Chat
 const allMessages = []
+const users = []
 let currentUser = ''
 function formatMessage(id, email, text){
     return {
@@ -45,7 +46,6 @@ function formatMessage(id, email, text){
       time: moment().calendar()
     }
   }
-
 io.on('connection',(socket)=>{
     // Websockets - Tabla
     socket.on('new-product', (newProduct)=>{
@@ -55,11 +55,20 @@ io.on('connection',(socket)=>{
     socket.emit('allProducts', [...products])
     
     // Websockets - Chat
+    const botName = 'AtonomoBot'
     socket.on('newEmail',(email)=>{
-        currentUser = email
+        const newUser = {
+            id : socket.id,
+            email
+          }
+        users.push(newUser)
+        socket.emit('newMessage', formatMessage(null,botName,'Bienvenido al Chat'))
+        socket.broadcast.emit('newMessage', formatMessage(null, botName, `${email} se unió!`))
+
     })
     socket.on('updateNewMessage', (text)=>{
-        const newMessage = formatMessage(socket.id, currentUser, text)
+        const user = users.find(user => user.id === socket.id)
+        const newMessage = formatMessage(socket.id, user.email, text)
         allMessages.push(newMessage)
         io.emit('newMessage', newMessage)
     })
