@@ -1,0 +1,52 @@
+[
+   {
+      "id": 1,
+      "code": 1,
+      "timestamp": 1646618974209,
+      "name": "Fodera Victor Wooten's Bass",
+      "desc": "Best Bass of the Best Bass Player of History",
+      "price": 50000,
+      "image": "https://i.pinimg.com/originals/db/fd/47/dbfd47befdbe252c27daa07e5275acd3.jpg",
+      "stock": 5
+   },
+   {
+      "id": 2,
+      "code": 2,
+      "timestamp": 1646618983235,
+      "name": "Fender Elite Jazz Bass",
+      "desc": "The most acknowledge",
+      "price": 20000,
+      "image": "https://i.imgur.com/eTV1w2W.jpeg",
+      "stock": 10
+   },
+   {
+      "id": 3,
+      "code": 3,
+      "timestamp": 1646618994386,
+      "name": "Rickenbacker 4003 Bass",
+      "desc": "The most powerful sound",
+      "price": 25000,
+      "image": "https://d1aeri3ty3izns.cloudfront.net/media/52/525549/1200/preview.jpg",
+      "stock": 10
+   },
+   {
+      "id": 4,
+      "code": 4,
+      "timestamp": 1646619011618,
+      "name": "Warwick Corvette Bubinga Bass",
+      "desc": "The most depper sound",
+      "price": 14000,
+      "image": "https://images-sc1.netdna-ssl.com/D/Bass-Guitar-WAR12-WPS124490PPBUBFR-detailed-image-1.jpg",
+      "stock": 5
+   },
+   {
+      "id": 5,
+      "code": 5,
+      "timestamp": 1646619021562,
+      "name": "Cort Action VA Bass(El mío!)",
+      "desc": "My loved",
+      "price": 14000,
+      "image": "https://http2.mlstatic.com/D_NQ_NP_737414-MLA31579300729_072019-W.jpg",
+      "stock": 20
+   }
+]
