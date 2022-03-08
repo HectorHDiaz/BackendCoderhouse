@@ -17,3 +17,5 @@ class CartApi{
 
     }
 }
+
+module.exports = CartApi

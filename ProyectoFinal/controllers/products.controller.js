@@ -10,12 +10,8 @@ const getAllProducts = (req,res)=>{
 
 const getProductById = (req,res)=>{
     const { productId } = req.params
-    const searchedProduct = products.find(item=>item.id === +productId)
-    if (!searchedProduct) {
-        return res.status(404).json({ resultado: false, error: `El producto: ${productId} no existe`});
-    }else{
-        return res.json({ resultado: true, result: searchedProduct });
-    }
+    const searchedProduct = products.getById(productId)
+    return res.json({ resultado: true, result: searchedProduct });
 };
 
 const saveNewProduct = (req,res)=>{
