@@ -1,21 +1,38 @@
-const { CartApi } = require('../models/indexApi')
+const { CartsApi } = require('../models/indexApi')
+const {productsApi} = require('./products.controller')
 
-const cart = new CartApi()
+const cartApi = new CartsApi()
 
 const postNewCart = (req,res)=>{
+    return res.json(cartApi.createCart())
+}
+const deleteCart = (req,res)=>{
+    const cartId = req.params.cartId
     
+    return res.json(cartApi.clearDelete(cartId))
 }
-const deleteCart = (req,res,cartId)=>{
-
+const getCartProducts = (req,res)=>{
+    const cartId = req.params.cartId
+    
+    return res.json(cartApi.showItems(cartId))
 }
-const getCartProducts = (req,res,cartId)=>{
+const postNewProduct = (req,res)=>{
+    const cartId = req.params.cartId
+    const productId = req.params.productId
+    const allProducts = productsApi.products;
 
+    const theProduct = allProducts.find(product => product.id === +productId)
+    
+    return res.json(cartApi.saveItem(cartId, theProduct))
 }
-const postNewProduct = (req,res,cartId, productId)=>{
+const deleteProductCart = (req,res)=>{
+    const cartId = req.params.cartId
+    const productId = req.params.productId
+    const allProducts = productsApi.products;
+    const deletedItem = cartApi.deleteItem(cartId, productId)
+    if (deletedItem.error) return res.status(404).send(deletedItem.error);
 
-}
-const deleteProductCart = (req,res,cartId, productId)=>{
-
+    return res.json(deletedItem)
 }
 
 module.exports = {

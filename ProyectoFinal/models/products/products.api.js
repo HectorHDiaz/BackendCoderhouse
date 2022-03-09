@@ -4,14 +4,11 @@ const path = require('path')
 const dataPath= path.resolve(__dirname,"./data.txt")
 const contenedor = new Contenedor(dataPath)
 
-console.log(contenedor.data)
-
 class ProductsApi{
     constructor(){
         this.products = (contenedor.data).then((res)=> {this.products = res})
     }
     getAll(){
-        
         return this.products;
     };
 
@@ -39,14 +36,14 @@ class ProductsApi{
         const index = this.products.findIndex(product => product.id === +id);
         if (index < 0) return { error: `No se encontró un Producto con el id: ${id}!`};
         this.products[index] = { 
-            id: id,
-            code: id,
+            id: +id,
+            code: +id,
             timestamp: Date.now(),
             ...newInfo 
         };
         contenedor.deleteAll()
-        contenedor.writeFile(this.products)
-        return this.products[index];
+        contenedor.writeFile([...this.products])
+        return {Success:`Producto de id: ${id} editado!`};
     };
 
     deleteById(id){

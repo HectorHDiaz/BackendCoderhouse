@@ -19,13 +19,14 @@ class Contenedor{
     async writeFile(obj){
         const fileContent = await this.data 
         fileContent.push(obj)
-        fs.writeFile(this.filePath, JSON.stringify(fileContent, null, 3))
-        return {Exito:true, Mensaje: `El objeto nuevo ${obj.name} fue guardado!`}
+        await fs.writeFile(this.filePath, JSON.stringify(fileContent, null, 3))
+        return {Exito:true, Mensaje: `Los cambios fueron guardados`}
     }
 
     async deleteAll(){
-        let newContent = []
+        let newContent =[]
         await fs.writeFile(this.filePath, newContent)
+        return {Exito: "Se eliminó todo"}
     }
 }
 
