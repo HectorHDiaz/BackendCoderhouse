@@ -22,10 +22,10 @@ class ProductsApi{
         const { name, desc, image, price} = product;
         if (!name || !desc || !image || !price ) return { error: 'Todos los campos son obligatorios!' };
         const newProduct = { 
-            ...product, 
             id: idCount +1,
             code: idCount+1,
-            timestamp: Date.now()
+            timestamp: Date.now(),
+            ...product
         };
         contenedor.writeFile(newProduct)
         this.products = (contenedor.data).then((res)=> {this.products = res})
@@ -33,17 +33,20 @@ class ProductsApi{
     };
 
     updateById(newInfo, id){
+        const newList = [...this.products]
         const index = this.products.findIndex(product => product.id === +id);
         if (index < 0) return { error: `No se encontró un Producto con el id: ${id}!`};
-        this.products[index] = { 
+        newList[index] = { 
             id: +id,
             code: +id,
             timestamp: Date.now(),
-            ...newInfo 
+            ...newInfo
         };
+        
         contenedor.deleteAll()
-        contenedor.writeFile([...this.products])
-        return {Success:`Producto de id: ${id} editado!`};
+        contenedor.writeFile([...newList])
+        
+        return newList
     };
 
     deleteById(id){
@@ -52,6 +55,7 @@ class ProductsApi{
         const newList = this.products.splice(index, 1)
         contenedor.deleteAll()
         contenedor.writeFile(newList)
+        return newList
     };
 }
 

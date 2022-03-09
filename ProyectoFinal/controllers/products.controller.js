@@ -3,7 +3,6 @@ const { ProductsApi } = require('../models/indexApi')
 const productsApi = new ProductsApi()
 
 
-
 const getAllProducts = (req,res)=>{
     return res.json(productsApi.getAll())
 };
@@ -11,25 +10,28 @@ const getAllProducts = (req,res)=>{
 const getProductById = (req,res)=>{
     const { productId } = req.params
     const searchedProduct = productsApi.getById(productId)
-    return res.json({ resultado: true, result: searchedProduct });
+    return res.json({result: searchedProduct });
 };
 
 const saveNewProduct = (req,res)=>{
     const newProduct = productsApi.saveNew(req.body)
-    return res.json(newProduct)
+    return res.json({Nuevo: newProduct})
 };
 
 const updateProduct = (req,res)=>{
     const {productId} = req.params
-    const updatedProduct = productsApi.updateById(req.body, productId)
-    if(updatedProduct.error) return res.status(404).send(updatedProduct.error);
-    return res.json({Exito: true, ProductoCambiado: updatedProduct})
+    const {name,desc,price,image} = req.body
+    const newProduct = {name,desc,price,image}
+    
+    if (!name || !desc || !image || !price ) return { error: 'Todos los campos son obligatorios!' };
+    const updatedProduct = productsApi.updateById(newProduct, productId)
+    return res.json({Nuevo:updatedProduct})
 }
 const deleteProduct = (req,res)=>{
     const {productId} = req.params
     const deletedProduct = productsApi.deleteById(productId)
     if (deletedProduct.error) return res.status(404).send(deletedProduct.error);
-  return res.json(deletedProduct);
+  return res.json({Eliminado:deletedProduct});
 };
 
 module.exports = {
