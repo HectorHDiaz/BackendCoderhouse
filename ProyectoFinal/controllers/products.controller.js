@@ -18,14 +18,14 @@ const saveNewProduct = (req,res)=>{
     return res.json({Nuevo: newProduct})
 };
 
-const updateProduct = (req,res)=>{
+ const updateProduct = (req,res)=>{
     const {productId} = req.params
     const {name,desc,price,image} = req.body
     const newProduct = {name,desc,price,image}
-    
+
     if (!name || !desc || !image || !price ) return { error: 'Todos los campos son obligatorios!' };
     const updatedProduct = productsApi.updateById(newProduct, productId)
-    return res.json({Nuevo:updatedProduct})
+    return res.json({Nuevo:updatedProduct.name})
 }
 const deleteProduct = (req,res)=>{
     const {productId} = req.params

@@ -28,11 +28,11 @@ class ProductsApi{
             ...product
         };
         contenedor.writeFile(newProduct)
-        this.products = (contenedor.data).then((res)=> {this.products = res})
+
         return newProduct;
     };
 
-    updateById(newInfo, id){
+    async updateById(newInfo, id){
         const newList = [...this.products]
         const index = this.products.findIndex(product => product.id === +id);
         if (index < 0) return { error: `No se encontró un Producto con el id: ${id}!`};
@@ -43,18 +43,17 @@ class ProductsApi{
             ...newInfo
         };
         
-        contenedor.deleteAll()
-        contenedor.writeFile([...newList])
-        
-        return newList
-    };
+        await contenedor.writeAllFile(newList)
 
+        this.products = (contenedor.data).then((res)=> {this.products = res})
+
+        return newList[index]
+    };
     deleteById(id){
         const index = this.products.findIndex(product => product.id === +id);
         if (index < 0) return { error: `No se encontró un Producto con el id: ${id}!`};
         const newList = this.products.splice(index, 1)
-        contenedor.deleteAll()
-        contenedor.writeFile(newList)
+        contenedor.writeAllFile(newList)
         return newList
     };
 }
