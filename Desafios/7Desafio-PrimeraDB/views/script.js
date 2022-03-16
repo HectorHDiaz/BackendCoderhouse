@@ -1,48 +1,49 @@
 const socket = io.connect()
 
 const   productForm = document.getElementById('productForm'),
-        productsTable = document.getElementById('productTable')
+        productsTable = document.getElementById('productTable'),
+        productsDiv = document.getElementById('productsDiv')
 
 
         
 productForm.addEventListener('submit',e=>{
     e.preventDefault()
         const newProduct={
-            title: e.target[0].value,
+            name: e.target[0].value,
             price: e.target[1].value,
-            thumbnail:e.target[2].value
+            image: e.target[2].value
         }
         socket.emit('new-product', newProduct)
 })
-socket.on('allProducts', (products)=>{
-    console.log(products)
-    if(products){
-        makeHtmlTable(products).then(html => {
-            productsTable.innerHTML = html
-        })
-    }
+socket.on('allProducts', async products=>{
+    await makeHtmlTable(products).then(html => {
+        console.log(products)
+        productsDiv.innerHTML = html
+    })
 })
-function makeHtmlTable(productos) {
+async function makeHtmlTable(products) {
     return fetch('./partials/products.hbs')
         .then(respuesta => respuesta.text())
         .then(plantilla => {
             const template = Handlebars.compile(plantilla);
-            const html = template({ productos })
+            const html = template({ products })
             return html
         })
 }
+
 socket.on('render-new-product', (newProduct)=>{
     renderProduct(newProduct)
 }) 
 function renderProduct(item){
+    const productTable = document.getElementById('productTable')
     const tr = document.createElement('tr')
       let html=`
-        <td>${item.title}</td>
+        <td>${item.name}</td>
         <td>${item.price}</td>
-        <td><img style="width: 100px;" src=${item.thumbnail} alt=${item.title}> </td>`
-      tr.innerHTML = html
-      if(productsTable){
-          productsTable.appendChild(tr)
+        <td><img style="width: 100px;" src=${item.image} alt=${item.name}> </td>`
+      tr.innerHTML = html 
+      if(productTable){
+        productTable.appendChild(tr)
       }else{
         location.reload(true)
       } 

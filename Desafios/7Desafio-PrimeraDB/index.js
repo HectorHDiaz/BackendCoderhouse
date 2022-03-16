@@ -1,4 +1,5 @@
 const express = require('express')
+const Contenedor = require('./contenedor/contenedor')
 
 const http = require('http')
 const socketIO = require('socket.io')
@@ -35,33 +36,38 @@ httpServer.listen(PORT, ()=>{
     console.log("Running...")
 })
 
-// Websockets - Chat
-const allMessages = []
+// DB
+const dbConfig = require('./db/config.js')
+
+const allMessages = new Contenedor(dbConfig.sqlite, 'messages')
+const products = new Contenedor(dbConfig.mariaDB, 'products')
+
+//const allMessages = []
+//const products = []
 const users = []
-const products = []
 
 function formatMessage(id, email, text){
     return {
       id,
       email,
       text,
-      time: moment().calendar()
+      time: moment().calendar().toString()
     }
   }
-io.on('connection',(socket)=>{
+io.on('connection',async socket=>{
     console.log('Nuevo cliente conectado')
     // Websockets - Tabla
-    socket.emit('allProducts', products)
+    const allProducts = await products.readFile()
+    socket.emit('allProducts', allProducts)
 
-    socket.on('new-product', newProduct=>{
-        products.push(newProduct)
+    socket.on('new-product', async newProduct=>{
+        await products.writeFile(newProduct)
         io.emit('render-new-product', newProduct)
-
     })
     
     // Websockets - Chat
     const botName = 'AtonomoBot'
-    socket.on('newEmail',(email)=>{
+    socket.on('newEmail',async(email)=>{
         const newUser = {
             id : socket.id,
             email
@@ -69,12 +75,15 @@ io.on('connection',(socket)=>{
         users.push(newUser)
         socket.emit('newMessage', formatMessage(null,botName,'Bienvenido al Chat'))
         socket.broadcast.emit('newMessage', formatMessage(null, botName, `${email} se unió!`))
-        socket.emit('allMessages', allMessages)
+
+        const messages = await allMessages.readFile()
+        socket.emit('allMessages', messages)
     })
-    socket.on('updateNewMessage', (text)=>{
+    socket.on('updateNewMessage', async (text)=>{
         const user = users.find(user => user.id === socket.id)
         const newMessage = formatMessage(socket.id, user.email, text)
-        allMessages.push(newMessage)
+        await allMessages.writeFile(newMessage)
         io.emit('newMessage', newMessage)
     })
 })  
+

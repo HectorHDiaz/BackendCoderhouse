@@ -1,22 +1,25 @@
 {
-  "name": "hbs",
+  "name": "7desafio-primeradb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "modules",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
-    "express-handlebars": "^6.0.2",
+    "express-handlebars": "^6.0.3",
     "handlebars": "^4.7.7",
     "moment": "^2.29.1",
     "nodemon": "^2.0.15",
-    "socket.io": "^4.4.1"
+    "socket.io": "^4.4.1",
+  
+    "knex": "^0.95.15",
+    "node-gyp": "^9.0.0",
+    "mysql": "^2.18.1",
+    "sqlite3": "^5.0.2"
   }
 }
