@@ -12,35 +12,55 @@ class ContenedorFirebase{
         this.query = db.collection(coll)
     }
     async getById(id) {
-      const docRef = this.query.doc(id);
-      if (!docRef) {
-        throw new Error('[NOT_FOUND] The requested resource does not exist in our records!');
+      try {
+        const docRef = this.query.doc(id);
+        if (!docRef) {
+          throw new Error('no se encuentra esa Id');
+        }
+        const document = await docRef.get();
+        return document.data();
+      } catch (error) {
+        return res.json({Error: `No se pudo realizar esta acción`, error})
       }
-      const document = await docRef.get();
-      return document.data();
     }
     async getAll() {
-      const docRef = await this.query.get();
-      const documents = docRef.docs;
-      return documents.map(document => ({ 
-        id: document.id,
-        ...document.data()
-      }))
-    }
-    async save(payload) {
-      const docRef = this.query.doc();
-      return await docRef.set(payload);
-    }
-    async updateById(id, payload) {
-      const docRef = this.query.doc(id);
-      if (!docRef) {
-        throw new Error('[NOT_FOUND] The requested resource does not exist in our records!');
+      try {
+        const docRef = await this.query.get();
+        const documents = docRef.docs;
+        return documents.map(document => ({ 
+          id: document.id,
+          ...document.data()
+        }))
+      } catch (error) {
+        return res.json({Error: `No se pudo realizar esta acción`, error})
       }
-      return await docRef.update(payload);
+    }
+    async save(obj) {
+      try {
+        const docRef = this.query.doc();
+        return await docRef.set(obj);
+      } catch (error) {
+        return res.json({Error: `No se pudo realizar esta acción`, error})
+      }
+    }
+    async updateById(id, obj) {
+      try {
+        const docRef = this.query.doc(id);
+        if (!docRef) {
+          throw new Error('No se encuentra esa id');
+        }
+        return await docRef.update(obj);
+      } catch (error) {
+        return res.json({Error: `No se pudo realizar esta acción`, error})
+      }
     }
     async deleteById(id) {
-      const docRef = this.query.doc(id);
-      return await docRef.delete();
+      try {
+        const docRef = this.query.doc(id);
+        return await docRef.delete();
+      } catch (error) {
+        return res.json({Error: `No se pudo realizar esta acción`, error})
+      }
     }
 }
 
