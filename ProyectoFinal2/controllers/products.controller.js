@@ -33,13 +33,13 @@ const saveNewProduct = async(req,res)=>{
     if (!name || !desc || !image || !price || !stock) return res.json({ error: 'Todos los campos son obligatorios!' });
 
     const updatedProduct = productsApi.updateById(productId, newProduct)
-    return res.json({response: `Se actualizó el Producto: ${updatedProduct.name}`})
+    return res.json({response: `Se actualizó el Producto: ${productId}`})
 }
 const deleteProduct = (req,res)=>{
     const {productId} = req.params
     const deletedProduct = productsApi.deleteById(productId)
     if (deletedProduct.error) return res.status(404).send(deletedProduct.error);
-  return res.json({response: `Se eliminó el Producto: ${deletedProduct.name}`});
+  return res.json({response: `Se eliminó el Producto: ${productId}`});
 };
 
 module.exports = {
