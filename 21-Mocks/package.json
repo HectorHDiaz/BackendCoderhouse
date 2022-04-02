@@ -1,0 +1,22 @@
+{
+  "name": "demo_pb_21",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node apiMock/index.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "supertest": "^6.2.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "faker": "^5.0.0",
+    "jest": "^27.5.1"
+  }
+}
