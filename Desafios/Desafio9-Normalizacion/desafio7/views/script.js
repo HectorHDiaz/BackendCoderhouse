@@ -1,5 +1,8 @@
 const socket = io.connect()
 
+const denormalize = normalizr.denormalize
+const schema = normalizr.schema
+
 const   productForm = document.getElementById('productForm'),
         productsTable = document.getElementById('productTable'),
         productsDiv = document.getElementById('productsDiv')
@@ -9,15 +12,16 @@ const   productForm = document.getElementById('productForm'),
 productForm.addEventListener('submit',e=>{
     e.preventDefault()
         const newProduct={
-            name: e.target[0].value,
-            price: e.target[1].value,
-            image: e.target[2].value
+            name: e.target.name.value,
+            price: e.target.price.value,
+            image: e.target.image.value,
+            desc: e.target.desc.value,
+            stock: e.target.stock.value
         }
         socket.emit('new-product', newProduct)
 })
 socket.on('allProducts', async products=>{
     await makeHtmlTable(products).then(html => {
-        console.log(products)
         productsDiv.innerHTML = html
     })
 })
@@ -49,17 +53,40 @@ function renderProduct(item){
       } 
 }
 
-const   emailText = document.getElementById('emailInput'),
-        emailButton = document.getElementById('email-button'),
+const getDenormalizedMessages = (obj)=>{
+    const userSchema = new schema.Entity('user', {},{
+        idAttribute: 'email'
+    })
+
+    const messageSchema = new schema.Entity('message',{
+        author: userSchema
+    });
+
+    const chatSchema = new schema.Entity('chat',{
+        messages:[ messageSchema ]
+    });
+    const denormalizedData = denormalize(obj, chatSchema)
+
+    return denormalizedData
+}
+
+const   userForm = document.getElementById('userForm'),
         chatText = document.getElementById('chat-text'),
         sendButton = document.getElementById('send-button'),
         chatBox = document.getElementById('chat-box')
 
 // Websockets - Chat
-emailButton.addEventListener('click', ()=>{
-    const newUser=emailText.value
-    socket.emit('newEmail', newUser)
-    emailText.disabled = true
+userForm.addEventListener('submit', (e)=>{
+    e.preventDefault()
+    const newUser = {
+        email: e.target.email.value, 
+        name: e.target.name.value, 
+        lastname: e.target.lastname.value, 
+        age: e.target.age.value, 
+        alias: e.target.alias.value,
+        avatar: e.target.avatar.value,
+      }
+    socket.emit('newUser', newUser)
 })
 sendButton.addEventListener('click',()=>{
     const text = chatText.value
@@ -67,12 +94,11 @@ sendButton.addEventListener('click',()=>{
     chatText.value = ''
 })
 socket.on('allMessages', data=>{
-    data.forEach(msg => {
-        renderMessage(msg)
-    });
-})
-socket.on('newMessage', (newMessage)=>{
-    renderMessage(newMessage)
+    const deNormalizedData = getDenormalizedMessages(data)
+    console.log(deNormalizedData)
+    // deNormalizedData.allMessages.forEach(msg => {
+    //     renderMessage(msg)
+    // });
 })
 
 function renderMessage(message){
