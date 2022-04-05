@@ -54,6 +54,7 @@ const users = []
 function formatMessage(author, text){
     return {
       author,
+      time:`[${moment().format('L')} ${moment().format('LTS')}]`,
       text
     }
 }
@@ -68,23 +69,6 @@ io.on('connection',async socket=>{
         await products.save(newProduct)
         io.emit('render-new-product', newProduct)
     })
-    
-    const getnormalizedMessages = (obj)=>{
-        const userSchema = new schema.Entity('user', {},{
-            idAttribute: 'email'
-        })
-
-        const messageSchema = new schema.Entity('message',{
-            author: userSchema
-        });
-
-        const chatSchema = new schema.Entity('chat',{
-            messages:[ messageSchema ]
-        });
-        
-        const normalizedData = normalize(obj, chatSchema)
-        return normalizedData
-    }
 
     // Websockets - Chat
     const chatBot = {
@@ -107,12 +91,24 @@ io.on('connection',async socket=>{
         
         const messages = {
             id:'messages',
-            messages:await allMessages.getAll()
+            messages:[...await allMessages.getAll()]
         }
-        socket.emit('allMessages', getnormalizedMessages(messages))
+        const userSchema = new schema.Entity('user', {},{
+            idAttribute: 'email'
+        })
+        const messageSchema = new schema.Entity('message',{
+            author: userSchema
+        });
+        const chatSchema = new schema.Entity('chat',{
+            messages:[ messageSchema ]
+        });
+        const normalizedData = normalize(messages, chatSchema)
+        socket.emit(`allMessages`, normalizedData.result, normalizedData.entities);
+
         socket.emit('newMessage', botWelcome)
         socket.broadcast.emit('newMessage', botJoin)
     })
+
     socket.on('updateNewMessage', async (text)=>{
         const user = users.find(user => user.id === socket.id)
         const newMessage = formatMessage(user, text)

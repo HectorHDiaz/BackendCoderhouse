@@ -50,21 +50,6 @@ function renderProduct(item){
       } 
 }
 
-const getDenormalizedMessages = (obj)=>{
-    const userSchema = new normalizr.schema.Entity('user', {},{
-        idAttribute: 'email'
-    })
-    const messageSchema = new normalizr.schema.Entity('message',{
-        author: userSchema
-    });
-    const chatSchema = new normalizr.schema.Entity('chat',{
-        messages:[ messageSchema ]
-    });
-    const denormalizedData = normalizr.denormalize(obj, chatSchema)
-
-    return denormalizedData
-}
-
 const   userForm = document.getElementById('userForm'),
         chatText = document.getElementById('chat-text'),
         sendButton = document.getElementById('send-button'),
@@ -88,20 +73,30 @@ sendButton.addEventListener('click',()=>{
     socket.emit('updateNewMessage', text)
     chatText.value = ''
 })
-socket.on('allMessages', data=>{
-    const deNormalizedData = getDenormalizedMessages(data)
-    console.log(deNormalizedData)
-    // deNormalizedData.allMessages.forEach(msg => {
-    //     renderMessage(msg)
-    // });
+socket.on('allMessages', (data,entities)=>{
+    const userSchema = new normalizr.schema.Entity('user', {},{
+        idAttribute: 'email'
+    })
+    const messageSchema = new normalizr.schema.Entity('message',{
+        author: userSchema
+    });
+    const chatSchema = new normalizr.schema.Entity('chat',{
+        messages:[ messageSchema ]
+    });
+    const denormalizedData = normalizr.denormalize(data, chatSchema, entities)
+    const allMessages = denormalizedData.messages;
+    renderMessages(allMessages)
 })
 
-function renderMessage(message){
-    const div = document.createElement('div')
-      let html=`
-        <span style="color: blue"><b>${message.email}</b></span>
-        <span style="color: orange">[${message.time}]</span>
-        <span style="color: green">${message.text}</span>`
-      div.innerHTML = html
-      chatBox.appendChild(div)
+function renderMessages(messages){
+    chatBox.innerHTML=''
+    messages.forEach(msg=>{
+        const div = document.createElement('div')
+        let html=`
+        <span style="color: blue"><b>${msg.author.alias}</b></span>
+        <span style="color: orange">[${msg.time}]</span>
+        <span style="color: green">${msg.text}</span>`
+        div.innerHTML = html
+        chatBox.appendChild(div)
+    })
 }
