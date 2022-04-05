@@ -1,8 +1,5 @@
 const socket = io.connect()
 
-const denormalize = normalizr.denormalize
-const schema = normalizr.schema
-
 const   productForm = document.getElementById('productForm'),
         productsTable = document.getElementById('productTable'),
         productsDiv = document.getElementById('productsDiv')
@@ -54,18 +51,16 @@ function renderProduct(item){
 }
 
 const getDenormalizedMessages = (obj)=>{
-    const userSchema = new schema.Entity('user', {},{
+    const userSchema = new normalizr.schema.Entity('user', {},{
         idAttribute: 'email'
     })
-
-    const messageSchema = new schema.Entity('message',{
+    const messageSchema = new normalizr.schema.Entity('message',{
         author: userSchema
     });
-
-    const chatSchema = new schema.Entity('chat',{
+    const chatSchema = new normalizr.schema.Entity('chat',{
         messages:[ messageSchema ]
     });
-    const denormalizedData = denormalize(obj, chatSchema)
+    const denormalizedData = normalizr.denormalize(obj, chatSchema)
 
     return denormalizedData
 }
