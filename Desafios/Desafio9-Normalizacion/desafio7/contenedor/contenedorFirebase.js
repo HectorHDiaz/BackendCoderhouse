@@ -20,7 +20,7 @@ class ContenedorFirebase{
         const document = await docRef.get();
         return document.data();
       } catch (error) {
-        return res.json({Error: `No se pudo realizar esta acción`, error})
+        return {Error: `No se pudo realizar esta acción`, error}
       }
     }
     async getAll() {
@@ -32,7 +32,7 @@ class ContenedorFirebase{
           ...document.data()
         }))
       } catch (error) {
-        return res.json({Error: `No se pudo realizar esta acción`, error})
+        return {Error: `No se pudo realizar esta acción`, error}
       }
     }
     async save(obj) {
@@ -40,7 +40,7 @@ class ContenedorFirebase{
         const docRef = this.query.doc();
         return await docRef.set(obj);
       } catch (error) {
-        return res.json({Error: `No se pudo realizar esta acción`, error})
+        return {Error: `No se pudo realizar esta acción`, error}
       }
     }
     async updateById(id, obj) {
@@ -51,7 +51,7 @@ class ContenedorFirebase{
         }
         return await docRef.update(obj);
       } catch (error) {
-        return res.json({Error: `No se pudo realizar esta acción`, error})
+        return {Error: `No se pudo realizar esta acción`, error}
       }
     }
     async deleteById(id) {
@@ -59,7 +59,7 @@ class ContenedorFirebase{
         const docRef = this.query.doc(id);
         return await docRef.delete();
       } catch (error) {
-        return res.json({Error: `No se pudo realizar esta acción`, error})
+        return {Error: `No se pudo realizar esta acción`, error}
       }
     }
 }

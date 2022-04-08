@@ -79,19 +79,11 @@ io.on('connection',async socket=>{
         alias: 'Chatbot',
         avatar:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKtaUBFUeoZYmRpgnrt1rq0rlxr_y6LDeDULOYbwNVnrjiFqNMckqaxBQLBBMQCM2C_Q4&usqp=CAU',
       }
-    socket.on('newUser',async(user)=>{
-        const newUser = {
-            ...user,
-            socketId: socket.id
-        }
-        users.push(newUser)
-        const botWelcome = formatMessage(chatBot,'Bienvenido al Chat')
-        const botJoin = formatMessage(chatBot, `${newUser.alias} se unió!`)
-        await allMessages.save(botJoin)
-        
-        const messages = {
+
+      const getnormalizedMessages = async ()=>{
+          const messages = {
             id:'messages',
-            messages:[...await allMessages.getAll()]
+            messages:[... await allMessages.getAll()]
         }
         const userSchema = new schema.Entity('user', {},{
             idAttribute: 'email'
@@ -102,7 +94,21 @@ io.on('connection',async socket=>{
         const chatSchema = new schema.Entity('chat',{
             messages:[ messageSchema ]
         });
-        const normalizedData = normalize(messages, chatSchema)
+        return normalize(messages, chatSchema)
+    }
+
+    socket.on('newUser',async(user)=>{
+        const newUser = {
+            ...user,
+            socketId: socket.id
+        }
+        console.log(newUser)
+        users.push(newUser)
+        const botWelcome = formatMessage(chatBot,'Bienvenido al Chat')
+        const botJoin = formatMessage(chatBot, `${newUser.alias} se unió!`)
+        await allMessages.save(botJoin)
+        
+        const normalizedData = await getnormalizedMessages()
         socket.emit(`allMessages`, normalizedData.result, normalizedData.entities);
 
         socket.emit('newMessage', botWelcome)
@@ -110,11 +116,11 @@ io.on('connection',async socket=>{
     })
 
     socket.on('updateNewMessage', async (text)=>{
-        const user = users.find(user => user.id === socket.id)
+        const user = users.find(user => user.socketId === socket.id)
         const newMessage = formatMessage(user, text)
         await allMessages.save(newMessage)
 
-        const messages = getnormalizedMessages(await allMessages.getAll())
-        io.emit('allMessages', messages)
+        const normalizedData = await getnormalizedMessages()
+        io.emit(`allMessages`, normalizedData.result, normalizedData.entities);
     })
 })  
