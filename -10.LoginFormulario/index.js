@@ -68,14 +68,13 @@ app.post('/', (req,res)=>{
     })
 })
 app.get('/desloguear', (req,res)=>{
-    const sessionName = req.session.name
+    const deslogueoName = req.session.name
     req.session.destroy(err=>{
         if(err){
             res.json({error:'olvidar', body:err})
         }else{
             res.clearCookie('session10')
-            
-            res.redirect('/')
+            res.render('index',{deslogueoName})
         }
     })
 });

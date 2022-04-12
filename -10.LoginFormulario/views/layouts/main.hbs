@@ -13,6 +13,10 @@
     <title>Document</title>
 </head>
 <body>
+    {{#if deslogueoName}}
+        {{>deslogueo}}
+    {{/if }}
+    {{#unless deslogueoName}}
     {{>login}}
     <div class="jumbotron container mt-3">
         {{>form}}
@@ -23,6 +27,6 @@
     </div>
         {{>chat}}
     <script src="../script.js"></script>
-    
+    {{/unless}}
 </body>
 </html>
