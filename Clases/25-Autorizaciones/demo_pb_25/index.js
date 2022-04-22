@@ -4,7 +4,6 @@ const MongoStore = require('connect-mongo');
 const mongoose = require('mongoose');
 const passport = require('./middlewares/passport');
 
-
 const env = require('./env.config');
 const dbConfig = require('./db/config');
 const apisRoutes = require('./routers/app.routers');

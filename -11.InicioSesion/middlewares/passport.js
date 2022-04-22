@@ -9,47 +9,53 @@ const salt = () => bcrypt.genSaltSync(10);
 const createHash = (password) => bcrypt.hashSync(password, salt());
 const isValidPassword = (user, password) => bcrypt.compareSync(password, user.password);
 
-passport.use('login', new LocalStrategy(async(userEmail, password, done)=>{
+passport.use('login', new LocalStrategy(async (userEmail, password, done) => {
     try {
-        const user = await userDao.getByEmail(userEmail);
-        if(!isValidPassword(user, password)){
-            console.log('invalid user o password')
-            return done(null, false)
-        }
-        console.log('User logged in succesfully')
-        return done(null, user)
-
-    } catch (error) {
-        return done(error)
+      const user = await userDao.getByEmail(userEmail);
+      if (!isValidPassword(user, password)) {
+        console.log('Invalid user or password');
+        return done(null, false);
+      }
+      return done(null, user);
     }
-}))
-passport.use('register', new LocalStrategy(async(userEmail, password, done)=>{
-    console.log('asdf')
+    catch (error) {
+      return done(error);
+    }
+  }));
+
+  passport.use('register', new LocalStrategy({
+      passReqToCallback: true,
+    },
+    async (req, userEmail, password, done) => {
+      console.log('Ingresó!')
     try {
-        const newUser={
-            email: userEmail,
-            pass: createHash(password)
-        }
-        const user = await userDao.createUser(newUser)
-        console.log("User registration successful!");
-        return done(null, user);
-
-    } catch (error) {
-        return done(error)
+      const userObject = {
+        email: userEmail,
+        password: createHash(password),
+      };
+      const newUser = formatUserForDB(userObject);
+      const user = await userDao.createUser(newUser);
+      console.log('User registration sucessful!');
+      return done(null, user);
     }
-}))
-
-// Serializacion:
-passport.serializeUser((user, done) => {
+    catch (error) {
+      console.log('Error signing up >>>', error);
+      return done(error);
+    }
+  }));
+  
+  // Serializacion
+  passport.serializeUser((user, done) => {
     console.log("Inside serializer");
     done(null, user._id);
-  })
+  });
   
-  // Deserializacion:
+  // Deserializacion
   passport.deserializeUser(async (id, done) => {
-    console.log("Inside deserializer");
-    const user = await userDao.getById(id);
+    console.log('Inside deserializer')
+    const user = await User.getById(id);
     done(null, user);
   })
-
-  module.exports = passport
+  
+  module.exports = passport;
+  

@@ -12,22 +12,15 @@ router.get('/', async (req,res)=>{
     if(req.session.contador){
         ++req.session.contador
     } 
-    const sessionName = req.session.name
-    const sessionCounter = req.session.contador
+    const sessionName = req.name
+    const sessionCounter = req.contador
     const products = await productsDao.getAll()
     res.render('index', {products, sessionName, sessionCounter})
 })
 
 router.get('/desloguear', (req,res)=>{
-    const deslogueoName = req.session.name
     req.logout();
-    req.session.destroy(err=>{
-        if(err){
-            res.json({error:'olvidar', body:err})
-        }
-        res.render('index',{deslogueoName})
-    })
-    res.clearCookie('session10')
+    res.render('index',{deslogueoName})
 });
 
 router.get('/api/productos-test', (req,res)=>{

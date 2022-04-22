@@ -13,7 +13,7 @@ const dbConfig=require('./db/config')
 const apiRoutes = require('./routers/index')
 const addMessagesHandlers = require('./routers/ws/addMessageSocket')
 const addProductsHandlers = require('./routers/ws/addProductsSocket');
-const passport = require('passport');
+const passport = require('./middlewares/passport');
 
 const PORT = process.env.PORT || 8080;
 
@@ -35,13 +35,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('views'))
 
 app.use(session({
-    name:'session10',
+    name:'coder-session',
     secret:'desafio10',
     resave:false,
     saveUninitialized: false,
     cookie:{maxAge:60000},
     store: MongoStore.create({mongoUrl: dbConfig.mongodb.connectTo('sessions')})
-}))
+}));
 app.use(passport.initialize());
 app.use(passport.session());
 

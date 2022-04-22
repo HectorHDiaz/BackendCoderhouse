@@ -1,6 +1,10 @@
 const auth = async (req, res, next) => {
-  if (req.isAuthenticated()) return next();
-  res.redirect('/');
+  if (req.isAuthenticated()) {
+    next();
+  }
+  else {
+    res.redirect('/');
+  }
 };
 
-export default auth;
+module.exports = auth;
