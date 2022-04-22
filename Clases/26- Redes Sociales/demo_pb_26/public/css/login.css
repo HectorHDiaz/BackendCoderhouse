@@ -1,0 +1,213 @@
+:root {
+  --base-bg-color: #4db6ac;
+  --base-border-radius: 8px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Secular One', sans-serif;
+}
+
+.pos-left {
+ margin-left: 2.2rem;
+}
+
+.p-left {
+  padding-left: 2.2rem !important;
+}
+
+.login-background {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-background img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  filter: brightness(60%);
+}
+
+.login-background .login-form {
+  position: relative;
+  z-index: 2;
+  top: 10%;
+  width: 60%;
+  height: 80%;
+  border-radius: var(--base-border-radius);
+  filter: drop-shadow(0 0 10rem var(--base-bg-color));
+}
+
+.form-container {
+  height: 100%;
+  border-radius: var(--base-border-radius);
+  position: relative;
+}
+
+.sign-in,
+.sign-up {
+  height: 100%;
+  position: relative;
+  top: 0px;
+  background-color: whitesmoke;
+  transition: all ease-out 0.80s;
+}
+
+.sign-in {
+  border-radius: var(--base-border-radius) 0 0 var(--base-border-radius);
+}
+
+.sign-up {
+  border-radius: 0 var(--base-border-radius) var(--base-border-radius) 0;
+}
+
+.digi-button-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.digi-button {
+  width: 150px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.login-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.login-window {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0%;
+  background-clip: border-box;
+  pointer-events: auto;
+  overflow: hidden;
+}
+
+.login-content {
+  width: 200%;
+  height: 100%;
+  pointer-events: auto;
+  color: whitesmoke;
+  background-color: rgba(77, 182, 172, 0.75);
+  border-radius: var(--base-border-radius);
+} 
+
+.digi-cover-button-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.digi-cover-button {
+  width: 150px;
+  height: 40px;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 40px;
+}
+
+.hide-form {
+  animation: hideForm 0.5s linear forwards;
+}
+
+.show-form {
+  visibility: visible;
+}
+
+.window-to-left-frame {
+  animation: windowToLeft 0.5s linear forwards;
+  transform-origin: 0% 0%;
+}
+
+.window-to-right-frame {
+  animation: windowToRight 0.5s linear forwards;
+  transform-origin: 100% 0%;
+}
+
+.content-to-left-frame {
+  animation: contentToLeft 0.5s linear forwards;
+  transform-origin: 50% 0%;
+}
+
+.content-to-right-frame {
+  animation: contentToRight 0.5s linear forwards;
+  transform-origin: 50% 0%;
+}
+
+@keyframes hideForm {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes windowToLeft {
+  0% {
+    left: 50%;
+
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes windowToRight {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes contentToLeft {
+  0% {
+    margin-left: 0%;
+    background-color: rgba(77, 182, 172, 1);
+  }
+  70% {
+    background-color: rgba(77, 182, 172, 1);
+  }
+  100% {
+    margin-left: -100%;
+    background-color: rgba(77, 182, 172, 0.65);
+  }
+}
+
+@keyframes contentToRight {
+  0% {
+    margin-left: -100%;
+    background-color: rgba(77, 182, 172, 1);
+
+  }
+  70% {
+    background-color: rgba(77, 182, 172, 1);
+  }
+  100% {
+    margin-left: 0%;
+    background-color: rgba(77, 182, 172, 0.75);
+  }
+}
+

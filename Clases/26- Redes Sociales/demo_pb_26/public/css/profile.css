@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Secular+One&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Secular One", sans-serif;
+}
+
+.profile-header {
+  width: 100%;
+  height: 400px;
+  background-image: url("/img/profile/background.gif");
+  background-size: cover;
+  background-position-y: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profile-card {
+  width: 50%;
+  height: 700px;
+  background-color: whitesmoke;
+  position: relative;
+  top: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15px;
+  filter: drop-shadow(0 0 0.5em #00bfa5);
+  padding: 24px;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  filter: drop-shadow(0 0 0.5em #00bfa5);
+}
+
+.profile-image img {
+  width: 100%;
+  max-height: 100%;
+  border-radius: 200px;
+}
+
+.profile-name {
+  width: 100%;
+  text-align: center;
+}
+
+.profile-social-media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 4em;
+}
+
+.profile-social-media div {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.profile-social-media div svg {
+  width: 100%;
+  height: 100%;
+  fill: #bbbbbb;
+  transition: fill 0.5s;
+}
+.social-container:hover > .social-icon {
+  fill: #64ffda;
+  transition: fill 0.75s;
+}
+
+.profile-accounts {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.profile-accounts .chevron-arrow {
+  width: 30px;
+  height: 70px;
+}
+
+.profile-accounts .chevron-arrow svg {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-accounts .account-info {
+  flex-grow: 1;
+  height: 100%;
+  text-align: center;
+  padding: 12px;
+}
+
+.profile-accounts .account-info .account-card {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px;
+}
+
+.account-card .account-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.account-card .account-header .account-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1de9b6 ;
+}
+
+.account-card .account-header .account-logo svg {
+  width: 65%;
+  height: 65%;
+  fill: white;
+}
+
+.account-card .account-header .account-balance {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #00bfa5 ;
+}
+
+.account-card .account-data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.account-card .account-data .account-details {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.account-card .account-data .account-details span {
+  font-style: italic;
+  text-decoration: underline;
+  color: #00bfa5;
+}
+
+.account-card .account-data .account-details span {
+  font-style: italic;
+  text-decoration: underline;
+  color: #00bfa5;
+}
+
+.account-card .account-goals {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  padding: 16px;
+}
+
+.account-card .account-goals .progress-container {
+  width: 80%;
+  height: 100%;
+}
+
+.progress-container .progress {
+  border-radius: 8px;
+  height: 8px;
+  background-color: rgba(0, 191, 165, 0.2);
+}
+
+.progress .determinate {
+  background-color: #00bfa5;
+}
+
+.account-card .account-actions {
+  width: 100%;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.account-card .account-actions ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  right: 8px;
+  bottom: 5px;
+  gap: 2em;
+}
+
+.account-actions-btn {
+  display: inline-flex;
+  right: 9%;
+  bottom: 10%;
+}
