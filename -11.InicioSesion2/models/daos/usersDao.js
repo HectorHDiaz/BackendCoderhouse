@@ -1,0 +1,43 @@
+const ContenedorMongoDB = require('../contenedores/contenedorMongoDB')
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema;
+
+const collection = 'users'
+
+const userSchema = new mongoose.Schema({
+    email: { type: String, required: true, unique: true},
+    password: { type: String, required: true },
+    messages: [{ type: Schema.Types.ObjectId, ref: "messages" }]
+})
+
+class UserDaoMongoDB extends ContenedorMongoDB{
+    constructor(){
+        super(collection, userSchema)
+    }
+
+    async createUser(userItem) {
+        try {
+          const user = new this.model(userItem);
+          await user.save();
+          return user;
+        }
+        catch(error) {
+          throw new Error(error);
+        }
+      };
+
+      async getByEmail(email) {
+        try {
+            const document = await this.model.findOne({ email }, { __v: 0 });
+            if (!document) {
+                const errorMessage = `Wrong username or password`;
+                const newError = formatErrorObject(NOT_FOUND.tag, errorMessage);
+                throw new Error(JSON.stringify(newError));
+              } else return document;
+        } catch (error) {
+            throw new Error(error);
+        }
+      }
+}
+
+module.exports = UserDaoMongoDB;

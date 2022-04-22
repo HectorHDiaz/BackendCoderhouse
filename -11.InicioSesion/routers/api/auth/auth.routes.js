@@ -8,10 +8,9 @@ authRoutes.post(
   passport.authenticate('login', { failureRedirect: "/login-error"}),
   (req, res) => {res.redirect('/')}
 );
-authRoutes.post(
-  '/register', 
-  passport.authenticate('register', { failureRedirect: "/register-error"}),
-  (req, res) => {res.redirect('/')}
-);
+authRoutes.post('/register', passport.authenticate("register", { 
+  failureRedirect: "/register-error",
+  successRedirect: "/"
+}));
 
 module.exports = authRoutes;

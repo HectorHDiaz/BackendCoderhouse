@@ -1,6 +1,7 @@
 const express = require('express')
 const {getMockedItems} = require('../db/MockApi')
 const apiRoutes= require('./api/api.routes') 
+const auth = require('../middlewares/auth')
 
 const ProductsDao = require('../models/daos/productsDao')
 const productsDao = new ProductsDao()
@@ -8,7 +9,9 @@ const router = express.Router()
 
 router.use('/api', apiRoutes);
 
-router.get('/', async (req,res)=>{
+
+
+router.get('/',auth, async (req,res)=>{
     if(req.session.contador){
         ++req.session.contador
     } 
@@ -16,6 +19,9 @@ router.get('/', async (req,res)=>{
     const sessionCounter = req.session.contador
     const products = await productsDao.getAll()
     res.render('index', {products, sessionName, sessionCounter})
+})
+router.get('/login', (req,res)=>{
+    res.render('login')
 })
 
 router.get('/desloguear', (req,res)=>{

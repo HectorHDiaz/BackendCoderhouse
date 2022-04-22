@@ -33,6 +33,8 @@ io.on('connection',async socket=>{
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('views'))
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use(session({
     name:'session10',
@@ -42,8 +44,6 @@ app.use(session({
     cookie:{maxAge:60000},
     store: MongoStore.create({mongoUrl: dbConfig.mongodb.connectTo('sessions')})
 }))
-app.use(passport.initialize());
-app.use(passport.session());
 
 //Template Engines
 app.engine('hbs', engine({
