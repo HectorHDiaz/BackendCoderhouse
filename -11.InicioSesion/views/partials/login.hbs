@@ -26,20 +26,20 @@
     const registerForm = document.getElementById('registerForm')
     const toggleBtn = document.getElementById('toggleBtn')
 
-    loginForm.hidden = false
-    registerForm.hidden = true
+    loginForm.style.display = 'block'
+    registerForm.style.display = 'none'
 
     toggleBtn.addEventListener('click', toggleBox)
 
     function toggleBox(){
         if(choice){
-            loginForm.hidden = true
-            registerForm.hidden = false
+            loginForm.style.display = 'none'
+            registerForm.style.display = 'block'
             toggleBtn.textContent = 'Loguearse'
             choice = false
         }else{
-            loginForm.hidden = false
-            registerForm.hidden = true
+            loginForm.style.display = 'block'
+            registerForm.style.display = 'none'
             toggleBtn.textContent = 'Registrase'
             choice = true
         }

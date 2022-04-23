@@ -12,7 +12,14 @@ const userSchema = new mongoose.Schema({
 
 class UserDaoMongoDB extends ContenedorMongoDB{
     constructor(){
-        super(collection, userSchema)
+        if (!UserDaoMongoDB.instance) {
+          super(collection, userSchema);
+          UserDaoMongoDB.instance = this;
+          return this;
+        }
+        else {
+          return UserDaoMongoDB.instance;
+        }
     }
 
     async createUser(userItem) {

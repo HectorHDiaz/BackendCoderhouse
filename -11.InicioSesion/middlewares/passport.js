@@ -1,9 +1,9 @@
-const passport = require('passport')
-const LocalStrategy = require('passport-local').Strategy
-const bcrypt = require('bcrypt')
+const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
+const bcrypt = require('bcrypt');
 
-const UserDao = require('../models/daos/usersDao')
-const userDao = new UserDao()
+const UserDao = require('../models/daos/usersDao');
+const userDao = new UserDao();
 
 const salt = () => bcrypt.genSaltSync(10);
 const createHash = (password) => bcrypt.hashSync(password, salt());
