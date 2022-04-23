@@ -12,15 +12,30 @@ router.get('/', async (req,res)=>{
     if(req.session.contador){
         ++req.session.contador
     } 
-    const sessionName = req.name
-    const sessionCounter = req.contador
+    const sessionName = req.session.userEmail
+    const sessionCounter = req.session.contador
     const products = await productsDao.getAll()
     res.render('index', {products, sessionName, sessionCounter})
 })
+//POST DE PRUEBA - CAMBIAR action EN "login.hbs"
+router.post('/', (req,res)=>{
+    req.session.userEmail = req.body.userEmail;
+    req.session.contador = 1;
+    req.session.save(()=>{
+    res.redirect('/')
+    })
+})
 
 router.get('/desloguear', (req,res)=>{
-    req.logout();
-    res.render('index',{deslogueoName})
+    const deslogueoName = req.session.userEmail
+    req.session.destroy(err=>{
+        if(err){
+            res.json({error:'olvidar', body:err})
+        }else{
+            res.clearCookie('session10')
+            res.render('index',{deslogueoName})
+        }
+    })
 });
 
 router.get('/api/productos-test', (req,res)=>{

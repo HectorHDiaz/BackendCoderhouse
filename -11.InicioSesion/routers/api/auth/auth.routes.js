@@ -2,18 +2,18 @@ const express = require('express');
 const passport = require('../../../middlewares/passport');
 const authControllers = require('../../../middlewares/auth.controllers');
 
-const router = express.Router();
+const authRouter = express.Router();
 
-router.post(
-  '/register',
-  passport.authenticate('register', { failureRedirect: '/register-error'}),
-  authControllers.register
-);
+authRouter.post('/register', 
+  (passport.authenticate("register", { 
+    failureRedirect: "/register-error",
+    successRedirect: "/"
+})));
 
-router.post(
-  '/login', 
-  passport.authenticate('login', { failureRedirect: '/login-error' }),
-  authControllers.login
-);
+authRouter.post('/login', 
+  (passport.authenticate("login", { 
+    failureRedirect: "/login-error",
+    successRedirect: "/"
+})));
 
-module.exports = router;
+module.exports = authRouter;

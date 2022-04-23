@@ -1,36 +1,36 @@
 require('dotenv').config();
-const express = require('express')
-const session = require('express-session')
-const MongoStore = require('connect-mongo') 
-const mongoose = require('mongoose')
-const path = require('path')
+const express = require('express');
+const session = require('express-session');
+const MongoStore = require('connect-mongo');
+const mongoose = require('mongoose');
+const path = require('path');
 const passport = require('./middlewares/passport');
-const {engine} = require('express-handlebars')
+const {engine} = require('express-handlebars');
 
-const http = require('http')
-const socketIO = require('socket.io')
-const dbConfig=require('./db/config')
-const apiRoutes = require('./routers/index')
+const http = require('http');
+const socketIO = require('socket.io');
+const dbConfig=require('./db/config');
+const apiRoutes = require('./routers/index');
 
-const addMessagesHandlers = require('./routers/ws/addMessageSocket')
+const addMessagesHandlers = require('./routers/ws/addMessageSocket');
 const addProductsHandlers = require('./routers/ws/addProductsSocket');
 
 const PORT = process.env.PORT || 8080;
 
 //Server
 const app = express();
-const httpServer = http.createServer(app)
-const io = socketIO(httpServer)
+const httpServer = http.createServer(app);
+const io = socketIO(httpServer);
 
 //Socket 
 io.on('connection',async socket=>{
-    console.log('Nuevo cliente conectado')
-    addMessagesHandlers(socket, io.sockets)
-    addProductsHandlers(socket, io.sockets)
+    console.log('Nuevo cliente conectado');
+    addMessagesHandlers(socket, io.sockets);
+    addProductsHandlers(socket, io.sockets);
 }) 
 
 //middlewares
-app.use(express.static('views'))
+app.use(express.static('views'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(session({
@@ -50,8 +50,8 @@ app.engine('hbs', engine({
     layoutsDir:path.resolve(__dirname,"./views/layouts"),
     partialDir:path.resolve(__dirname, "./views/partials")
 }))
-app.set('views', './views/')
-app.set('view engine', 'hbs')
+app.set('views', './views/');
+app.set('view engine', 'hbs');
 
 //Routes
 app.use(apiRoutes);
@@ -67,6 +67,6 @@ httpServer.listen(PORT, ()=>{
 		console.log(`An error occurred while connecting the database`);
 		console.log(`Error en servidor `, err);
 	})
-})
+});
 
  

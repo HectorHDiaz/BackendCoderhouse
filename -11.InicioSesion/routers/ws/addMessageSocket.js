@@ -6,6 +6,14 @@ const UsersDao = require('../../models/daos/usersDao')
 const messagesDao = new MessagesDao();
 const usersDao = new UsersDao();
 
+function formatMessage(author, text){
+    return {
+      author,
+      time:`[${moment().format('L')} ${moment().format('LTS')}]`,
+      text
+    }
+}
+
 async function addMessages(socket, sockets){
     sockets.emit('allMessages', getnormalizedMessages(await messagesDao.getAll()));
     const chatBot = {
@@ -17,10 +25,7 @@ async function addMessages(socket, sockets){
         avatar:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKtaUBFUeoZYmRpgnrt1rq0rlxr_y6LDeDULOYbwNVnrjiFqNMckqaxBQLBBMQCM2C_Q4&usqp=CAU',
     }
     const botWelcome = formatMessage(chatBot,'Bienvenido al Chat') 
-    const botJoin = formatMessage(chatBot, `${newUser.alias} se unió!`)
-    await messagesDao.save(botJoin)
     socket.emit('newMessage', botWelcome)
-    socket.broadcast.emit('newMessage', botJoin)
 
     socket.on('updateNewMessage', async (message)=>{
         const user = await usersDao.getByEmail(message.email)
@@ -34,4 +39,4 @@ async function addMessages(socket, sockets){
     })
 }
 
-module.exports = {addMessages}
+module.exports = addMessages
