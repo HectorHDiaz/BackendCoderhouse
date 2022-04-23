@@ -29,6 +29,7 @@ passport.use('register', new LocalStrategy({
     passReqToCallback: true,
   },
   async (req, username, password, done) => {
+    console.log('Ingresó al Passport!')
   try {
     const userObject = {
       firstname: req.body.firstname,

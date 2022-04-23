@@ -4,14 +4,14 @@ const authControllers = require('../../../middlewares/auth.controllers');
 
 const authRouter = express.Router();
 
-authRouter.post('/register', 
-  (passport.authenticate("register", { 
+authRouter.post('/register',
+  (passport.authenticate("register", {
     failureRedirect: "/register-error",
     successRedirect: "/"
 })));
 
-authRouter.post('/login', 
-  (passport.authenticate("login", { 
+authRouter.post('/login',
+  (passport.authenticate("login", {
     failureRedirect: "/login-error",
     successRedirect: "/"
 })));

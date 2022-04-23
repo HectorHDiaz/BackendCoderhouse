@@ -9,13 +9,9 @@ const router = express.Router()
 router.use('/api', apiRoutes);
 
 router.get('/', async (req,res)=>{
-    if(req.session.contador){
-        ++req.session.contador
-    } 
-    const sessionName = req.session.userEmail
-    const sessionCounter = req.session.contador
+    const sessionName = req.user
     const products = await productsDao.getAll()
-    res.render('index', {products, sessionName, sessionCounter})
+    res.render('index', {products, sessionName})
 })
 //POST DE PRUEBA - CAMBIAR action EN "login.hbs"
 router.post('/', (req,res)=>{
@@ -27,15 +23,11 @@ router.post('/', (req,res)=>{
 })
 
 router.get('/desloguear', (req,res)=>{
-    const deslogueoName = req.session.userEmail
-    req.session.destroy(err=>{
-        if(err){
-            res.json({error:'olvidar', body:err})
-        }else{
-            res.clearCookie('session10')
-            res.render('index',{deslogueoName})
-        }
-    })
+    const deslogueoName = req.user
+    req.logout();
+    console.log('User logued out!');
+    res.render('index',{deslogueoName})
+
 });
 
 router.get('/api/productos-test', (req,res)=>{
