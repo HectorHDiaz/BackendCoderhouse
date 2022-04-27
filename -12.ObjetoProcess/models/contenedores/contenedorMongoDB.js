@@ -5,7 +5,7 @@ class ContenedorMongoDB{
         this.model = mongoose.model(collection, schema)
     }
     async getById(id){
-        const document = await this.model.find({id:id},{__v:0}).lean();
+        const document = await this.model.findById(id, { __v: 0 }).lean();
         return document 
     }
     async getAll(){

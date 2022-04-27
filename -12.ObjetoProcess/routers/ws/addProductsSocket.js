@@ -19,4 +19,4 @@ async function addProducts(socket, sockets){
     })
 }
 
-module.exports = {addProducts}
+module.exports = addProducts

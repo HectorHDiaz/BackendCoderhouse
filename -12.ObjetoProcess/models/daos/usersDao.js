@@ -12,7 +12,14 @@ const userSchema = new mongoose.Schema({
 
 class UserDaoMongoDB extends ContenedorMongoDB{
     constructor(){
-        super(collection, userSchema)
+        if (!UserDaoMongoDB.instance) {
+          super(collection, userSchema);
+          UserDaoMongoDB.instance = this;
+          return this;
+        }
+        else {
+          return UserDaoMongoDB.instance;
+        }
     }
 
     async createUser(userItem) {
@@ -31,9 +38,9 @@ class UserDaoMongoDB extends ContenedorMongoDB{
             const document = await this.model.findOne({ email }, { __v: 0 });
             if (!document) {
                 const errorMessage = `Wrong username or password`;
-                const newError = formatErrorObject(NOT_FOUND.tag, errorMessage);
-                throw new Error(JSON.stringify(newError));
+                throw new Error(errorMessage);
               } else return document;
+              
         } catch (error) {
             throw new Error(error);
         }
