@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const passport = require('./middlewares/passport');
 const {engine} = require('express-handlebars');
+const minimist = require('minimist')
 
 const http = require('http');
 const socketIO = require('socket.io');
@@ -15,7 +16,6 @@ const apiRoutes = require('./routers/index');
 const addMessagesHandlers = require('./routers/ws/addMessageSocket');
 const addProductsHandlers = require('./routers/ws/addProductsSocket');
 
-const PORT = process.env.PORT || 8080;
 const args = minimist(process.argv.slice(2), {
     default:{
         PORT: 8080,
@@ -24,7 +24,6 @@ const args = minimist(process.argv.slice(2), {
         p:'PORT'
     }
 })
-
 
 //Server
 const app = express();
@@ -78,5 +77,3 @@ httpServer.listen(args.PORT, ()=>{
 	})
 });
 
-module.exports = {args}
- 

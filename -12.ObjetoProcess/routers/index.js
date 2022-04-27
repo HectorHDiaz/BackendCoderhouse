@@ -1,7 +1,16 @@
 const express = require('express')
 const {getMockedItems} = require('../db/MockApi')
-const apiRoutes= require('./api/api.routes') 
-const {args} = require('../index')
+const apiRoutes= require('./api/api.routes')
+ 
+const minimist = require('minimist')
+const args = minimist(process.argv.slice(2), {
+    default:{
+        PORT: 8080,
+    },
+    alias:{
+        p:'PORT'
+    }
+})
 
 const ProductsDao = require('../models/daos/productsDao')
 const productsDao = new ProductsDao()
@@ -53,8 +62,7 @@ router.get('/info', (req,res)=>{
         processId:      process.pid,
         projectFolder:  `${process.cwd()}`
     }
-    res.render('info', info)
+    res.render('index', {info})
 });
-
 
 module.exports = router
