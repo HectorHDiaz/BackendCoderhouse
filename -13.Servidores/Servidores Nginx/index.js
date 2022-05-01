@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 const path = require('path');
 const passport = require('./middlewares/passport');
 const {engine} = require('express-handlebars');
-const minimist = require('minimist')
 
 const http = require('http');
 const socketIO = require('socket.io');
@@ -16,38 +15,22 @@ const apiRoutes = require('./routers/index');
 const addMessagesHandlers = require('./routers/ws/addMessageSocket');
 const addProductsHandlers = require('./routers/ws/addProductsSocket');
 
-const cluster = require('cluster')
-const os = require('os')
+const PORT = process.argv[2];
+// if(args.MODO =='CLUSTER'){
+//     if(cluster.isPrimary){
+//         console.log(`Proceso principal, N°: ${process.pid}`)
+//         const CPUS_NUM = os.cpus().length;
+//         for(let i = 0; i< CPUS_NUM;i++){
+//             cluster.fork()
+//         }
+//     }else{
+//         console.log(`Proceso secundario, N°: ${process.pid}`)
+//         allServer();
+//     }
+// }else{
+//     allServer();
+// }
 
-const args = minimist(process.argv.slice(2), {
-    default:{
-        PORT: 8080,
-        MODO:'FORK'
-    },
-    alias:{
-        p:'PORT',
-        m:'MODO'
-    }
-})
-
-if(args.MODO =='CLUSTER'){
-    if(cluster.isPrimary){
-        console.log(`Proceso principal, N°: ${process.pid}`)
-        const CPUS_NUM = os.cpus().length;
-        for(let i = 0; i< CPUS_NUM;i++){
-            cluster.fork()
-        }
-    }else{
-        console.log(`Proceso secundario, N°: ${process.pid}`)
-        allServer();
-    }
-}else{
-    allServer();
-}
-
-module.exports = args
-
-function allServer(){
     //Server
     const app = express();
     const httpServer = http.createServer(app);
@@ -88,15 +71,14 @@ function allServer(){
     app.use(apiRoutes);
 
     //Inicio de Server
-    httpServer.listen(args.PORT, ()=>{
+    httpServer.listen(PORT, ()=>{
         mongoose.connect(dbConfig.mongodb.connectTo('ProyectoDesafios'))
     .then(() => {
         console.log('Connected to DB!');
-        console.log('Server is up and running on port:', args.PORT);
+        console.log('Server is up and running on port:', PORT);
     })
     .catch(err => {
             console.log(`An error occurred while connecting the database`);
             console.log(`Error en servidor `, err);
         })
     });
-}
