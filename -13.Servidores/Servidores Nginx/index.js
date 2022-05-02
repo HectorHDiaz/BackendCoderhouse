@@ -15,22 +15,38 @@ const apiRoutes = require('./routers/index');
 const addMessagesHandlers = require('./routers/ws/addMessageSocket');
 const addProductsHandlers = require('./routers/ws/addProductsSocket');
 
-const PORT = process.argv[2];
-// if(args.MODO =='CLUSTER'){
-//     if(cluster.isPrimary){
-//         console.log(`Proceso principal, N°: ${process.pid}`)
-//         const CPUS_NUM = os.cpus().length;
-//         for(let i = 0; i< CPUS_NUM;i++){
-//             cluster.fork()
-//         }
-//     }else{
-//         console.log(`Proceso secundario, N°: ${process.pid}`)
-//         allServer();
-//     }
-// }else{
-//     allServer();
-// }
+const minimist = require('minimist')
+const cluster = require('cluster')
+const os = require('os');
+const { MongoGridFSChunkError } = require('mongodb');
 
+const args = minimist(process.argv.slice(2), {
+    default:{
+        PORT: 8080,
+        MODE: 'FORK'
+    },
+    alias:{
+        p:'PORT',
+        m:'MODE'
+    }
+})
+
+if(args.MODE =='CLUSTER'){
+    if(cluster.isPrimary){
+        console.log(`Proceso principal, N°: ${process.pid}`)
+        const CPUS_NUM = os.cpus().length;
+        for(let i = 0; i< CPUS_NUM;i++){
+            cluster.fork()
+        }
+    }else{
+        console.log(`Proceso secundario, N°: ${process.pid}`)
+        allServer();
+    }
+}else{
+    allServer();
+}
+
+function allServer(){
     //Server
     const app = express();
     const httpServer = http.createServer(app);
@@ -71,14 +87,15 @@ const PORT = process.argv[2];
     app.use(apiRoutes);
 
     //Inicio de Server
-    httpServer.listen(PORT, ()=>{
+    httpServer.listen(args.PORT, ()=>{
         mongoose.connect(dbConfig.mongodb.connectTo('ProyectoDesafios'))
     .then(() => {
         console.log('Connected to DB!');
-        console.log('Server is up and running on port:', PORT);
+        console.log('Server is up and running on port:', args.PORT);
     })
     .catch(err => {
             console.log(`An error occurred while connecting the database`);
             console.log(`Error en servidor `, err);
         })
     });
+}

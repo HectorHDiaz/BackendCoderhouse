@@ -5,6 +5,6 @@ const router = express.Router();
 
 //Routes
 router.use('/auth', authRoutes);
-router.use('/random', randomRoute)
+router.use('/randoms', randomRoute)
 
 module.exports = router;

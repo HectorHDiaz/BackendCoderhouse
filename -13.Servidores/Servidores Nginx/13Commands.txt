@@ -1,0 +1,11 @@
+Instancias de servidores 8080 y 8081
+pm2 start index.js --name “cluster-server” -- -p 8080 --m "CLUSTER"
+pm2 start index.js --name “fork-server” -- -p 8081 --m "FORK"
+
+/api/randoms servers
+pm2 start index.js --name “fork-server2” -- -p 8082 --m "FORK"
+pm2 start index.js --name “fork-server3” -- -p 8083 --m "FORK"
+pm2 start index.js --name “fork-server4” -- -p 8084 --m "FORK"
+pm2 start index.js --name “fork-server5” -- -p 8085 --m "FORK"
+
+

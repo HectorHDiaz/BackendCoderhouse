@@ -62,7 +62,7 @@ app.set('views', './views/');
 app.set('view engine', 'hbs');
 
 //Routes
-app.use(apiRoutes);
+app.use('(api', apiRoutes);
 
 //Inicio de Server
 httpServer.listen(args.PORT, ()=>{

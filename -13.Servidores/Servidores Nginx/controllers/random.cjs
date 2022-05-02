@@ -1,4 +1,4 @@
-const count = (qty = 100000000) => {
+const count = (qty = 1000) => {
   const dataRandom = [];
   for(let i = 0; i < qty; i++) {
     dataRandom.push(Math.floor(Math.random() * 1000) + 1);
