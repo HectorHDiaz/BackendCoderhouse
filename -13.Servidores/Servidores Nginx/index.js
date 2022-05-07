@@ -18,7 +18,6 @@ const addProductsHandlers = require('./routers/ws/addProductsSocket');
 const minimist = require('minimist')
 const cluster = require('cluster')
 const os = require('os');
-const { MongoGridFSChunkError } = require('mongodb');
 
 const args = minimist(process.argv.slice(2), {
     default:{

@@ -1,0 +1,39 @@
+<div class="jumbotron container mt-3" id="chat">
+    <h3>Chat</h3>
+    <div class="form-group" id="userForm">
+        <form action="/" method="post">
+            <div class="form-group">
+                <label for="email">Ingrese su Email</label>
+                <input type="email" name="email" class="form-control" id="emailInput">
+            </div>
+            <div class="form-group">
+                <label for="title">Nombre</label>
+                <input type="text" name="name" id="nameInput" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="title">Apellido</label>
+                <input type="text" name="lastname" id="lastnameInput" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="title">Edad</label>
+                <input type="text" name="age" id="ageInput" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="title">Alias</label>
+                <input type="text" name="alias" id="aliasInput" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="title">Avatar</label>
+                <input type="text" name="avatar" id="avatarInput" class="form-control">
+            </div>
+            <button class="btn btn-primary" id="email-button">Usar Datos</button>
+        </form>
+        <hr>
+        <div style="margin: 1em 2em" id="chat-box">
+            
+        </div>
+        <hr>
+        <textarea type="text" id="chat-text" class="form-control"></textarea>
+        <button class="btn btn-primary" id="send-button">Enviar!</button>
+    </div>
+</div>
