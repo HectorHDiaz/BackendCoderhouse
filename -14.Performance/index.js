@@ -21,7 +21,7 @@ const os = require('os');
 
 const args = minimist(process.argv.slice(2), {
     default:{
-        PORT: 8080,
+        PORT: 8081,
         MODE: 'FORK'
     },
     alias:{

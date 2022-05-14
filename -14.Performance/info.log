@@ -1,0 +1,5 @@
+[2022-05-13T21:28:35.581] [INFO] infoFile - Route: /. Method: GET
+[2022-05-13T21:28:39.221] [INFO] infoFile - Route: /login-error. Method: GET
+[2022-05-13T21:28:54.452] [INFO] infoFile - Route: /. Method: GET
+[2022-05-13T21:29:01.746] [INFO] infoFile - Route: /desloguear?. Method: GET
+[2022-05-13T21:29:03.827] [INFO] infoFile - Route: /?. Method: GET
