@@ -19,6 +19,8 @@ const minimist = require('minimist')
 const cluster = require('cluster')
 const os = require('os');
 
+const PORT = process.env.PORT || 8080;
+
 const args = minimist(process.argv.slice(2), {
     default:{
         PORT: 8081,
@@ -88,11 +90,11 @@ function allServer(){
     app.use(apiRoutes);
 
     //Inicio de Server
-    httpServer.listen(args.PORT, ()=>{
+    httpServer.listen(PORT, ()=>{
         mongoose.connect(dbConfig.mongodb.connectTo('ProyectoDesafios'))
     .then(() => {
         console.log('Connected to DB!');
-        console.log('Server is up and running on port:', args.PORT);
+        console.log('Server is up and running on port:', PORT);
     })
     .catch(err => {
             console.log(`An error occurred while connecting the database`);

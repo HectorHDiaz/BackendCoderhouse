@@ -6,6 +6,7 @@ const   productForm = document.getElementById('productForm'),
    
 productForm.addEventListener('submit',e=>{
     e.preventDefault()
+    
         const newProduct={
             name: e.target.name.value,
             price: e.target.price.value,

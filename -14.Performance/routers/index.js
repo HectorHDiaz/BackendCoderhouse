@@ -10,7 +10,7 @@ const ProductsDao = require('../models/daos/productsDao')
 const productsDao = new ProductsDao()
 const router = express.Router()
 const minimist = require('minimist')
-const { runMain } = require('module')
+
 const args = minimist(process.argv.slice(2), {
     default:{
         PORT: 8080,

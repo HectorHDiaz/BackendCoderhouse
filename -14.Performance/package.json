@@ -14,6 +14,7 @@
     "bcrypt": "^5.0.1",
     "compression": "^1.7.4",
     "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.1",
     "express": "^4.17.3",
     "express-handlebars": "^6.0.4",
     "express-session": "^1.17.2",
@@ -32,7 +33,6 @@
     "socket.io": "^4.4.1"
   },
   "devDependencies": {
-    "dotenv": "^16.0.0",
     "nodemon": "^2.0.16"
   },
   "description": ""
