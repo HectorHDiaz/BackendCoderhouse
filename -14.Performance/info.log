@@ -3,3 +3,7 @@
 [2022-05-13T21:28:54.452] [INFO] infoFile - Route: /. Method: GET
 [2022-05-13T21:29:01.746] [INFO] infoFile - Route: /desloguear?. Method: GET
 [2022-05-13T21:29:03.827] [INFO] infoFile - Route: /?. Method: GET
+[2022-05-15T18:57:27.421] [INFO] infoFile - Route: /. Method: GET
+[2022-05-15T18:59:30.889] [INFO] infoFile - Route: /. Method: GET
+[2022-05-15T19:00:04.561] [INFO] infoFile - Route: /. Method: GET
+[2022-05-15T19:00:05.313] [INFO] infoFile - Route: /. Method: GET
