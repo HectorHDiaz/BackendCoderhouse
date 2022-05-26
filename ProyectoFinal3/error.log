@@ -1,0 +1,225 @@
+[2022-05-23T20:47:04.648] [ERROR] error - Error: ReferenceError: productsDao is not defined
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:25:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:38:31.122] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:25:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:38:38.668] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:25:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:38:42.435] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:25:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:49:14.058] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:28:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:49:16.391] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:28:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:51:18.749] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:51:44.661] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:51:55.681] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:52:10.633] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:52:32.393] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:52:37.826] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:52:40.944] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:53:48.522] [ERROR] error - Error: CastError: Cast to ObjectId failed for value "2" (type number) at path "_id" for model "carts"
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-05-24T18:54:32.344] [ERROR] error - Error: CastError: Cast to ObjectId failed for value "2" (type number) at path "_id" for model "carts"
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-05-24T18:54:41.694] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:56:11.835] [ERROR] error - Error: CastError: Cast to ObjectId failed for value "2" (type number) at path "_id" for model "carts"
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-05-24T18:56:15.397] [ERROR] error - Error: CastError: Cast to ObjectId failed for value "2" (type number) at path "_id" for model "carts"
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-05-24T18:56:18.209] [ERROR] error - Error: CastError: Cast to ObjectId failed for value "2" (type number) at path "_id" for model "carts"
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-05-24T18:56:19.996] [ERROR] error - Error: CastError: Cast to ObjectId failed for value "2" (type number) at path "_id" for model "carts"
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-05-24T18:56:28.535] [ERROR] error - Error: CastError: Cast to ObjectId failed for value "2" (type number) at path "_id" for model "carts"
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-05-24T18:56:29.300] [ERROR] error - Error: CastError: Cast to ObjectId failed for value "2" (type number) at path "_id" for model "carts"
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-05-24T18:57:49.935] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:58:31.431] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:59:00.864] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T18:59:01.647] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'cart')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:29:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-05-24T19:10:17.132] [ERROR] error - Error: CastError: Cast to ObjectId failed for value "3" (type number) at path "_id" for model "carts"
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:32:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
