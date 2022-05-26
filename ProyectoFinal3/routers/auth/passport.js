@@ -2,7 +2,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcrypt');
 const moment = require('moment');
-const path = require('path');
+const {newRegister} = require('../../utils/nodemailer')
 const {postNewCart} = require('../../controllers/cart.controller')
 
 const UserDao = require('../../models/daos/users/userDao');
@@ -47,6 +47,7 @@ passport.use("login", new LocalStrategy(async (username, password, done) => {
         };
         const user = await userDao.createUser(usrObject);
         console.log("User registration successful!");
+        newRegister(user)
         return done(null, user);
       }
       catch(error) {
