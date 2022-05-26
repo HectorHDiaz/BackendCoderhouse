@@ -49,3 +49,18 @@ function addToCart(productId, cartId){
     })
      .catch(error => console.error('Error:', error))
 } 
+
+function deleteFromCart(productId, cartId){
+  fetch(`http://localhost:8080/cart/${cartId}/products/${productId}`,
+  {
+      method: 'DELETE',
+      headers:{
+          'Content-Type': 'application/json'
+      }
+  },
+  ).then(res => res.json())
+   .then((res)=>{
+      console.log(res)
+  })
+   .catch(error => console.error('Error:', error))
+} 

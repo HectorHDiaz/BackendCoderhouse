@@ -2,7 +2,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcrypt');
 const moment = require('moment');
-
+const path = require('path');
 const {postNewCart} = require('../../controllers/cart.controller')
 
 const UserDao = require('../../models/daos/users/userDao');

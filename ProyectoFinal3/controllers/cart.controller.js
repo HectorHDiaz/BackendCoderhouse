@@ -64,13 +64,13 @@ const postNewProduct = async(req,res)=>{
 }
 const deleteProductCart = async(req,res)=>{
     try {
-        const cartId = req.params.cartId
-        const productId = req.params.productId
-        const theCart = await cartApi.getById(cartId)
-        const index = theCart[0].products.findIndex(product => product.id === +productId);
-        theCart[0].products.splice(index, 1)
+        const cartId = mongoose.Types.ObjectId(req.params.cartId);
+        const productId = mongoose.Types.ObjectId(req.params.productId);
+        const theCart = await cartApi.getById(cartId);
+        const index = theCart.products.findIndex(product => product._id === productId);
+        theCart.products.splice(index, 1)
         
-        await cartApi.updateById(cartId,theCart[0])
+        await cartApi.updateById(cartId, theCart);
         return res.json({response:'Se eliminó el producto al carro.'})
     } catch (error) {
         return res.json({Error: `No se pudo realizar esta acción`, error})
