@@ -1,5 +1,6 @@
 const express = require('express')
 const multer = require('multer')
+const {infoLogger, errorLogger} = require('../../utils/logger/index')
 
 const fileRouter = express.Router()
 //middleware
@@ -17,7 +18,7 @@ fileRouter.post('/image',upload.single('image') ,(req,res,next)=>{
         error.httpStatusCode = 400
         return next(error);
     }
-    console.log(filePath)
+    infoLogger.info(filePath)
 })
 
 module.exports = fileRouter

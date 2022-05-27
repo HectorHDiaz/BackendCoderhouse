@@ -1,5 +1,10 @@
 const nodemailer = require('nodemailer')
+const {adminWppMessage, smsClient} = require('./whatsapp')
 const adminConfig = require('./dbConfig')
+const handlebars = require("handlebars")
+const fs = require("fs")
+const path = require("path")
+const {infoLogger, errorLogger, consoleLogger} = require('./logger/index')
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -10,20 +15,6 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-// const mailOptions = {
-//     from: 'Node JS Server',
-//     to: 'atonomo.4s@gmail.com',
-//     subject:'Order Complete!',
-//     html:'<h1>Message<h1/>',
-// };
-// (async ()=>{
-//     try {
-//         const mailInfo = await transporter.sendMail(mailOptions);
-//         console.log(mailInfo)
-//     } catch (error) {
-//         console.log(error)
-//     }
-// });
 async function newRegister(newUser){
     try {
         const mailPayload = {
@@ -32,12 +23,8 @@ async function newRegister(newUser){
             subject:`New Register!`,
             html:`
             <html>
-                <head>
-                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-                </head>
                 <body>
                     <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">${newUser.name}</h5>
                             <p class="card-text">${newUser.email}</p>
@@ -52,15 +39,34 @@ async function newRegister(newUser){
             </html>`,
         };
         const mailInfo = await transporter.sendMail(mailPayload);
-        console.log(mailInfo)
+        infoLogger.info(mailInfo)
     } catch (error) {
-        console.log(error)
+        errorLogger.error(error)
     }
 }
 
-function newPurchase(){
+async function newPurchase(user,cart){
+    try {
+        const emailTemplateSource = fs.readFileSync(path.join(__dirname, "/cartList.hbs"), "utf8")
+        const template = handlebars.compile(emailTemplateSource)
+        const htmlToSend = template({cart})
 
+        const subjectString = `Nuevo pedido de ${user.name}. Email: ${user.email}`
+        const mailPayload = {
+            from: 'Proyecto3 - Diaz Hector',
+            to: adminConfig.ADMIN_EMAIL,
+            subject: subjectString,
+            html:htmlToSend,
+        };
+        const mailInfo = await transporter.sendMail(mailPayload);
+        const wppInfo = await adminWppMessage(subjectString)
+        const customerSms = await smsClient(user.phone, `Hola ${user.name}! Su pedido ha sido recibido y está ahora en proceso. Gracias!`)
+        return true
+    } catch (error) {
+        errorLogger.error(error)
+    }
 }
 
-module.exports={newRegister}
+
+module.exports={newRegister, newPurchase}
 

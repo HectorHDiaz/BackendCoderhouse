@@ -5,7 +5,8 @@ const {
     deleteCart,
     getCartProducts,
     postNewProduct,
-    deleteProductCart
+    deleteProductCart,
+    purchaseCart
 } = require('../../controllers/cart.controller')
 
 const router = express.Router()
@@ -21,5 +22,6 @@ router.delete('/:cartId', deleteCart)
 router.get('/:cartId' ,getCartProducts)
 router.post('/:cartId/products/:productId', postNewProduct)
 router.delete('/:cartId/products/:productId', deleteProductCart)
+router.post('/:cartId', purchaseCart)
 
 module.exports = router

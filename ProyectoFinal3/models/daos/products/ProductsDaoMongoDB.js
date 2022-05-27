@@ -1,4 +1,5 @@
 const ContenedorMongoDB = require('../../contenedores/contenedorMongoDB')
+const {errorLogger} = require('../../../utils/logger/index')
 const mongoose = require('mongoose')
 
 const collection = 'products'

@@ -1,8 +1,0 @@
-[2022-05-07T11:38:51.434] [WARN] warningFile - Route: /asd. Method: GET
-[2022-05-07T11:38:51.881] [WARN] warningFile - Route: /asd. Method: GET
-[2022-05-07T11:38:52.352] [WARN] warningFile - Route: /asd. Method: GET
-[2022-05-07T11:39:44.038] [WARN] warningFile - Route: /asd. Method: GET
-[2022-05-07T11:39:46.640] [WARN] warningFile - Route: /asd. Method: GET
-[2022-05-07T16:59:09.981] [WARN] warningFile - Route: /register?username=atonomo&password=1q2w3e4r. Method: GET
-[2022-05-07T16:59:54.845] [WARN] warningFile - Route: /api/auth/register?username=atonomo&password=1q2w3e4r. Method: GET
-[2022-05-07T17:00:28.667] [WARN] warningFile - Route: /api/auth/register. Method: GET

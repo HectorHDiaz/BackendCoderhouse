@@ -45,7 +45,7 @@ function addToCart(productId, cartId){
     },
     ).then(res => res.json())
      .then((res)=>{
-        console.log(res)
+      location.reload()
     })
      .catch(error => console.error('Error:', error))
 } 
@@ -60,7 +60,23 @@ function deleteFromCart(productId, cartId){
   },
   ).then(res => res.json())
    .then((res)=>{
-      console.log(res)
+      location.reload()
   })
    .catch(error => console.error('Error:', error))
 } 
+
+function purchaseCart(cartId){
+  fetch(`http://localhost:8080/cart/${cartId}`,
+  {
+      method: 'POST',
+      headers:{
+          'Content-Type': 'application/json'
+      }
+  },
+  ).then(res => res.json())
+   .then((res)=>{
+    location.reload()
+    
+  })
+   .catch(error => console.error('Error:', error))
+}

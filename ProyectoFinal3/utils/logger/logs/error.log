@@ -1,0 +1,25 @@
+[2022-05-27T19:21:49.547] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'name')
+    at newRegister (D:\BackendCoderhouse\ProyectoFinal3\utils\nodemailer.js:31:62)
+    at Strategy._verify (D:\BackendCoderhouse\ProyectoFinal3\routers\auth\passport.js:52:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-05-27T19:54:05.275] [ERROR] error - Error: Error: Wrong username or password
+    at UserDaoMongoDB.getByEmail (D:\BackendCoderhouse\ProyectoFinal3\models\daos\users\userDao.js:50:19)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal3\routers\auth\passport.js:17:20)
+[2022-05-27T19:55:16.984] [ERROR] error - Error: Error: Wrong username or password
+    at UserDaoMongoDB.getByEmail (D:\BackendCoderhouse\ProyectoFinal3\models\daos\users\userDao.js:50:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal3\routers\auth\passport.js:17:20)
+[2022-05-27T19:55:55.210] [ERROR] error - Error: Error: Wrong username or password
+    at UserDaoMongoDB.getByEmail (D:\BackendCoderhouse\ProyectoFinal3\models\daos\users\userDao.js:50:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal3\routers\auth\passport.js:17:20)
+[2022-05-27T19:56:13.792] [ERROR] error - Error: Error: Wrong username or password
+    at UserDaoMongoDB.getByEmail (D:\BackendCoderhouse\ProyectoFinal3\models\daos\users\userDao.js:50:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal3\routers\auth\passport.js:17:20)
+[2022-05-27T19:56:21.260] [ERROR] error - Error: Error: Wrong username or password
+    at UserDaoMongoDB.getByEmail (D:\BackendCoderhouse\ProyectoFinal3\models\daos\users\userDao.js:50:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal3\routers\auth\passport.js:17:20)

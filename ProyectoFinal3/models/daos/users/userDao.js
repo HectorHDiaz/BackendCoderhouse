@@ -1,4 +1,5 @@
 const ContenedorMongoDB = require('../../contenedores/contenedorMongoDB')
+const {errorLogger} = require('../../../utils/logger/index')
 const mongoose = require('mongoose')
 
 const collection = 'users'
@@ -34,7 +35,7 @@ class UserDaoMongoDB extends ContenedorMongoDB{
           return user;
         }
         catch(error) {
-          throw new Error(error);
+          errorLogger.error(error);
         }
       };
 
@@ -47,7 +48,7 @@ class UserDaoMongoDB extends ContenedorMongoDB{
               } else return document;
               
         } catch (error) {
-            throw new Error(error);
+          errorLogger.error(error);
         }
       }
 }

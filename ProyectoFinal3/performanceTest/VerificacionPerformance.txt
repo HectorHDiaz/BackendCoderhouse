@@ -1,0 +1,7 @@
+Hubo variacion de request.rate de 0,6/sec a favor del Cluster implementado en la pagina del listado de productos.
+
+Este no representa mucha diferencia de performance a la escala de 2000 peticion totales (50 peticiones por 40 usuarios)
+
+$ artillery quick --count 50 -n 40 http://localhost:8080/ > result_fork.txt 
+
+$ artillery quick --count 50 -n 40 http://localhost:8080/ > result_cluster.txt   

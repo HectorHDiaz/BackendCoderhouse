@@ -34,7 +34,8 @@
     "passport": "^0.5.2",
     "passport-local": "^1.0.0",
     "pm2": "^5.2.0",
-    "socket.io": "^4.4.1"
+    "socket.io": "^4.4.1",
+    "twilio": "^3.77.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"

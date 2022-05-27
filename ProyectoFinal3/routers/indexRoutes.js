@@ -5,7 +5,7 @@ const authRouter = require('./auth/authRoute')
 const fileRouter = require('./file/fileRoute')
 const CartDao = require('../models/daos/cart/CartDaoMongoDB')
 const ProductsDao = require('../models/daos/products/ProductsDaoMongoDB')
-const {warnLogger, errorLogger} = require('../utils/logger/index')
+const {infoLogger, errorLogger} = require('../utils/logger/index')
 
 const router = express.Router()
 
@@ -37,7 +37,7 @@ router.get('/', async (req,res)=>{
 router.get('/desloguear', (req,res)=>{
     const deslogueoName = req.user
     req.logout();
-    console.log('User logued out!');
+    infoLogger.info('User logued out!');
     res.render('index',{deslogueoName})
 
 });

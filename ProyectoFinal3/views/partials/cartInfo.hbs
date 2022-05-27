@@ -1,6 +1,7 @@
 <h3 style="margin-top: 2em;">Productos en carro:</h3>
 <h5>Cantidad: {{sessionCart.products.length}}</h5>
     {{#if sessionCart.products.length}}
+    <button onclick="return purchaseCart('{{sessionCart._id}}')" class="btn btn-success">Finalizar Compra</button>
     <div id="tableContainer">
         <table class="table table-dark" id="productTable">
             <tr class="text-warning">

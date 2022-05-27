@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const collection = 'carts'
 
 const cartSchema = new mongoose.Schema({
-    id:{type:Number, unique:true, required:true},
+    owner: {type: Object, ref:'users'},
     timestamp:{type:Date, min:Date.now()},
     products: [{type: Object, ref:'products'}]
 })

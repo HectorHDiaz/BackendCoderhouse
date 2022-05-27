@@ -7,7 +7,7 @@ const path = require('path');
 const {engine} = require('express-handlebars');
 const apiRoutes = require('./routers/indexRoutes')
 const dbConfig=require('./utils/dbConfig');
-
+const {infoLogger, errorLogger, consoleLogger} = require('./utils/logger/index')
 
 const minimist = require('minimist')
 const cluster = require('cluster')
@@ -17,24 +17,22 @@ const PORT = process.env.PORT || 8080;
 
 const args = minimist(process.argv.slice(2), {
     default:{
-        PORT: 8081,
         MODE: 'FORK'
     },
     alias:{
-        p:'PORT',
         m:'MODE'
     }
 })
 
 if(args.MODE =='CLUSTER'){
     if(cluster.isPrimary){
-        console.log(`Proceso principal, N°: ${process.pid}`)
+        infoLogger.info(`Proceso principal, N°: ${process.pid}`)
         const CPUS_NUM = os.cpus().length;
         for(let i = 0; i< CPUS_NUM;i++){
             cluster.fork()
         }
     }else{
-        console.log(`Proceso secundario, N°: ${process.pid}`)
+        infoLogger.info(`Proceso secundario, N°: ${process.pid}`)
         allServer();
     }
 }else{
@@ -77,12 +75,12 @@ function allServer(){
     app.listen(PORT, ()=>{
         mongoose.connect(dbConfig.mongodb.connectTo('ProyectoFinal'))
     .then(() => {
-        console.log('Connected to DB!');
-        console.log('Server is up and running on port:', PORT);
+        infoLogger.info('Connected to DB!');
+        consoleLogger.info('Server is up and running on port:', PORT);
     })
     .catch(err => {
-            console.log(`An error occurred while connecting the database`);
-            console.log(`Error en servidor `, err);
+        errorLogger.error(`An error occurred while connecting the database`);
+        errorLogger.error(`Error en servidor `, err);
         })
     });
 }

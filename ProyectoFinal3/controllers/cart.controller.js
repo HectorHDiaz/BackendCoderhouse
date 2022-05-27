@@ -1,22 +1,25 @@
 const {CartsDao} = require('../models/daos/indexApi')
-//const  CartsDao  = require('../models/daos/cart/CartDaoMongoDB')
 const {productsApi} = require('./products.controller')
+const UserDaoMongoDB=require('../models/daos/users/userDao')
 const mongoose = require('mongoose')
+const {newPurchase} = require('../utils/nodemailer')
+const {infoLogger, errorLogger} = require('../utils/logger/index')
 
 const cartApi = new CartsDao()
+const userApi = new UserDaoMongoDB()
 
-const postNewCart =async (req,res)=>{
+const postNewCart =async (userId, res)=>{
     try {
         const totalCarts = await cartApi.getAll()
             const newCart = {
-            id: totalCarts.length + 1,
+            owner : userId,
             timestamp : Date.now(),
             products:[],
         }
         const newMongoCart = await cartApi.save(newCart)
-        console.log(JSON.stringify(newMongoCart, null, 2))
         return newMongoCart._id
     } catch (error) {
+        errorLogger.error(error);
         return res.json({Error: `No se pudo realizar esta acción`, error})
     }
     
@@ -27,6 +30,7 @@ const deleteCart = (req,res)=>{
         cartApi.deleteById(cartId)
         return res.json({response:`Su carro id:${cartId} fué eliminado`})
     } catch (error) {
+        errorLogger.error(error);
         return res.json({Error: `No se pudo realizar esta acción`, error})
     }
 }
@@ -37,6 +41,7 @@ const getCartProducts = async(req,res)=>{
         //retorna un array donde tengo que especificar la posicion
         return res.json(theCart[0].products)
     } catch (error) {
+        errorLogger.error(error);
         return res.json({Error: `No se pudo realizar esta acción`, error})
     }
 }
@@ -44,21 +49,16 @@ const postNewProduct = async(req,res)=>{
     try {
         const cartId = mongoose.Types.ObjectId(req.params.cartId);
         const productId = mongoose.Types.ObjectId(req.params.productId);
-        // const allProducts = await productsApi.getAll();
-        // const theProduct = allProducts.find(product => product._id === productId);
         const theProduct = await productsApi.getById(productId)
-        // console.log(productId);
-        // console.log(allProducts[0]._id);
-        //console.log(theProduct)
         
         const theCart = await cartApi.getById(cartId);
         theCart.products.push(theProduct);
-        console.log(theCart)
     
         await cartApi.updateById(cartId, theCart);
         
         return res.json({response:`Se agregó el producto al carro.`});
     } catch (error) {
+        errorLogger.error(error);
         return res.json({Error: `No se pudo realizar esta acción`, error});
     }
 }
@@ -73,8 +73,30 @@ const deleteProductCart = async(req,res)=>{
         await cartApi.updateById(cartId, theCart);
         return res.json({response:'Se eliminó el producto al carro.'})
     } catch (error) {
+        errorLogger.error(error);
         return res.json({Error: `No se pudo realizar esta acción`, error})
     }
+}
+
+const purchaseCart = async(req,res)=>{
+    try {
+        const cartId = mongoose.Types.ObjectId(req.params.cartId);
+        const theCart = await cartApi.getById(cartId);
+        const userId = mongoose.Types.ObjectId(theCart.owner);
+        const theOwner = await userApi.getById(userId);
+
+        const newCart = {...theCart._doc, products:[]}
+
+        await newPurchase(theOwner, theCart)
+
+        await cartApi.updateById(cartId, newCart)
+
+        return res.json({response: 'Pedido realizado. Compra en Proceso'})
+    
+    } catch (error) {
+        errorLogger.error(error);
+        return res.json({Error: `No se pudo realizar esta acción`, error})
+    } 
 }
 
 module.exports = {
@@ -82,5 +104,6 @@ module.exports = {
     deleteCart,
     getCartProducts,
     postNewProduct,
-    deleteProductCart
+    deleteProductCart,
+    purchaseCart
 }
