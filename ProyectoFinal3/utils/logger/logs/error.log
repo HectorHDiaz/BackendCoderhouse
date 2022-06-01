@@ -1,0 +1,28 @@
+[2022-05-30T20:10:55.886] [ERROR] error - RestException [Error]: Authenticate
+    at success (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:1369:30)
+    at RawTask.call (D:\BackendCoderhouse\ProyectoFinal3\node_modules\asap\asap.js:40:19)
+    at flush (D:\BackendCoderhouse\ProyectoFinal3\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2022-05-30T20:10:56.535] [ERROR] error - RestException [Error]: Authenticate
+    at success (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:1369:30)
+    at RawTask.call (D:\BackendCoderhouse\ProyectoFinal3\node_modules\asap\asap.js:40:19)
+    at flush (D:\BackendCoderhouse\ProyectoFinal3\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
