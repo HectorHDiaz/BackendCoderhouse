@@ -1,39 +1,25 @@
-require('dotenv').config();
+
 const express = require('express');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
-const mongoose = require('mongoose');
 const path = require('path');
 const http = require('http');
 const socketIO = require('socket.io');
 const {engine} = require('express-handlebars');
-const minimist = require('minimist')
 const cluster = require('cluster')
 const os = require('os');
 
 const passport = require('./middlewares/passport');
 const dbConfig=require('./db/config');
 const apiRoutes = require('./routers/indexRoutes');
+const config = require('./config/config');
 
 const addMessagesHandlers = require('./routers/ws/addMessageSocket');
 const addProductsHandlers = require('./routers/ws/addProductsSocket');
-
-const PORT = process.env.PORT || 8080;
-
-const args = minimist(process.argv.slice(2), {
-    default:{
-        PORT: 8081,
-        MODE: 'FORK'
-    },
-    alias:{
-        p:'PORT',
-        m:'MODE'
-    }
-})
+const { MongoClient } = require('mongodb');
 
 
-
-if(args.MODE =='CLUSTER'){
+if(config.MODE =='CLUSTER'){
     if(cluster.isPrimary){
         console.log(`Proceso principal, N°: ${process.pid}`)
         const CPUS_NUM = os.cpus().length;
@@ -67,7 +53,7 @@ function allServer(){
     app.use(express.urlencoded({ extended: true }));
     app.use(session({
         name:'coder-session',
-        secret:process.env.COOKIE_SECRET,
+        secret:config.COOKIE_SECRET,
         resave:false,
         saveUninitialized: false,
         cookie:{maxAge:60000},
@@ -89,11 +75,11 @@ function allServer(){
     app.use(apiRoutes);
 
     //Inicio de Server
-    httpServer.listen(PORT, ()=>{
-        mongoose.connect(dbConfig.mongodb.connectTo('ProyectoDesafios'))
+    httpServer.listen(config.PORT, ()=>{
+        MongoClient.connect(config.mongodb.connectTo('ProyectoDesafios'))
     .then(() => {
-        console.log('Connected to DB!');
-        console.log('Server is up and running on port:', PORT);
+        console.log(`[${config.NODE_ENV.trim()}] Using ${config.DATA_SOURCE} as project's data source`);
+        console.log(`[${config.NODE_ENV.trim()}] Server is up and running on port => ${config.PORT}`);
     })
     .catch(err => {
             console.log(`An error occurred while connecting the database`);

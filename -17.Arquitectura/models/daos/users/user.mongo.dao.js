@@ -1,10 +1,10 @@
 const mongodb = require('mongodb');
 const {errorLogger} = require('../../../utils/logger/index')
 const config = require('../../../config/config')
-const dbConfig = require('../../../db/config')
-const UserDTO = require('../../../models/dtos/product.dto')
+const UserDTO = require('../../../models/dtos/user.dto')
 const {STATUS} = require('../../../utils/constants/api.constants')
 const CustomError = require('../../../utils/errors/customError');
+
 
 const {
   MongoClient,
@@ -12,19 +12,20 @@ const {
 } = mongodb;
 
 class UserDaoMongoDB{
-  static #dbinstances = {}
+  static #dbinstances = {};
 
   constructor(database){
     if(!UserDaoMongoDB.#dbinstances[database]){
         console.log(`[${config.NODE_ENV.trim()}] Connecting to ${database} database...`);
-        MongoClient.connect(dbConfig.mongodb)
+        MongoClient.connect(config.mongodb.connectTo('ProyectoDesafios'))
         .then((connection)=>{
-            ProductsDaoMongoDB.#dbinstances[database] = this;
+            UserDaoMongoDB.#dbinstances[database] = this;
             const db = connection.db(database);
             this._collection = db.collection('users');
             console.log(`[${config.NODE_ENV.trim()}] Connected to ${database}`) 
         })
     } else{
+      console.log('Instancia ya creada');
         return UserDaoMongoDB.#dbinstances[database]
     }
 }
@@ -53,7 +54,7 @@ class UserDaoMongoDB{
             if (!document) {
                 throw new CustomError(
                   STATUS.SERVER_ERROR,
-                  `Wrong username!`,
+                  `Wrong mail!`,
                   error
                 )
               } else return document;       

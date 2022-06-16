@@ -1,7 +1,6 @@
 const mongodb = require('mongodb');
 const {errorLogger} = require('../../../utils/logger/index')
 const config = require('../../../config/config')
-const dbConfig = require('../../../db/config')
 const ProductDTO = require('../../../models/dtos/product.dto')
 const {STATUS} = require('../../../utils/constants/api.constants')
 const CustomError = require('../../../utils/errors/customError');
@@ -18,7 +17,7 @@ class ProductsDaoMongoDB{
   constructor(database){
     if(!ProductsDaoMongoDB.#dbinstances[database]){
         console.log(`[${config.NODE_ENV.trim()}] Connecting to ${database} database...`);
-        MongoClient.connect(dbConfig.mongodb)
+        MongoClient.connect(config.mongodb.connectTo('ProyectoDesafios'))
         .then((connection)=>{
             ProductsDaoMongoDB.#dbinstances[database] = this;
             const db = connection.db(database);

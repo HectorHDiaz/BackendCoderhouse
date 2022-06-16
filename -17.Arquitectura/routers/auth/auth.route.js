@@ -9,9 +9,9 @@ class UserRoutes {
     }
 
     initialize(){
-        authRouter.post('/register', this.controller.passportRegister);
+        authRouter.post('/register', this.controller.loginRoute);
 
-        authRouter.post('/login', this.controller.passportLogin);
+        authRouter.post('/login', this.controller.loginRoute);
 
         authRouter.get('/register-error', this.controller.registerError);
 

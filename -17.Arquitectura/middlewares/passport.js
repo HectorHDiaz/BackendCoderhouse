@@ -2,15 +2,14 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcrypt');
 
-const { loginController, registerController } = require('../controllers/user.controller')
+const UserControllers = require('../controllers/user.controller')
 
-const salt = () => bcrypt.genSaltSync(10);
-const createHash = (password) => bcrypt.hashSync(password, salt());
-const isValidPassword = (user, password) => bcrypt.compareSync(password, user.password);
+const userController = new UserControllers()
 
-passport.use("login", new LocalStrategy(loginController));
 
-passport.use("register", new LocalStrategy(registerController));
+passport.use("login", new LocalStrategy(userController.passportLogin));
+
+passport.use("register", new LocalStrategy(userController.passportRegister));
   
 // Serializacion
 passport.serializeUser((user, done) => {

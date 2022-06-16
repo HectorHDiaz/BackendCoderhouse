@@ -1,9 +1,9 @@
-const ProductsDao = require('../../models/daos/products/products.mongo.dao')
+const ProductsController = require('../../controllers/product.controller')
 
-const productsDao = new ProductsDao();
+const Products = new ProductsController();
 
 async function addProducts(socket, sockets){
-    const allProducts = await productsDao.getAll()
+    const allProducts = await Products.getAllProductsController()
     socket.emit('allProducts', allProducts)
 
     socket.on('new-product', async newItem=>{
@@ -13,9 +13,9 @@ async function addProducts(socket, sockets){
             id:allProducts.length+1,
             code:allProducts.length+1,
         };
-        await productsDao.createItem(newProduct)
-        const products = await productsDao.getAll()
-        sockets.emit('render-new-product', products)
+        await Products.createProductController(newProduct)
+        const newProducts = await Products.getAllProductsController()
+        sockets.emit('render-new-product', newProducts)
     })
 }
 

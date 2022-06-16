@@ -1,10 +1,10 @@
 const moment = require('moment') 
 const {getnormalizedMessages} = require('../../models/normalizacion')
-const MessagesDao = require('../../models/daos/messages/messages.mongo.dao')
-const UsersDao = require('../../models/daos/users/user.mongo.dao')
+const MessagesControllers = require('../../controllers/message.controller')
+const UsersControllers = require('../../controllers/user.controller')
 
-const messagesDao = new MessagesDao();
-const usersDao = new UsersDao();
+const Messages = new MessagesControllers();
+const Users = new UsersControllers();
 
 function formatMessage(author, text){
     return {
@@ -15,7 +15,7 @@ function formatMessage(author, text){
 }
 
 async function addMessages(socket, sockets){
-    sockets.emit('allMessages', getnormalizedMessages(await messagesDao.getAll()));
+    sockets.emit('allMessages', getnormalizedMessages(await Messages.getAllMessagesController()));
     const chatBot = {
         email: 'chatbot@chat.com', 
         nombre: 'Chatbot', 
@@ -28,14 +28,14 @@ async function addMessages(socket, sockets){
     socket.emit('newMessage', botWelcome)
 
     socket.on('updateNewMessage', async (message)=>{
-        const user = await usersDao.getByEmail(message.email)
+        const user = await Users.getUserByIdController(message.email)
         const newMessage = {
             author:user._id,
             text: message.text,
             time:`[${moment().format('L')} ${moment().format('LTS')}]`
         }
-        await messagesDao.createMessage(newMessage)
-        sockets.emit('allMessages', getnormalizedMessages(await messagesDao.getAll()));
+        await Messages.createMessageController(newMessage)
+        sockets.emit('allMessages', getnormalizedMessages(await Messages.getAllMessagesController()));
     })
 }
 

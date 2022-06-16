@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "start-dev": "set NODE_ENV=development && node server.js",
-    "start-prod": "set NODE_ENV=production && node server.js"
+    "start": "nodemon server.js",
+    "start-dev": "set NODE_ENV=development && nodemon server.js",
+    "start-prod": "set NODE_ENV=production && nodemon server.js"
   },
   "keywords": [],
   "author": "",

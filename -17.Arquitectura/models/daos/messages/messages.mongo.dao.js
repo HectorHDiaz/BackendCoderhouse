@@ -1,11 +1,9 @@
 const mongodb = require('mongodb');
 const {errorLogger} = require('../../../utils/logger/index')
 const config = require('../../../config/config')
-const dbConfig = require('../../../db/config')
 const MessageDTO = require('../../../models/dtos/message.dto')
 const {STATUS} = require('../../../utils/constants/api.constants')
 const CustomError = require('../../../utils/errors/customError');
-
 
 const {
     MongoClient,
@@ -19,7 +17,7 @@ class MessageDaoMongoDB {
     constructor(database){
         if(!MessageDaoMongoDB.#dbinstances[database]){
             console.log(`[${config.NODE_ENV.trim()}] Connecting to ${database} database...`);
-            MongoClient.connect(dbConfig.mongodb)
+            MongoClient.connect(config.mongodb.connectTo('ProyectoDesafios'))
             .then((connection)=>{
                 MessageDaoMongoDB.#dbinstances[database] = this;
                 const db = connection.db(database);
