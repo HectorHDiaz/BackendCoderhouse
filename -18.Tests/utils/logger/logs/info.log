@@ -1,0 +1,186 @@
+[2022-05-30T20:06:40.491] [INFO] infoFile - Connected to DB!
+[2022-05-30T20:09:27.349] [INFO] infoFile - User registration successful!
+[2022-05-30T20:09:29.663] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 777,
+  messageTime: 728,
+  messageSize: 948,
+  response: '250 2.0.0 OK  1653952171 ov16-20020a056870cb9000b000f33ced2c50sm1582503oab.56 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<24b0ab0d-2b08-5cc7-c116-28fb69f1c621@GrandPC>'
+}
+[2022-05-30T20:14:46.413] [INFO] infoFile - User logued out!
+[2022-06-21T20:18:02.881] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:19:18.092] [INFO] infoFile - User registration successful!
+[2022-06-21T20:19:21.743] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 904,
+  messageTime: 1327,
+  messageSize: 947,
+  response: '250 2.0.0 OK  1655853562 z4-20020a4ac204000000b0041c1e1c5652sm10559275oop.47 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<28484be9-f7fa-4e39-8f58-5bdb0761c999@GrandPC>'
+}
+[2022-06-21T20:20:59.374] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:22:15.642] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:24:59.136] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:25:12.656] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:26:26.026] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:26:39.841] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:28:02.081] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:29:21.269] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:29:31.528] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:30:09.695] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:30:20.460] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:30:28.935] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:34:02.365] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:34:20.184] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:34:37.254] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:34:50.990] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:35:19.784] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:35:22.721] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:35:37.676] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:36:42.163] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:40:43.498] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:40:53.638] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:44:56.271] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:45:41.113] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:46:25.111] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:46:34.325] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:46:43.787] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:46:49.312] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:46:56.067] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:49:48.336] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:50:08.956] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:50:52.760] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:51:04.138] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:51:15.908] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:51:27.461] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:53:41.391] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:53:56.969] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:54:59.837] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:56:01.483] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:57:55.247] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:58:53.282] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:59:42.883] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:00:11.891] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:00:39.247] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:02:14.766] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:02:19.650] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:03:11.640] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:03:17.975] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:05:28.148] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:05:31.358] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:05:41.532] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:05:52.524] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:05:59.277] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:06:15.469] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:07:21.617] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:07:28.821] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:08:58.281] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:09:07.315] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:09:25.310] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:10:28.101] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:10:32.470] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:12:05.190] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:12:10.946] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:12:38.426] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:12:44.614] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:12:52.165] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:15:00.134] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:15:49.286] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:15:58.434] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:16:13.903] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:16:38.487] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:17:00.727] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:18:14.257] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:18:38.455] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:20:41.036] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:21:02.065] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:22:53.962] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:23:12.300] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:23:42.030] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:24:00.345] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:24:14.621] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:24:34.115] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:24:41.720] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:25:07.392] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:26:35.955] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:27:56.497] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:28:10.051] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:28:25.879] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:30:09.247] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:31:11.573] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:32:43.488] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:33:34.346] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:33:49.530] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:34:47.140] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:35:07.204] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:35:24.741] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:35:46.995] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:36:39.200] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:38:22.938] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:38:44.681] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:39:19.603] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:40:03.253] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:41:03.312] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:41:08.502] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:41:38.883] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:41:54.309] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:43:10.338] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:44:57.224] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:45:24.760] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:46:07.481] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:46:39.191] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:47:32.840] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:47:39.766] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:48:30.860] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:48:43.544] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:48:45.883] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:49:03.489] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:49:41.420] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:50:19.531] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:50:34.935] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:50:41.418] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:51:04.728] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:51:14.755] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:54:18.890] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:54:28.081] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:54:54.382] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:55:36.182] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:56:55.961] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:57:41.435] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:57:54.765] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:58:19.981] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:59:02.584] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:59:19.941] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:59:31.096] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:00:49.768] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:01:22.607] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:02:03.967] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:02:08.004] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:03:30.320] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:03:51.020] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:04:38.223] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:07:33.518] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:07:46.269] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:09:04.467] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:09:42.552] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:09:48.380] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:10:15.615] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:10:22.411] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:10:44.528] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:10:58.705] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:11:21.245] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:15:51.062] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:16:19.300] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:17:54.881] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:18:10.061] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:18:33.707] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:18:50.478] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:18:55.355] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:19:06.797] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:19:09.955] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:19:49.996] [INFO] infoFile - Connected to DB!
