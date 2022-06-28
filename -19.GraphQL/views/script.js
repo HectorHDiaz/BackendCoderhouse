@@ -81,7 +81,7 @@ function purchaseCart(cartId){
    .catch(error => console.error('Error:', error))
 }
 
-//El cliente consume el backend y obtiene el array de objetos
+//El cliente consume el backend y obtiene el array de objetos.
 fetch('/products/graphql', {
   method: 'POST',
   headers: {

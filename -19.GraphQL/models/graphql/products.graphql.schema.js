@@ -1,3 +1,4 @@
+//GraphQL Schema
 const productSchema =`
   type Product {
     id: ID!,

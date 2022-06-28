@@ -16,6 +16,7 @@ const schema = buildSchema(productSchema)
 
 router.use(express.json())
 router.use(express.urlencoded({extended:true}))
+//GraphQL middleware
 router.use('/graphql', graphqlHTTP({
     schema,
     rootValue:{
