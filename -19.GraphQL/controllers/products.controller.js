@@ -11,7 +11,7 @@ const getAllProducts = async(req,res)=>{
 const getProductById = async(req,res)=>{
     const { productId } = req.params
     const searchedProduct = await productsApi.getById(productId)
-    return searchedProduct;
+    return res.json(searchedProduct);
 };
 const saveNewProduct = async(req,res)=>{
     const idCount = await productsApi.getAll()

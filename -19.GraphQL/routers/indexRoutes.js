@@ -22,7 +22,7 @@ const productsDao = new ProductsDao()
 
 router.get('/', async (req,res)=>{
     try {
-        const sessionName = req.user
+        const sessionName = req.user;
         const allProducts = await productsDao.getAll()
         if(sessionName){
             const sessionCart = await cartDao.getById(sessionName.cart)

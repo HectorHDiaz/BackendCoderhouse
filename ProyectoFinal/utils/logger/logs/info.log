@@ -1,0 +1,1090 @@
+[2022-05-30T20:06:40.491] [INFO] infoFile - Connected to DB!
+[2022-05-30T20:09:27.349] [INFO] infoFile - User registration successful!
+[2022-05-30T20:09:29.663] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 777,
+  messageTime: 728,
+  messageSize: 948,
+  response: '250 2.0.0 OK  1653952171 ov16-20020a056870cb9000b000f33ced2c50sm1582503oab.56 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<24b0ab0d-2b08-5cc7-c116-28fb69f1c621@GrandPC>'
+}
+[2022-05-30T20:14:46.413] [INFO] infoFile - User logued out!
+[2022-06-21T20:18:02.881] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:19:18.092] [INFO] infoFile - User registration successful!
+[2022-06-21T20:19:21.743] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 904,
+  messageTime: 1327,
+  messageSize: 947,
+  response: '250 2.0.0 OK  1655853562 z4-20020a4ac204000000b0041c1e1c5652sm10559275oop.47 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<28484be9-f7fa-4e39-8f58-5bdb0761c999@GrandPC>'
+}
+[2022-06-21T20:20:59.374] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:22:15.642] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:24:59.136] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:25:12.656] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:26:26.026] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:26:39.841] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:28:02.081] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:29:21.269] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:29:31.528] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:30:09.695] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:30:20.460] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:30:28.935] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:34:02.365] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:34:20.184] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:34:37.254] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:34:50.990] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:35:19.784] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:35:22.721] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:35:37.676] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:36:42.163] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:40:43.498] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:40:53.638] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:44:56.271] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:45:41.113] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:46:25.111] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:46:34.325] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:46:43.787] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:46:49.312] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:46:56.067] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:49:48.336] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:50:08.956] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:50:52.760] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:51:04.138] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:51:15.908] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:51:27.461] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:53:41.391] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:53:56.969] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:54:59.837] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:56:01.483] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:57:55.247] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:58:53.282] [INFO] infoFile - Connected to DB!
+[2022-06-21T20:59:42.883] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:00:11.891] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:00:39.247] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:02:14.766] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:02:19.650] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:03:11.640] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:03:17.975] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:05:28.148] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:05:31.358] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:05:41.532] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:05:52.524] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:05:59.277] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:06:15.469] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:07:21.617] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:07:28.821] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:08:58.281] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:09:07.315] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:09:25.310] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:10:28.101] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:10:32.470] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:12:05.190] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:12:10.946] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:12:38.426] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:12:44.614] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:12:52.165] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:15:00.134] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:15:49.286] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:15:58.434] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:16:13.903] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:16:38.487] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:17:00.727] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:18:14.257] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:18:38.455] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:20:41.036] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:21:02.065] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:22:53.962] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:23:12.300] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:23:42.030] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:24:00.345] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:24:14.621] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:24:34.115] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:24:41.720] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:25:07.392] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:26:35.955] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:27:56.497] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:28:10.051] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:28:25.879] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:30:09.247] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:31:11.573] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:32:43.488] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:33:34.346] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:33:49.530] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:34:47.140] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:35:07.204] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:35:24.741] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:35:46.995] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:36:39.200] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:38:22.938] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:38:44.681] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:39:19.603] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:40:03.253] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:41:03.312] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:41:08.502] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:41:38.883] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:41:54.309] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:43:10.338] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:44:57.224] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:45:24.760] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:46:07.481] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:46:39.191] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:47:32.840] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:47:39.766] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:48:30.860] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:48:43.544] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:48:45.883] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:49:03.489] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:49:41.420] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:50:19.531] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:50:34.935] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:50:41.418] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:51:04.728] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:51:14.755] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:54:18.890] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:54:28.081] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:54:54.382] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:55:36.182] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:56:55.961] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:57:41.435] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:57:54.765] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:58:19.981] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:59:02.584] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:59:19.941] [INFO] infoFile - Connected to DB!
+[2022-06-21T21:59:31.096] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:00:49.768] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:01:22.607] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:02:03.967] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:02:08.004] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:03:30.320] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:03:51.020] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:04:38.223] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:07:33.518] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:07:46.269] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:09:04.467] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:09:42.552] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:09:48.380] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:10:15.615] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:10:22.411] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:10:44.528] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:10:58.705] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:11:21.245] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:15:51.062] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:16:19.300] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:17:54.881] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:18:10.061] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:18:33.707] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:18:50.478] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:18:55.355] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:19:06.797] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:19:09.955] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:19:49.996] [INFO] infoFile - Connected to DB!
+[2022-06-21T22:19:58.431] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:04:25.698] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:14:20.445] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:16:18.832] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:16:41.389] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:16:58.008] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:17:08.481] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:17:37.437] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:17:50.623] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:17:53.663] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:19:22.802] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:19:37.199] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:19:47.876] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:20:01.199] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:21:00.933] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:22:11.632] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:22:36.571] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:25:00.386] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:27:07.755] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:27:18.453] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:27:26.558] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:27:45.883] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:27:57.709] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:28:42.993] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:29:10.803] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:29:25.392] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:29:59.827] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:30:15.292] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:32:27.558] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:35:28.947] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:36:08.414] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:36:22.885] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:36:30.990] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:36:35.300] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:40:01.056] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:40:54.789] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:43:00.184] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:45:06.958] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:45:33.106] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:50:23.357] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:51:18.479] [INFO] infoFile - Connected to DB!
+[2022-06-26T19:51:23.789] [INFO] infoFile - Connected to DB!
+[2022-06-26T20:03:24.369] [INFO] infoFile - Connected to DB!
+[2022-06-26T20:07:55.084] [INFO] infoFile - Connected to DB!
+[2022-06-26T20:46:38.245] [INFO] infoFile - Connected to DB!
+[2022-06-26T21:15:24.431] [INFO] infoFile - Connected to DB!
+[2022-06-26T21:23:26.705] [INFO] infoFile - Connected to DB!
+[2022-06-26T21:43:16.095] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:10:45.539] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:14:31.091] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:16:14.458] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:16:45.488] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:17:22.851] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:17:54.131] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:18:05.917] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:18:32.234] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:18:44.749] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:18:59.646] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:19:15.579] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:19:51.907] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:20:09.403] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:23:53.291] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:24:04.480] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:24:17.062] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:25:25.783] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:25:53.818] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:26:37.223] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:32:00.555] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:32:33.163] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:33:03.535] [INFO] infoFile - Connected to DB!
+[2022-06-26T22:36:35.824] [INFO] infoFile - Connected to DB!
+[2022-06-27T21:25:31.469] [INFO] infoFile - Connected to DB!
+[2022-06-27T21:25:38.626] [INFO] infoFile - Connected to DB!
+[2022-06-27T21:26:40.319] [INFO] infoFile - Connected to DB!
+[2022-06-27T21:27:04.618] [INFO] infoFile - Connected to DB!
+[2022-06-27T21:31:51.372] [INFO] infoFile - Connected to DB!
+[2022-06-27T21:32:31.525] [INFO] infoFile - Connected to DB!
+[2022-06-29T14:23:23.688] [INFO] infoFile - Connected to DB!
+[2022-06-29T14:26:00.500] [INFO] infoFile - Connected to DB!
+[2022-06-29T15:49:06.237] [INFO] infoFile - Connected to DB!
+[2022-06-29T15:50:59.578] [INFO] infoFile - User logued out!
+[2022-06-29T15:58:09.097] [INFO] infoFile - Connected to DB!
+[2022-06-29T15:59:05.829] [INFO] infoFile - User registration successful!
+[2022-06-29T15:59:07.957] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 606,
+  messageTime: 615,
+  messageSize: 951,
+  response: '250 2.0.0 OK  1656529148 i16-20020a05683033f000b00616b835f5e7sm8320845otu.43 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<5f9279ce-7802-9c23-990c-efd339311bba@GrandPC>'
+}
+[2022-06-29T16:12:15.679] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:12:18.366] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:12:39.385] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:13:08.091] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:15:33.973] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:18:04.391] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:19:08.731] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:24:43.067] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:25:24.305] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:31:55.272] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:32:37.073] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:32:56.765] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:34:14.913] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:35:16.490] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:35:26.287] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:39:54.459] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:41:09.559] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:42:08.126] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:42:30.154] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:43:21.782] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:43:48.613] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:44:31.128] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:44:59.258] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:47:08.812] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:47:22.643] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:47:30.785] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:47:40.489] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:47:48.001] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:57:40.077] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:57:40.547] [INFO] infoFile - User logued out!
+[2022-06-29T16:58:38.812] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:58:39.437] [INFO] infoFile - User logued out!
+[2022-06-29T16:58:59.249] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:59:47.833] [INFO] infoFile - Connected to DB!
+[2022-06-29T16:59:49.401] [INFO] infoFile - User logued out!
+[2022-06-29T17:02:14.631] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:02:32.339] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:02:50.633] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:03:06.851] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:03:36.059] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:03:53.399] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:05:45.146] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:06:59.390] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:07:09.420] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:07:14.216] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:08:19.774] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:08:39.669] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:08:47.435] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:09:21.980] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:09:43.192] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:12:03.243] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:12:18.668] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:12:42.242] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:13:38.293] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:14:21.368] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:24:55.827] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:25:18.067] [INFO] infoFile - User logued out!
+[2022-06-29T17:27:17.754] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:27:19.968] [INFO] infoFile - User logued out!
+[2022-06-29T17:29:23.514] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:31:21.599] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:31:48.036] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:32:37.476] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:33:12.063] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:33:37.141] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:33:42.110] [INFO] infoFile - User logued out!
+[2022-06-29T17:35:55.736] [INFO] infoFile - Connected to DB!
+[2022-06-29T17:36:23.929] [INFO] infoFile - User registration successful!
+[2022-06-29T17:36:26.753] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 545,
+  messageTime: 1032,
+  messageSize: 951,
+  response: '250 2.0.0 OK  1656534986 1-20020a9d0801000000b00616f3310807sm1660954oty.60 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<1aab8dcf-9ebe-6a61-f96a-b88c007a6a09@GrandPC>'
+}
+[2022-06-29T17:36:58.318] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:09:49.006] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:10:31.370] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:12:10.727] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:14:36.574] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:16:14.635] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:17:52.775] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:18:20.966] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:18:35.083] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:18:38.377] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:18:58.905] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:19:51.312] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:20:21.148] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:20:40.366] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:21:24.438] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:22:13.006] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:22:39.016] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:23:12.015] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:23:40.916] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:25:44.414] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:26:15.761] [INFO] infoFile - Connected to DB!
+[2022-06-30T12:27:54.765] [INFO] infoFile - Connected to DB!
+[2022-06-30T13:28:46.236] [INFO] infoFile - User logued out!
+[2022-06-30T13:30:03.609] [INFO] infoFile - Connected to DB!
+[2022-06-30T13:56:26.166] [INFO] infoFile - Connecting to ProyectoFinal database...
+[2022-06-30T13:56:26.174] [INFO] infoFile - Connecting to ProyectoFinal database...
+[2022-06-30T13:56:26.175] [INFO] infoFile - Connecting to ProyectoFinal database...
+[2022-06-30T13:56:26.265] [INFO] infoFile - Connecting to ProyectoFinal database...
+[2022-06-30T13:56:27.195] [INFO] infoFile - Connected to DB!
+[2022-06-30T13:56:27.237] [INFO] infoFile - Connected to ProyectoFinal!
+[2022-06-30T13:56:27.320] [INFO] infoFile - Connected to ProyectoFinal!
+[2022-06-30T13:56:27.339] [INFO] infoFile - Connected to ProyectoFinal!
+[2022-06-30T13:56:27.370] [INFO] infoFile - Connected to ProyectoFinal!
+[2022-06-30T13:57:19.727] [INFO] infoFile - Connected to DB!
+[2022-06-30T13:59:03.815] [INFO] infoFile - Connected to DB!
+[2022-06-30T13:59:50.798] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:00:06.926] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:00:17.833] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:00:46.722] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:01:05.562] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:01:20.073] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:02:12.083] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:03:15.296] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:03:44.111] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:04:17.866] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:04:23.963] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:04:56.807] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:05:27.037] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:05:34.548] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:06:52.236] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:07:03.945] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:07:21.800] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:07:33.409] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:07:50.817] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:10:40.781] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:11:09.096] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:11:24.022] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:11:29.531] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:12:06.199] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:12:11.139] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:14:36.013] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:21:07.952] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:21:24.795] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:24:21.370] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:24:39.952] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:24:52.825] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:26:01.979] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:27:14.985] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:27:37.197] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:27:46.690] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:27:55.522] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:28:30.416] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:28:39.116] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:28:53.953] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:29:06.230] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:29:17.738] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:31:53.055] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:32:19.905] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:32:29.611] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:34:05.017] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:34:16.525] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:39:54.276] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:40:17.706] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:40:52.002] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:41:06.434] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:41:15.076] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:41:45.755] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:42:01.719] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:42:15.985] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:42:20.045] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:42:23.531] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:43:27.158] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:59:24.941] [INFO] infoFile - Connected to DB!
+[2022-06-30T14:59:31.727] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:00:32.674] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:00:49.306] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:02:27.281] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:03:54.978] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:06:59.578] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:10:27.366] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:14:41.176] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:19:00.014] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:20:18.637] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:22:38.731] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:22:48.172] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:24:44.743] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:24:58.587] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:26:06.212] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:26:18.708] [INFO] infoFile - User logued out!
+[2022-06-30T15:35:05.440] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:37:54.214] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:41:16.877] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:46:13.945] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:48:02.859] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:52:51.587] [INFO] infoFile - Connected to DB!
+[2022-06-30T15:56:26.336] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:02:22.732] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:03:40.629] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:05:49.855] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:06:08.141] [INFO] infoFile - User logued out!
+[2022-06-30T16:06:29.573] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:06:58.723] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:07:38.743] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:08:07.594] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:10:59.820] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:11:52.391] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:13:28.150] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:13:58.847] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:14:05.052] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:15:07.605] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:17:29.202] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:18:36.121] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:18:50.461] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:19:19.658] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:19:39.393] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:21:23.687] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:21:32.764] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:21:51.313] [INFO] infoFile - User logued out!
+[2022-06-30T16:22:58.143] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:26:58.644] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:27:58.403] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:28:11.902] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:28:28.388] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:28:45.557] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:29:06.758] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:29:12.465] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:29:15.003] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:29:47.591] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:30:44.280] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:31:46.605] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:31:57.589] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:32:22.353] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:32:55.481] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:33:35.951] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:35:08.628] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:35:26.261] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:35:38.106] [INFO] infoFile - Connected to DB!
+[2022-06-30T16:35:46.406] [INFO] infoFile - Connected to DB!
+[2022-06-30T21:09:22.739] [INFO] infoFile - Connected to DB!
+[2022-06-30T21:11:12.226] [INFO] infoFile - Connected to DB!
+[2022-06-30T21:11:35.700] [INFO] infoFile - Connected to DB!
+[2022-06-30T21:14:40.616] [INFO] infoFile - Connected to DB!
+[2022-06-30T21:15:14.094] [INFO] infoFile - Connected to DB!
+[2022-06-30T21:21:46.128] [INFO] infoFile - Connected to DB!
+[2022-06-30T23:45:14.211] [INFO] infoFile - Connected to DB!
+[2022-06-30T23:46:04.107] [INFO] infoFile - Connected to DB!
+[2022-06-30T23:46:30.479] [INFO] infoFile - Connected to DB!
+[2022-06-30T23:46:53.827] [INFO] infoFile - User registration successful!
+[2022-06-30T23:46:57.314] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 1333,
+  messageTime: 1045,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656643617 p23-20020a05683019d700b00614c1c39a84sm7402300otp.11 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<ab438902-5f5c-72bb-b793-87ebb4cdb819@GrandPC>'
+}
+[2022-06-30T23:47:10.684] [INFO] infoFile - Connected to DB!
+[2022-06-30T23:50:27.156] [INFO] infoFile - Connected to DB!
+[2022-06-30T23:50:38.510] [INFO] infoFile - Connected to DB!
+[2022-06-30T23:51:05.203] [INFO] infoFile - User registration successful!
+[2022-06-30T23:51:07.433] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 602,
+  messageTime: 822,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656643867 i16-20020a05683033f000b00616b835f5e7sm10371240otu.43 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<c7d01c4f-3e9a-a308-9561-9b36059925c6@GrandPC>'
+}
+[2022-06-30T23:52:00.654] [INFO] infoFile - Connected to DB!
+[2022-06-30T23:52:23.756] [INFO] infoFile - User registration successful!
+[2022-06-30T23:52:26.643] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 730,
+  messageTime: 910,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656643946 i13-20020a056808054d00b0032ed4543c36sm11013405oig.36 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<a67a3788-950b-e5e8-94bb-474e2acc037b@GrandPC>'
+}
+[2022-06-30T23:53:07.659] [INFO] infoFile - Connected to DB!
+[2022-06-30T23:53:27.834] [INFO] infoFile - User registration successful!
+[2022-06-30T23:53:30.482] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 515,
+  messageTime: 665,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656644010 g15-20020a9d5f8f000000b00616d7a9bfaesm6616790oti.45 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<581c2fc0-df17-0a9c-12a5-00d882ef7312@GrandPC>'
+}
+[2022-06-30T23:53:59.017] [INFO] infoFile - Connected to DB!
+[2022-06-30T23:54:15.979] [INFO] infoFile - Connected to DB!
+[2022-06-30T23:56:18.888] [INFO] infoFile - Connected to DB!
+[2022-06-30T23:56:39.185] [INFO] infoFile - User registration successful!
+[2022-06-30T23:56:41.599] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 755,
+  messageTime: 890,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656644201 q17-20020a05683033d100b0060c237c6355sm7111863ott.71 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<65ec7a00-260f-44d1-874e-3f7336e12396@GrandPC>'
+}
+[2022-06-30T23:57:56.434] [INFO] infoFile - Connected to DB!
+[2022-06-30T23:58:16.939] [INFO] infoFile - User registration successful!
+[2022-06-30T23:58:19.209] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 680,
+  messageTime: 796,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656644298 7-20020aca2107000000b003264a325ecdsm10979067oiz.5 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<816f4ed6-8e74-4ee5-3cd6-9c2f6c7bf2bd@GrandPC>'
+}
+[2022-06-30T23:59:42.322] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:00:12.100] [INFO] infoFile - User registration successful!
+[2022-07-01T00:00:14.996] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 594,
+  messageTime: 669,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656644414 s4-20020a056870ea8400b000f1bc45ba21sm15009510oap.14 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<4bc87126-4b4a-0271-f9e9-520dd031f24e@GrandPC>'
+}
+[2022-07-01T00:01:33.014] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:03:20.115] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:03:47.341] [INFO] infoFile - User registration successful!
+[2022-07-01T00:05:53.322] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:06:19.686] [INFO] infoFile - User registration successful!
+[2022-07-01T00:06:22.473] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 608,
+  messageTime: 737,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656644782 k23-20020a056870959700b000f5f4ad194bsm15200080oao.25 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<c39bc937-5bbf-f0df-b5fe-784f4d5024e2@GrandPC>'
+}
+[2022-07-01T00:07:53.741] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:09:59.779] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:10:17.591] [INFO] infoFile - User registration successful!
+[2022-07-01T00:10:19.985] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 690,
+  messageTime: 804,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656645019 q30-20020a056808201e00b003351d035f77sm1194204oiw.47 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<ce459c7d-5dc2-6420-dde5-1ec0a5661dcd@GrandPC>'
+}
+[2022-07-01T00:11:21.901] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:11:44.740] [INFO] infoFile - User registration successful!
+[2022-07-01T00:11:47.281] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 629,
+  messageTime: 944,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656645107 kv9-20020a056870fb8900b000f39f0816bbsm13640367oab.40 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<1b58fad3-261f-a95e-977a-df38dab6bb73@GrandPC>'
+}
+[2022-07-01T00:12:42.235] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:12:53.340] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:14:00.509] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:14:12.071] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:14:34.966] [INFO] infoFile - User registration successful!
+[2022-07-01T00:20:23.942] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:20:51.117] [INFO] infoFile - User registration successful!
+[2022-07-01T00:21:24.410] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:21:53.497] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:22:18.010] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:22:37.214] [INFO] infoFile - User registration successful!
+[2022-07-01T00:22:40.153] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 779,
+  messageTime: 650,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656645759 e12-20020a056870d10c00b0010490c6b552sm14008534oac.35 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<718dfc78-2d97-3556-dd7c-b3d0a748bb91@GrandPC>'
+}
+[2022-07-01T00:24:51.477] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:25:10.369] [INFO] infoFile - User registration successful!
+[2022-07-01T00:25:12.494] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 677,
+  messageTime: 704,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656645912 bl29-20020a056808309d00b0032ed2343100sm11213080oib.14 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<37714508-a0c3-6050-5134-348b90144b7a@GrandPC>'
+}
+[2022-07-01T00:40:04.205] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:41:46.099] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:43:06.891] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:43:12.945] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:43:31.776] [INFO] infoFile - User registration successful!
+[2022-07-01T00:43:34.471] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 998,
+  messageTime: 789,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656647014 t1-20020a056830082100b006169251c27dsm12137317ots.24 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<d15e0913-2280-084d-bf0a-d5aca2333dd6@GrandPC>'
+}
+[2022-07-01T00:46:42.809] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:47:01.132] [INFO] infoFile - User registration successful!
+[2022-07-01T00:47:38.022] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:49:50.740] [INFO] infoFile - User registration successful!
+[2022-07-01T00:49:53.762] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 599,
+  messageTime: 1296,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656647393 r19-20020a0568301ad300b0060bfb08741esm12005531otc.12 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<1520bed1-a115-36cf-aac4-fe8d7df0101b@GrandPC>'
+}
+[2022-07-01T00:52:03.813] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:52:22.608] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:53:03.691] [INFO] infoFile - User registration successful!
+[2022-07-01T00:53:06.218] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 550,
+  messageTime: 648,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656647586 eh40-20020a056870f5a800b000f342d078fasm14552172oab.52 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<7e609306-6217-e951-5e70-794d6a34776c@GrandPC>'
+}
+[2022-07-01T00:53:29.877] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:54:37.403] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:55:02.269] [INFO] infoFile - User registration successful!
+[2022-07-01T00:55:21.622] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:55:38.552] [INFO] infoFile - User registration successful!
+[2022-07-01T00:55:41.540] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 570,
+  messageTime: 1145,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656647741 r22-20020a05687032d600b000f346e6d786sm13683182oac.54 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<c628886c-84cf-3680-6859-24c8f26d17ab@GrandPC>'
+}
+[2022-07-01T00:56:10.375] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:56:27.492] [INFO] infoFile - User registration successful!
+[2022-07-01T00:56:29.727] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 616,
+  messageTime: 638,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656647789 b11-20020a9d60cb000000b00616dfd2c859sm5698763otk.59 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<51446f62-0e32-5679-17af-aa6c804545c1@GrandPC>'
+}
+[2022-07-01T00:56:50.820] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:57:09.551] [INFO] infoFile - User registration successful!
+[2022-07-01T00:57:11.520] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 550,
+  messageTime: 720,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656647831 j18-20020a544812000000b00333295a8919sm10987785oij.28 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<dcdb1040-ca2d-8e61-0b67-3fd171e6fb1d@GrandPC>'
+}
+[2022-07-01T00:57:31.950] [INFO] infoFile - Connected to DB!
+[2022-07-01T00:58:04.530] [INFO] infoFile - User registration successful!
+[2022-07-01T00:58:06.557] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 583,
+  messageTime: 702,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656647886 e28-20020a0568301f3c00b00616e3fcadaasm5460503oth.62 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<5c5b3290-23eb-6f1c-2338-f635f5ec2c16@GrandPC>'
+}
+[2022-07-01T00:58:14.391] [INFO] infoFile - User logued out!
+[2022-07-01T18:49:01.608] [INFO] infoFile - Connected to DB!
+[2022-07-01T18:51:30.684] [INFO] infoFile - User registration successful!
+[2022-07-01T18:51:33.177] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 829,
+  messageTime: 631,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656712293 v7-20020a9d5a07000000b006176e06d59esm3302163oth.77 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<bdbfb034-2a49-458d-dc0a-953bc7b3a74e@GrandPC>'
+}
+[2022-07-01T18:58:33.048] [INFO] infoFile - Connected to DB!
+[2022-07-01T19:55:12.923] [INFO] infoFile - Connected to DB!
+[2022-07-01T20:01:44.876] [INFO] infoFile - Connected to DB!
+[2022-07-01T20:04:49.192] [INFO] infoFile - Connected to DB!
+[2022-07-01T20:09:09.283] [INFO] infoFile - Connected to DB!
+[2022-07-01T20:14:12.043] [INFO] infoFile - Connected to DB!
+[2022-07-01T20:17:05.429] [INFO] infoFile - Connected to DB!
+[2022-07-01T20:17:14.863] [INFO] infoFile - Connected to DB!
+[2022-07-01T20:17:52.522] [INFO] infoFile - Connected to DB!
+[2022-07-01T20:18:31.178] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:09:33.521] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:10:13.058] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:10:39.379] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:11:52.824] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:12:29.465] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:14:54.971] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:24:07.541] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:24:54.132] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:26:02.785] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:28:50.580] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:31:10.005] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:31:27.401] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:31:39.853] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:41:15.376] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:42:33.658] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:56:34.300] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:57:30.044] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:57:36.172] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:58:06.570] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:58:57.637] [INFO] infoFile - Connected to DB!
+[2022-07-01T21:59:48.038] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:00:38.755] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:02:16.138] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:15:44.387] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:17:55.050] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:19:59.163] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:22:25.864] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:22:40.220] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:23:18.874] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:24:34.378] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:28:03.461] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:30:29.138] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:32:46.683] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:33:57.772] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:34:16.387] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:41:18.843] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:42:42.047] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:43:58.855] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:44:25.962] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:45:08.632] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:45:43.733] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:47:19.489] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:47:53.563] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:51:05.758] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:54:42.275] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:55:14.728] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:55:32.424] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:56:06.620] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:56:10.656] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:56:13.890] [INFO] infoFile - Connected to DB!
+[2022-07-01T22:56:40.745] [INFO] infoFile - Connected to DB!
+[2022-07-01T23:04:59.470] [INFO] infoFile - Connected to DB!
+[2022-07-01T23:06:16.687] [INFO] infoFile - User registration successful!
+[2022-07-01T23:06:19.250] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 832,
+  messageTime: 702,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656727579 z23-20020a544597000000b003342a70fd59sm11957402oib.10 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<0aa79bf3-d8ba-9435-3ec6-3e006c554d85@GrandPC>'
+}
+[2022-07-01T23:07:16.900] [INFO] infoFile - Connected to DB!
+[2022-07-01T23:07:33.669] [INFO] infoFile - User registration successful!
+[2022-07-01T23:07:35.496] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 497,
+  messageTime: 536,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656727655 z16-20020a4ade50000000b004257b0aa35fsm12627767oot.8 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<925eacb3-34e4-c8a4-85a9-23d72b3cf147@GrandPC>'
+}
+[2022-07-02T20:06:15.951] [INFO] infoFile - Connected to DB!
+[2022-07-02T20:31:07.827] [INFO] infoFile - User registration successful!
+[2022-07-02T20:31:10.531] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 979,
+  messageTime: 719,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656804671 y16-20020a056808131000b00335cad84fe9sm3517468oiv.29 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<b7069839-e92f-27b7-7a01-24d6cb1718ac@GrandPC>'
+}
+[2022-07-02T20:38:52.326] [INFO] infoFile - Connected to DB!
+[2022-07-02T20:39:22.063] [INFO] infoFile - User registration successful!
+[2022-07-02T20:39:24.073] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 509,
+  messageTime: 551,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656805165 f19-20020a056830057300b0060bd2d06a1csm14623021otc.47 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<40b617a9-ef81-3dd4-f107-3fb0d142414d@GrandPC>'
+}
+[2022-07-02T20:39:37.765] [INFO] infoFile - Connected to DB!
+[2022-07-02T20:40:37.012] [INFO] infoFile - User registration successful!
+[2022-07-02T20:40:39.561] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 494,
+  messageTime: 507,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656805240 p7-20020a4adc07000000b0042859bebfebsm2270427oov.45 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<2df54016-316e-7996-6c39-f25682675894@GrandPC>'
+}
+[2022-07-02T20:41:43.716] [INFO] infoFile - Connected to DB!
+[2022-07-02T20:46:08.311] [INFO] infoFile - User registration successful!
+[2022-07-02T20:46:10.277] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 495,
+  messageTime: 604,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656805571 q14-20020a4ad54e000000b0035eb4e5a6c8sm13948996oos.30 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<583878b3-a5e4-51ba-2c58-4713adcf0726@GrandPC>'
+}
+[2022-07-02T20:47:15.651] [INFO] infoFile - Connected to DB!
+[2022-07-02T20:47:45.911] [INFO] infoFile - User registration successful!
+[2022-07-02T20:47:47.894] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 515,
+  messageTime: 512,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656805669 s4-20020a056870ea8400b000f1bc45ba21sm17844835oap.14 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<2d2a6d82-080e-2293-217c-d4e14bdb7746@GrandPC>'
+}
+[2022-07-02T20:48:13.240] [INFO] infoFile - Connected to DB!
+[2022-07-02T20:48:34.542] [INFO] infoFile - User registration successful!
+[2022-07-02T20:48:36.205] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 503,
+  messageTime: 499,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656805717 en38-20020a05687007a600b000f325409614sm16404957oab.13 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<3d3c8c66-9501-803e-ba17-94a367dfc5c5@GrandPC>'
+}
+[2022-07-02T21:32:11.435] [INFO] infoFile - Connected to DB!
+[2022-07-02T21:34:50.034] [INFO] infoFile - Connected to DB!
+[2022-07-02T21:34:59.786] [INFO] infoFile - Connected to DB!
+[2022-07-02T21:40:03.945] [INFO] infoFile - Connected to DB!
+[2022-07-02T21:50:25.914] [INFO] infoFile - Connected to DB!
+[2022-07-02T21:51:14.366] [INFO] infoFile - Connected to DB!
+[2022-07-02T21:52:57.127] [INFO] infoFile - Connected to DB!
+[2022-07-02T21:53:12.432] [INFO] infoFile - Connected to DB!
+[2022-07-02T21:53:51.992] [INFO] infoFile - Connected to DB!
+[2022-07-02T21:58:47.883] [INFO] infoFile - Connected to DB!
+[2022-07-02T21:59:11.316] [INFO] infoFile - Connected to DB!
+[2022-07-02T21:59:32.477] [INFO] infoFile - Connected to DB!
+[2022-07-02T21:59:53.652] [INFO] infoFile - Connected to DB!
+[2022-07-02T22:00:01.082] [INFO] infoFile - Connected to DB!
+[2022-07-02T22:00:17.755] [INFO] infoFile - Connected to DB!
+[2022-07-02T22:57:15.306] [INFO] infoFile - User registration successful!
+[2022-07-02T22:57:17.842] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 969,
+  messageTime: 661,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656813439 go13-20020a056870da0d00b00101f143d537sm16987361oab.26 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<f15812e5-ebae-9d39-d8b7-7a80a90e43e5@GrandPC>'
+}
+[2022-07-02T23:23:41.604] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:24:05.819] [INFO] infoFile - User registration successful!
+[2022-07-02T23:24:08.660] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 837,
+  messageTime: 670,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656815049 a18-20020a9d3e12000000b006168dbb001fsm14230274otd.7 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<2286f936-c043-63ae-d9f9-78d316461417@GrandPC>'
+}
+[2022-07-02T23:24:46.907] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:25:09.098] [INFO] infoFile - User registration successful!
+[2022-07-02T23:25:11.331] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 490,
+  messageTime: 469,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656815112 r193-20020acaa8ca000000b00325cda1ffa6sm13050478oie.37 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<09a36e90-04ee-82e0-f88a-016f564472ad@GrandPC>'
+}
+[2022-07-02T23:26:07.602] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:27:07.977] [INFO] infoFile - User registration successful!
+[2022-07-02T23:27:09.778] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 491,
+  messageTime: 499,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656815231 l2-20020a05687040c200b00101fae1b82fsm16923809oal.4 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<507efd50-6893-b2b4-7d91-8edcd0beda0d@GrandPC>'
+}
+[2022-07-02T23:27:37.796] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:29:29.371] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:29:58.798] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:30:09.748] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:30:31.792] [INFO] infoFile - User registration successful!
+[2022-07-02T23:30:34.134] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 520,
+  messageTime: 517,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656815435 y27-20020a544d9b000000b0032b99637366sm10283662oix.25 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<5951a7b5-f2cd-4b39-b7db-0688180b4793@GrandPC>'
+}
+[2022-07-02T23:31:33.357] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:32:25.636] [INFO] infoFile - User registration successful!
+[2022-07-02T23:32:27.418] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 487,
+  messageTime: 511,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656815548 e19-20020a9d4913000000b0060bc92bf0c9sm14610280otf.20 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<d8cbf347-219e-013a-10e4-64d3d6efee8c@GrandPC>'
+}
+[2022-07-02T23:32:54.387] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:33:22.093] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:33:33.019] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:33:52.865] [INFO] infoFile - User registration successful!
+[2022-07-02T23:33:54.693] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 493,
+  messageTime: 522,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656815636 r22-20020a05687032d600b000f346e6d786sm16503532oac.54 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<a970b81f-1e3d-5e07-90db-097ee5bda704@GrandPC>'
+}
+[2022-07-02T23:35:34.153] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:35:51.108] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:36:15.588] [INFO] infoFile - User registration successful!
+[2022-07-02T23:36:17.308] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 563,
+  messageTime: 497,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656815778 eq37-20020a056870a92500b0010173875df2sm18184021oab.58 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<8e0cfc30-e785-2962-19e5-64435fddd1fa@GrandPC>'
+}
+[2022-07-02T23:36:55.526] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:37:09.150] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:37:29.347] [INFO] infoFile - User registration successful!
+[2022-07-02T23:37:31.092] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 571,
+  messageTime: 505,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656815852 s35-20020a056870612300b00101a553225csm16868477oae.38 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<4d6499df-ec2f-2015-1843-2d9d20f1c17c@GrandPC>'
+}
+[2022-07-02T23:38:26.023] [INFO] infoFile - Connected to DB!
+[2022-07-02T23:38:45.137] [INFO] infoFile - User registration successful!
+[2022-07-02T23:38:47.797] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 488,
+  messageTime: 908,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1656815929 v6-20020a4ae046000000b00425cd32b1absm5475949oos.25 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<b28cef92-c219-c2bf-6ee2-90b28ce1d017@GrandPC>'
+}
+[2022-07-02T23:39:09.531] [INFO] infoFile - Connected to DB!
+[2022-07-03T16:12:42.383] [INFO] infoFile - Connected to DB!

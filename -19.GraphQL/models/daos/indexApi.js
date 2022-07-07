@@ -1,9 +1,9 @@
-const PERS = require('../../utils/dbConfig').PERS;
+const PERS = require('../../config/config').DATA_SOURCE;
 
 let ProductsDao;
 let CartsDao;
 
-switch(PERS) {
+switch(PERS.toLowerCase()) {
   case 'firebase':
     ProductsDao = require('./products/ProductsDaoFirebase');
     CartsDao = require('./cart/CartDaoFirebase');

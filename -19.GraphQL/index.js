@@ -6,25 +6,14 @@ const passport = require('./routers/auth/passport');
 const path = require('path');
 const {engine} = require('express-handlebars');
 const apiRoutes = require('./routers/indexRoutes')
-const dbConfig=require('./utils/dbConfig');
 const {infoLogger, errorLogger, consoleLogger} = require('./utils/logger/index')
 
-const minimist = require('minimist')
 const cluster = require('cluster')
 const os = require('os');
+const config = require('./config/config');
 
-const PORT = process.env.PORT || 8080;
 
-const args = minimist(process.argv.slice(2), {
-    default:{
-        MODE: 'FORK'
-    },
-    alias:{
-        m:'MODE'
-    }
-})
-
-if(args.MODE =='CLUSTER'){
+if(config.MODE =='CLUSTER'){
     if(cluster.isPrimary){
         infoLogger.info(`Proceso principal, N°: ${process.pid}`)
         const CPUS_NUM = os.cpus().length;
@@ -50,11 +39,11 @@ function allServer(){
     app.use(express.urlencoded({ extended: true }));
     app.use(session({
         name:'coder-session',
-        secret:process.env.COOKIE_SECRET,
+        secret:config.COOKIE_SECRET,
         resave:false,
         saveUninitialized: false,
         cookie:{maxAge:24 * 60 * 60 * 1000},
-        store: MongoStore.create({mongoUrl: dbConfig.mongodb.connectTo('sessions')})
+        store: MongoStore.create({mongoUrl: config.mongodb.connectTo('sessions')})
     }));
     app.use(passport.initialize());
     app.use(passport.session());
@@ -72,11 +61,11 @@ function allServer(){
     app.use(apiRoutes);
 
     //Inicio de Server
-    app.listen(PORT, ()=>{
-        mongoose.connect(dbConfig.mongodb.connectTo('ProyectoFinal'))
+    app.listen(config.PORT, ()=>{
+        mongoose.connect(config.mongodb.connectTo('ProyectoFinal'))
     .then(() => {
         infoLogger.info('Connected to DB!');
-        consoleLogger.info('Server is up and running on port:', PORT);
+        consoleLogger.info('Server is up and running on port:', config.PORT);
     })
     .catch(err => {
         errorLogger.error(`An error occurred while connecting the database`);

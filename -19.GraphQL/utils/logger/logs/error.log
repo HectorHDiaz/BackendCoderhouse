@@ -92,3 +92,122 @@
     at serializeObject (D:\BackendCoderhouse\-18.Tests\node_modules\bson\lib\parser\serializer.js:280:20)
     at serializeInto (D:\BackendCoderhouse\-18.Tests\node_modules\bson\lib\parser\serializer.js:810:25)
     at serializeObject (D:\BackendCoderhouse\-18.Tests\node_modules\bson\lib\parser\serializer.js:280:20)
+[2022-06-29T14:23:23.689] [ERROR] error - An error occurred while connecting the database
+[2022-06-29T14:23:23.690] [ERROR] error - Error en servidor  ReferenceError: PORT is not defined
+    at D:\BackendCoderhouse\-19.GraphQL\index.js:70:65
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-06-29T15:51:31.964] [ERROR] error - MongoServerError: Performing an update on the path '_id' would modify the immutable field '_id'
+    at D:\BackendCoderhouse\-19.GraphQL\node_modules\mongoose\node_modules\mongodb\lib\operations\update.js:85:33
+    at D:\BackendCoderhouse\-19.GraphQL\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:273:25
+    at handleOperationResult (D:\BackendCoderhouse\-19.GraphQL\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:327:20)
+    at Connection.onMessage (D:\BackendCoderhouse\-19.GraphQL\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:215:9)
+    at MessageStream.<anonymous> (D:\BackendCoderhouse\-19.GraphQL\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:390:28)
+    at processIncomingData (D:\BackendCoderhouse\-19.GraphQL\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (D:\BackendCoderhouse\-19.GraphQL\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10) {
+  index: 0,
+  code: 66,
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-06-29T16:24:51.331] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading '0')
+    at D:\BackendCoderhouse\-19.GraphQL\routers\indexRoutes.js:34:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\-19.GraphQL\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+[2022-06-29T16:24:55.324] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading '0')
+    at D:\BackendCoderhouse\-19.GraphQL\routers\indexRoutes.js:34:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\-19.GraphQL\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+[2022-06-29T16:55:46.435] [ERROR] error - BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+    at new BSONTypeError (D:\BackendCoderhouse\-19.GraphQL\node_modules\bson\lib\error.js:41:28)
+    at new ObjectId (D:\BackendCoderhouse\-19.GraphQL\node_modules\bson\lib\objectid.js:67:23)
+    at ObjectId (D:\BackendCoderhouse\-19.GraphQL\node_modules\bson\lib\objectid.js:26:20)
+    at postNewProduct (D:\BackendCoderhouse\-19.GraphQL\controllers\cart.controller.js:50:39)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:365:14)
+[2022-06-29T16:55:51.896] [ERROR] error - BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+    at new BSONTypeError (D:\BackendCoderhouse\-19.GraphQL\node_modules\bson\lib\error.js:41:28)
+    at new ObjectId (D:\BackendCoderhouse\-19.GraphQL\node_modules\bson\lib\objectid.js:67:23)
+    at ObjectId (D:\BackendCoderhouse\-19.GraphQL\node_modules\bson\lib\objectid.js:26:20)
+    at postNewProduct (D:\BackendCoderhouse\-19.GraphQL\controllers\cart.controller.js:50:39)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:365:14)
+[2022-06-29T16:55:53.529] [ERROR] error - BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+    at new BSONTypeError (D:\BackendCoderhouse\-19.GraphQL\node_modules\bson\lib\error.js:41:28)
+    at new ObjectId (D:\BackendCoderhouse\-19.GraphQL\node_modules\bson\lib\objectid.js:67:23)
+    at ObjectId (D:\BackendCoderhouse\-19.GraphQL\node_modules\bson\lib\objectid.js:26:20)
+    at postNewProduct (D:\BackendCoderhouse\-19.GraphQL\controllers\cart.controller.js:50:39)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:365:14)
+[2022-06-29T16:57:42.670] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading '0')
+    at D:\BackendCoderhouse\-19.GraphQL\routers\indexRoutes.js:35:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\-19.GraphQL\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+[2022-06-29T16:58:41.606] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading '0')
+    at D:\BackendCoderhouse\-19.GraphQL\routers\indexRoutes.js:35:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\-19.GraphQL\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+[2022-06-29T16:59:51.546] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading '0')
+    at D:\BackendCoderhouse\-19.GraphQL\routers\indexRoutes.js:35:27
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\-19.GraphQL\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\-19.GraphQL\node_modules\express\lib\router\layer.js:95:5)
+[2022-06-29T17:04:47.885] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'push')
+    at postNewProduct (D:\BackendCoderhouse\-19.GraphQL\controllers\cart.controller.js:57:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-06-29T17:04:49.716] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'push')
+    at postNewProduct (D:\BackendCoderhouse\-19.GraphQL\controllers\cart.controller.js:57:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-06-29T17:07:16.564] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'push')
+    at postNewProduct (D:\BackendCoderhouse\-19.GraphQL\controllers\cart.controller.js:54:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-06-29T17:08:21.273] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'push')
+    at postNewProduct (D:\BackendCoderhouse\-19.GraphQL\controllers\cart.controller.js:55:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

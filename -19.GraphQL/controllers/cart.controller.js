@@ -50,7 +50,6 @@ const postNewProduct = async(req,res)=>{
         const cartId = mongoose.Types.ObjectId(req.params.cartId);
         const productId = mongoose.Types.ObjectId(req.params.productId);
         const theProduct = await productsApi.getById(productId)
-        
         const theCart = await cartApi.getById(cartId);
         theCart.products.push(theProduct);
     

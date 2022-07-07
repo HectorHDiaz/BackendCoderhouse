@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer')
 const {adminWppMessage, smsClient} = require('./whatsapp')
-const adminConfig = require('./dbConfig')
+const adminConfig = require('../config/config')
 const handlebars = require("handlebars")
 const fs = require("fs")
 const path = require("path")
