@@ -22,7 +22,15 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-    name: 'string'
+    email: 'string',
+    password: 'string',
+    name: 'string',
+    phone: 'string',
+    bday: 'string',
+    age: 'number',
+    address: 'string',
+    image: 'string',
+    cart: 'string',
   },
 
 };

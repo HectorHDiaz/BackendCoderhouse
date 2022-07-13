@@ -8,6 +8,8 @@
  * https://sailsjs.com/anatomy/config/routes-js
  */
 
+const ProductsController = require("../api/controllers/ProductsController");
+
 module.exports.routes = {
 
   /***************************************************************************
@@ -20,6 +22,7 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/homepage' },
+  //'GET /products/list' : ProductsController.lists
 
 
   /***************************************************************************

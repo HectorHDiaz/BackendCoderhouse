@@ -1,0 +1,11 @@
+{
+  "imports": {
+    "oak": "https://deno.land/x/oak@v10.6.0/mod.ts",
+    "colorlog" : "https://deno.land/x/colorlog@v1.0/mod.ts/",
+    "@interfaces/" : "./models/interfaces/",
+    "@daos/": "./models/daos/",
+    "@controllers/": "./controllers/",
+    "@routers/": "./routers/",
+    "@middlewares/" : "./middleware/"
+  }
+}

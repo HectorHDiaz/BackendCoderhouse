@@ -22,8 +22,14 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-    title: "string",
-    desc: "string"
+    id: "number",
+    code: "string",
+    timestamp: 'string',
+    name: 'string',
+    desc: 'string',
+    price: 'number',
+    image: 'string',
+    stock: 'number',
 
   },
 

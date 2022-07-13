@@ -1088,3 +1088,42 @@
 }
 [2022-07-02T23:39:09.531] [INFO] infoFile - Connected to DB!
 [2022-07-03T16:12:42.383] [INFO] infoFile - Connected to DB!
+[2022-07-07T19:04:10.078] [INFO] infoFile - Connected to DB!
+[2022-07-07T19:04:49.924] [INFO] infoFile - User registration successful!
+[2022-07-07T19:04:52.623] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 553,
+  messageTime: 660,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1657231493 c25-20020a4ac319000000b0042e51b14608sm469813ooq.6 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<aee7076d-0d12-9c36-b007-2bbf66cdeb8a@GrandPC>'
+}
+[2022-07-07T19:05:40.318] [INFO] infoFile - User logued out!
+[2022-07-07T19:07:58.227] [INFO] infoFile - Connected to DB!
+[2022-07-07T19:08:19.352] [INFO] infoFile - User registration successful!
+[2022-07-07T19:08:21.390] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 521,
+  messageTime: 540,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1657231701 cv2-20020a056870c68200b000f33b23a030sm21726790oab.57 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<781838fb-ae9f-84fa-b940-4d5044c58ec1@GrandPC>'
+}
+[2022-07-07T19:08:35.786] [INFO] infoFile - User logued out!
+[2022-07-07T19:16:12.034] [INFO] infoFile - Connected to DB!
+[2022-07-07T19:16:31.150] [INFO] infoFile - User registration successful!
+[2022-07-07T19:16:33.511] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 658,
+  messageTime: 597,
+  messageSize: 953,
+  response: '250 2.0.0 OK  1657232194 f21-20020a056830309500b00616a2aa298asm17007645ots.75 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<23205bdc-9619-6c49-e886-a52b3c2acfe8@GrandPC>'
+}
+[2022-07-07T19:16:41.820] [INFO] infoFile - User logued out!

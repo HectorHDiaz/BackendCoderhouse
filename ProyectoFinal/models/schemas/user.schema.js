@@ -17,7 +17,7 @@ class UserSchema {
   constructor(email, password, name,phone, bday, age, address, image, cart) {
     this.email = email,
     this.password = password,
-    this.naem = name,
+    this.name = name,
     this.phone = phone,
     this.bday = bday,
     this.age = age,
