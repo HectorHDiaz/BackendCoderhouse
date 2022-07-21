@@ -7,21 +7,15 @@ class UserSchema {
     password: yup.string().required(),
     name: yup.string().required(),
     phone: yup.string().required(),
-    bday: yup.string().required(),
-    age: yup.number().required(),
-    address: yup.string(),
     image: yup.string(),
     cart: yup.string(yup.ref('carts')),
   });
 
-  constructor(email, password, name,phone, bday, age, address, image, cart) {
+  constructor(email, password, name,phone, image, cart) {
     this.email = email,
     this.password = password,
     this.name = name,
     this.phone = phone,
-    this.bday = bday,
-    this.age = age,
-    this.address = address,
     this.image = image,
     this.cart = cart
   }

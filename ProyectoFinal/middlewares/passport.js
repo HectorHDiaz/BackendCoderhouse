@@ -1,7 +1,7 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const {errorLogger} = require('../utils/logger/index');
-const UserControllers = require('./user.controllers');
+const UserControllers = require('../controllers/user.controllers');
 const bcrypt = require('bcrypt');
 const salt = () => bcrypt.genSaltSync(10);
 const createHash = (password) => bcrypt.hashSync(password, salt());

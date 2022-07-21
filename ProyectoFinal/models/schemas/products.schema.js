@@ -3,9 +3,7 @@ const yup = require('yup');
 class ProductSchema {
 
   static #Schema = yup.object({
-    id: yup.number().required(),
-    code: yup.string().required(),
-    timestamp: yup.string().required(),
+    _id: yup.string().required(),
     name: yup.string().required(),
     desc: yup.string().required(),
     price: yup.number().min(0).required(),

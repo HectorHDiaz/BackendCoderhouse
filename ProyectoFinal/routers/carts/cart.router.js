@@ -8,13 +8,16 @@ const router = express.Router()
 router.use(express.json())
 router.use(express.urlencoded({extended:true}))
 
-router.get('/', (req,res)=>{
-    res.render('cart.html')
-})
+router.get('/', cartController.getAllCarts)
 router.post('/', cartController.postNewCart)
+router.get('/cart/:cartId', ()=>{
+  const cartId = req.params.cartId; 
+  cartController.getCartById(cartId) 
+})
 router.get('/:cartId' , cartController.getCartProducts)
 router.post('/:cartId/products/:productId', cartController.postNewProduct)
 router.delete('/:cartId/products/:productId', cartController.deleteProductCart)
 router.post('/:cartId', cartController.purchaseCart)
+router.delete('/:cartId', cartController.deleteCart)
 
 module.exports = router

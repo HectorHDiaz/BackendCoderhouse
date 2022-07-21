@@ -61,42 +61,7 @@ function formatMessage(author, text){
 
 io.on('connection',async socket=>{
     console.log('Nuevo cliente conectado')
-    // Websockets - Tabla
-    const allProducts = await products.getAll()
-    socket.emit('allProducts', allProducts)
-
-    socket.on('new-product', async newProduct=>{
-        await products.save(newProduct)
-        io.emit('render-new-product', newProduct)
-    })
-
     // Websockets - Chat
-    const chatBot = {
-        email: 'chatbot@chat.com', 
-        nombre: 'Chatbot', 
-        apellido: '', 
-        edad: '', 
-        alias: 'Chatbot',
-        avatar:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKtaUBFUeoZYmRpgnrt1rq0rlxr_y6LDeDULOYbwNVnrjiFqNMckqaxBQLBBMQCM2C_Q4&usqp=CAU',
-      }
-
-      const getnormalizedMessages = async ()=>{
-          const messages = {
-            id:'messages',
-            messages:[... await allMessages.getAll()]
-        }
-        const userSchema = new schema.Entity('user', {},{
-            idAttribute: 'email'
-        })
-        const messageSchema = new schema.Entity('message',{
-            author: userSchema
-        });
-        const chatSchema = new schema.Entity('chat',{
-            messages:[ messageSchema ]
-        });
-        return normalize(messages, chatSchema)
-    }
-
     socket.on('newUser',async(user)=>{
         const newUser = {
             ...user,

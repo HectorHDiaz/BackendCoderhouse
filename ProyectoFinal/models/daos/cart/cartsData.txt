@@ -1,0 +1,34 @@
+[
+   {
+      "products": [],
+      "timestamp": "1658195376098",
+      "owner": "e42091ef-351a-4af7-9888-0f7baddc1610",
+      "createdAt": 1658195376100,
+      "updatedAt": 1658195376100,
+      "_id": "fa975542-9f08-44b7-aac3-2179dc3ae82f"
+   },
+   {
+      "products": [],
+      "timestamp": "1658230147150",
+      "owner": "b2755064-5991-47c9-84a7-a523cf55825e",
+      "createdAt": 1658230147151,
+      "updatedAt": 1658230147151,
+      "_id": "47f2a32d-6940-4adb-8924-bbfcb1d702d4"
+   },
+   {
+      "products": [],
+      "timestamp": "1658372637729",
+      "owner": "fabfe55d-c7d4-470f-8f5d-fe841f669c3f",
+      "createdAt": 1658372637732,
+      "updatedAt": 1658372637732,
+      "_id": "2b940431-a617-4bcf-8445-5bda5b66ed6b"
+   },
+   {
+      "products": [],
+      "timestamp": "1658372767706",
+      "owner": "fbf49015-0136-4415-91d1-d89f3a9b51ab",
+      "createdAt": 1658372767708,
+      "updatedAt": 1658372767708,
+      "_id": "66cd5033-efc4-4f7e-98f3-6beead896842"
+   }
+]

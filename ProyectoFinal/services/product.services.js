@@ -10,12 +10,8 @@ class ProductServices {
     try {
       return await ProductSchema.validate(product);
     }
-    catch(error) {
-      throw new CustomError(
-        STATUS.BAD_REQUEST,
-        `Validation error`,
-        error,
-      )
+    catch (error) {
+      return error
     }
   }
 
@@ -24,7 +20,7 @@ class ProductServices {
   }
 
   async getAllProductsService() {
-    return await this.productDAO.getAll()
+    return await this.productDAO.getAllProducts()
   }
 
   async getProductByIdService(id) {
@@ -38,38 +34,34 @@ class ProductServices {
   }
 
   async createProductService(product) {
-    const idCount = await this.productDAO.getAll()
-    const newProduct = { 
-        id: uuid(),
-        code: idCount.length +1,
-        timestamp: Date.now(),
-        ...product
+    const newProduct = {
+      ...product
     };
     const validatedProduct = ProductServices.#validateProduct(newProduct);
-    return await this.productDAO.createItem(newProduct);
-  } 
+    return await this.productDAO.createProduct(newProduct);
+  }
 
   async updateProductService(id, product) {
     const idValidation = await this.productDAO.getProductById(id)
-    if(!idValidation){
+    if (!idValidation) {
       throw new CustomError(
         STATUS.BAD_REQUEST,
         'The id param is a required field'
       )
     }
-    const updatedProduct = await this.productDAO.updateById(id, product)
+    const updatedProduct = await this.productDAO.updateProductById(id, product)
     return updatedProduct;
   }
 
-  async deleteProduct(id){
+  async deleteProduct(id) {
     const idValidation = await this.productDAO.getProductById(id)
-    if(!idValidation){
+    if (!idValidation) {
       throw new CustomError(
         STATUS.BAD_REQUEST,
         'The id param is a required field'
       )
     }
-    const deletedProduct = await this.productDAO.deleteById(id)
+    const deletedProduct = await this.productDAO.deleteProductById(id)
     return deletedProduct
   }
 }

@@ -1462,3 +1462,738 @@
       at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
       at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
 }
+[2022-07-16T21:19:14.576] [ERROR] error - TypeError: this.userDAO.postNewUser is not a function
+    at UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:45:44)
+    at UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:21:48)
+    at Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:46)
+    at Strategy.authenticate (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Immediate.<anonymous> (D:\BackendCoderhouse\ProyectoFinal\node_modules\multer\lib\make-middleware.js:53:37)
+    at processImmediate (node:internal/timers:466:21)
+[2022-07-16T21:20:46.085] [ERROR] error - TypeError: uuid is not a function
+    at UsersMemDAO.postNewUser (D:\BackendCoderhouse\ProyectoFinal\models\daos\users\userMemDao.js:31:47)
+    at UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:45:44)
+    at UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:21:48)
+    at Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:46)
+    at Strategy.authenticate (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Immediate.<anonymous> (D:\BackendCoderhouse\ProyectoFinal\node_modules\multer\lib\make-middleware.js:53:37)
+[2022-07-16T21:21:30.221] [ERROR] error - TypeError: uuid is not a function
+    at CartsMemDAO.createCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:25:47)
+    at CartServices.createCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:43:49)
+    at async UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:46:49)
+    at async UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:21:29)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:25)
+[2022-07-16T21:24:19.036] [ERROR] error - TypeError: uuid is not a function
+    at CartsMemDAO.createCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:25:47)
+    at CartServices.createCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:43:49)
+    at async UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:46:49)
+    at async UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:21:29)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:25)
+[2022-07-16T21:26:54.618] [ERROR] error - TypeError: uuid is not a function
+    at CartsMemDAO.createCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:25:47)
+    at CartServices.createCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:43:49)
+    at async UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:46:49)
+    at async UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:21:29)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:25)
+[2022-07-16T21:27:41.666] [ERROR] error - TypeError: uuid is not a function
+    at CartsMemDAO.createCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:25:47)
+    at CartServices.createCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:43:49)
+    at async UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:46:49)
+    at async UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:21:29)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:25)
+[2022-07-16T21:29:36.001] [ERROR] error - TypeError: uuid is not a function
+    at UsersMemDAO.postNewUser (D:\BackendCoderhouse\ProyectoFinal\models\daos\users\userMemDao.js:32:19)
+    at UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:45:44)
+    at UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:21:48)
+    at Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:46)
+    at Strategy.authenticate (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Immediate.<anonymous> (D:\BackendCoderhouse\ProyectoFinal\node_modules\multer\lib\make-middleware.js:53:37)
+[2022-07-16T21:30:54.045] [ERROR] error - TypeError: uuid is not a function
+    at CartsMemDAO.createCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:25:47)
+    at CartServices.createCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:43:49)
+    at async UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:46:49)
+    at async UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:21:29)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:25)
+[2022-07-16T21:31:44.912] [ERROR] error - TypeError: uuid is not a function
+    at CartsMemDAO.createCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:25:47)
+    at CartServices.createCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:43:49)
+    at async UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:46:49)
+    at async UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:21:29)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:25)
+[2022-07-16T21:33:05.537] [ERROR] error - BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+    at new BSONTypeError (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\error.js:41:28)
+    at new ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:67:23)
+    at ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:26:20)
+    at purchaseCart (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:59:28)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+[2022-07-16T22:17:30.684] [ERROR] error - TypeError: this.users.findIndex is not a function
+    at UsersMemDAO.updateById (D:\BackendCoderhouse\ProyectoFinal\models\daos\users\userMemDao.js:45:30)
+    at UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:62:43)
+    at async UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:30:23)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:25)
+[2022-07-16T22:40:16.898] [ERROR] error - An error occurred while connecting the database
+[2022-07-16T22:40:16.898] [ERROR] error - Error en servidor  MongoNetworkError: connection 1 to 54.94.197.236:27017 closed
+    at Connection.onClose (D:\BackendCoderhouse\ProyectoFinal\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:131:19)
+    at TLSSocket.<anonymous> (D:\BackendCoderhouse\ProyectoFinal\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:65:46)
+    at TLSSocket.emit (node:events:390:28)
+    at node:net:687:12
+    at TCP.done (node:_tls_wrap:580:7)
+[2022-07-16T22:45:10.356] [ERROR] error - BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+    at new BSONTypeError (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\error.js:41:28)
+    at new ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:67:23)
+    at ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:26:20)
+    at postNewProduct (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:38:28)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+[2022-07-16T22:45:13.414] [ERROR] error - BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+    at new BSONTypeError (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\error.js:41:28)
+    at new ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:67:23)
+    at ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:26:20)
+    at postNewProduct (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:38:28)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+[2022-07-16T22:49:30.787] [ERROR] error - BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+    at new BSONTypeError (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\error.js:41:28)
+    at new ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:67:23)
+    at ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:26:20)
+    at deleteProductCart (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:51:28)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+[2022-07-16T22:49:32.039] [ERROR] error - BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+    at new BSONTypeError (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\error.js:41:28)
+    at new ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:67:23)
+    at ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:26:20)
+    at deleteProductCart (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:51:28)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+[2022-07-16T22:49:32.888] [ERROR] error - BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+    at new BSONTypeError (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\error.js:41:28)
+    at new ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:67:23)
+    at ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:26:20)
+    at deleteProductCart (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:51:28)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+[2022-07-16T22:51:13.478] [ERROR] error - RestException [Error]: Authenticate
+    at success (D:\BackendCoderhouse\ProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (D:\BackendCoderhouse\ProyectoFinal\node_modules\twilio\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (D:\BackendCoderhouse\ProyectoFinal\node_modules\twilio\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (D:\BackendCoderhouse\ProyectoFinal\node_modules\twilio\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (D:\BackendCoderhouse\ProyectoFinal\node_modules\twilio\node_modules\q\q.js:1369:30)
+    at RawTask.call (D:\BackendCoderhouse\ProyectoFinal\node_modules\asap\asap.js:40:19)
+    at flush (D:\BackendCoderhouse\ProyectoFinal\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2022-07-16T22:51:14.134] [ERROR] error - RestException [Error]: Authenticate
+    at success (D:\BackendCoderhouse\ProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (D:\BackendCoderhouse\ProyectoFinal\node_modules\twilio\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (D:\BackendCoderhouse\ProyectoFinal\node_modules\twilio\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (D:\BackendCoderhouse\ProyectoFinal\node_modules\twilio\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (D:\BackendCoderhouse\ProyectoFinal\node_modules\twilio\node_modules\q\q.js:1369:30)
+    at RawTask.call (D:\BackendCoderhouse\ProyectoFinal\node_modules\asap\asap.js:40:19)
+    at flush (D:\BackendCoderhouse\ProyectoFinal\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2022-07-17T18:26:50.975] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'cartId')
+    at CartController.getCartById (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:15:31)
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:37:54
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-17T18:28:49.992] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'cartId')
+    at CartController.getCartById (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:15:31)
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:37:54
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-17T18:29:34.348] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'cartId')
+    at CartController.getCartById (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:15:41)
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:37:54
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-17T18:29:40.397] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'cartId')
+    at CartController.getCartById (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:15:41)
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:37:54
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-17T18:47:27.186] [ERROR] error - Error: [object Object]
+    at CartsMemDAO.deleteCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:53:25)
+    at CartServices.deleteCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:81:28)
+    at deleteCart (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:75:31)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+[2022-07-17T19:23:49.789] [ERROR] error - Error: [object Object]
+    at CartsMemDAO.deleteCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:53:25)
+    at CartServices.deleteCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:81:28)
+    at deleteCart (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:75:31)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+[2022-07-17T19:24:15.122] [ERROR] error - Error: [object Object]
+    at CartsMemDAO.deleteCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:53:25)
+    at CartServices.deleteCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:81:28)
+    at deleteCart (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:75:31)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+[2022-07-17T19:24:35.474] [ERROR] error - Error: No se encontró una Cart con el id: 1asd!
+    at CartsMemDAO.deleteCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:53:25)
+    at CartServices.deleteCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:81:28)
+    at deleteCart (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:75:31)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+[2022-07-17T19:25:45.809] [ERROR] error - Error: No se encontró una Cart con el id: 1asd!
+    at CartsMemDAO.deleteCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:53:25)
+    at CartServices.deleteCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:81:26)
+    at deleteCart (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:75:31)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+[2022-07-17T19:26:56.349] [ERROR] error - Error: No se encontró una Cart con el id: 1asd!
+    at CartsMemDAO.deleteCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:53:25)
+    at CartServices.deleteCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:81:26)
+    at deleteCart (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:75:31)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+[2022-07-17T19:27:17.096] [ERROR] error - Error: No se encontró una Cart con el id: 1asd!
+    at CartsMemDAO.deleteCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:53:25)
+    at CartServices.deleteCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:81:26)
+    at deleteCart (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:75:31)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+[2022-07-17T19:28:09.035] [ERROR] error - Error: No se encontró una Cart con el id: 1asd!
+    at CartsMemDAO.deleteCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:53:25)
+    at CartServices.deleteCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:81:26)
+    at deleteCart (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:75:31)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+[2022-07-17T19:29:33.765] [ERROR] error - Error: No se encontró una Cart con el id: 1asd!
+    at CartsMemDAO.deleteCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:53:25)
+    at CartServices.deleteCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:81:26)
+    at deleteCart (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:75:31)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+[2022-07-17T19:30:58.765] [ERROR] error - Error: No se encontró una Cart con el id: 1asd!
+    at CartsMemDAO.deleteCart (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMemDao.js:53:25)
+    at CartServices.deleteCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:81:26)
+    at deleteCart (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:75:31)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+[2022-07-17T20:02:51.457] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'service')
+    at createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:30:34)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-17T20:03:25.510] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'service')
+    at createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:30:34)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-17T20:06:02.818] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'service')
+    at createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:30:34)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-17T20:06:35.109] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'service')
+    at createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:30:34)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-17T20:07:18.834] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'service')
+    at createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:30:34)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\BackendCoderhouse\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-17T20:12:38.274] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'service')
+    at updateUser (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:41:34)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+[2022-07-17T20:14:24.021] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'service')
+    at updateUser (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:41:34)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+[2022-07-17T20:16:02.811] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'service')
+    at updateUser (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:41:34)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+[2022-07-17T20:16:55.134] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'service')
+    at updateUser (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:41:34)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+[2022-07-17T20:17:48.252] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'service')
+    at updateUser (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:41:34)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+[2022-07-17T20:18:03.298] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'service')
+    at updateUser (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:41:34)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+[2022-07-18T20:10:46.270] [ERROR] error - ValidationError: phone is a required field
+    at createError (D:\BackendCoderhouse\ProyectoFinal\node_modules\yup\lib\util\createValidation.js:54:21)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\yup\lib\util\createValidation.js:72:107
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  value: {
+    email: undefined,
+    password: undefined,
+    name: undefined,
+    phone: undefined,
+    image: undefined,
+    createdAt: 1658185846265,
+    updatedAt: 1658185846265,
+    _id: '8240e1ec-4d7e-4124-b5d5-c9bd7ccf8d51',
+    cart: 'd04191d5-6bc8-4e6b-a474-b0889c5a06a2'
+  },
+  path: 'phone',
+  type: 'required',
+  errors: [ 'phone is a required field' ],
+  params: {
+    value: undefined,
+    originalValue: undefined,
+    label: undefined,
+    path: 'phone'
+  },
+  inner: []
+}
+[2022-07-18T20:11:58.266] [ERROR] error - ValidationError: phone is a required field
+    at createError (D:\BackendCoderhouse\ProyectoFinal\node_modules\yup\lib\util\createValidation.js:54:21)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\yup\lib\util\createValidation.js:72:107
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  value: {
+    email: undefined,
+    password: undefined,
+    name: undefined,
+    phone: undefined,
+    image: undefined,
+    createdAt: 1658185918261,
+    updatedAt: 1658185918261,
+    _id: '7a6d61fd-9d7a-4313-ae59-5df41b8d66b3',
+    cart: '0e5fb64c-da90-4f98-9b4e-d13d158415c9'
+  },
+  path: 'phone',
+  type: 'required',
+  errors: [ 'phone is a required field' ],
+  params: {
+    value: undefined,
+    originalValue: undefined,
+    label: undefined,
+    path: 'phone'
+  },
+  inner: []
+}
+[2022-07-18T20:14:32.669] [ERROR] error - ValidationError: password is a required field
+    at createError (D:\BackendCoderhouse\ProyectoFinal\node_modules\yup\lib\util\createValidation.js:54:21)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\yup\lib\util\createValidation.js:72:107
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  value: {
+    email: 'fff@fff',
+    password: undefined,
+    name: 'atoato',
+    phone: '12345678',
+    image: '123',
+    createdAt: 1658186072664,
+    updatedAt: 1658186072664,
+    _id: '85664801-4f84-4de2-aafc-8faefcfc0eab',
+    cart: '28f64d88-b099-4117-823e-34ec8a496b4e'
+  },
+  path: 'password',
+  type: 'required',
+  errors: [ 'password is a required field' ],
+  params: {
+    value: undefined,
+    originalValue: undefined,
+    label: undefined,
+    path: 'password'
+  },
+  inner: []
+}
+[2022-07-20T00:03:35.568] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'id')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:44:38
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-20T00:05:37.458] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'id')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:44:38
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-20T00:05:47.041] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'id')
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:44:38
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-20T19:29:25.928] [ERROR] error - An error occurred while connecting the database
+[2022-07-20T19:29:25.928] [ERROR] error - Error en servidor  MongoNetworkError: connection 1 to 54.94.197.236:27017 closed
+    at Connection.onClose (D:\BackendCoderhouse\ProyectoFinal\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:131:19)
+    at TLSSocket.<anonymous> (D:\BackendCoderhouse\ProyectoFinal\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:65:46)
+    at TLSSocket.emit (node:events:390:28)
+    at node:net:687:12
+    at TCP.done (node:_tls_wrap:580:7)
+[2022-07-20T19:29:25.934] [ERROR] error - An error occurred while connecting the database
+[2022-07-20T19:29:25.934] [ERROR] error - Error en servidor  MongoNetworkError: connection 1 to 54.94.197.236:27017 closed
+    at Connection.onClose (D:\BackendCoderhouse\ProyectoFinal\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:131:19)
+    at TLSSocket.<anonymous> (D:\BackendCoderhouse\ProyectoFinal\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:65:46)
+    at TLSSocket.emit (node:events:390:28)
+    at node:net:687:12
+    at TCP.done (node:_tls_wrap:580:7)
+[2022-07-20T19:55:26.328] [ERROR] error - Error: Wrong username or password
+    at UserMongoDAO.getUserByEmail (D:\BackendCoderhouse\ProyectoFinal\models\daos\users\userMongoDao.js:41:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async UserServices.getUserByEmailService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:45:21)
+    at async UserControllers.getUserByEmailController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:20:23)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:14:23)
+[2022-07-20T19:55:26.330] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'password')
+    at isValidPassword (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:8:79)
+    at Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:15:12)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-20T19:55:56.013] [ERROR] error - Error: Wrong username or password
+    at UserMongoDAO.getUserByEmail (D:\BackendCoderhouse\ProyectoFinal\models\daos\users\userMongoDao.js:41:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async UserServices.getUserByEmailService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:45:21)
+    at async UserControllers.getUserByEmailController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:20:23)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:14:23)
+[2022-07-20T19:55:56.014] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'password')
+    at isValidPassword (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:8:79)
+    at Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:15:12)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-20T19:57:06.744] [ERROR] error - ReferenceError: uuid is not defined
+    at UserMongoDAO.postNewUser (D:\BackendCoderhouse\ProyectoFinal\models\daos\users\userMongoDao.js:63:35)
+    at UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:57:40)
+    at UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:30:42)
+    at Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:46)
+    at Strategy.authenticate (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Immediate._onImmediate (D:\BackendCoderhouse\ProyectoFinal\node_modules\multer\lib\make-middleware.js:53:37)
+[2022-07-20T19:57:06.745] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_id')
+    at UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:58:95)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:30:23)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:25)
+[2022-07-20T20:17:40.221] [ERROR] error - BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+    at new BSONTypeError (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\error.js:41:28)
+    at new ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:67:23)
+    at ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:26:20)
+    at UserMongoDAO.updateUserById (D:\BackendCoderhouse\ProyectoFinal\models\daos\users\userMongoDao.js:75:64)
+    at UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:60:39)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:30:23)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:25)
+[2022-07-20T20:17:40.223] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'name')
+    at newRegisterNodemailer (D:\BackendCoderhouse\ProyectoFinal\utils\nodemailer.js:29:62)
+    at UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:62:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:30:23)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:25)
+[2022-07-20T20:17:40.689] [ERROR] error - CustomError {
+  status: 500,
+  message: 'Error fetching cart with id 479c6e8a-4dad-48c2-943a-9d488cd7f57e',
+  details: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:67:23)
+      at ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:26:20)
+      at CartMongoDAO.getCartById (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMongoDao.js:49:61)
+      at CartServices.getCartByIdService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:33:40)
+      at CartController.getCartById (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:13:45)
+      at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:41:48
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+}
+[2022-07-20T20:20:59.911] [ERROR] error - CustomError {
+  status: 500,
+  message: 'Error fetching cart with id 479c6e8a-4dad-48c2-943a-9d488cd7f57e',
+  details: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:67:23)
+      at ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:26:20)
+      at CartMongoDAO.getCartById (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMongoDao.js:49:61)
+      at CartServices.getCartByIdService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:33:40)
+      at CartController.getCartById (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:13:45)
+      at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:41:48
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+}
+[2022-07-20T20:21:00.112] [ERROR] error - CustomError {
+  status: 500,
+  message: 'Error fetching cart with id 479c6e8a-4dad-48c2-943a-9d488cd7f57e',
+  details: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:67:23)
+      at ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:26:20)
+      at CartMongoDAO.getCartById (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMongoDao.js:49:61)
+      at CartServices.getCartByIdService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:33:40)
+      at CartController.getCartById (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:13:45)
+      at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:41:48
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+}
+[2022-07-20T20:21:19.161] [ERROR] error - Error: TypeError: Cannot read properties of undefined (reading 'find')
+    at ProductsMongoDAO.getAllProducts (D:\BackendCoderhouse\ProyectoFinal\models\daos\products\ProductsMongoDao.js:36:25)
+    at ProductServices.getAllProductsService (D:\BackendCoderhouse\ProyectoFinal\services\product.services.js:23:34)
+    at ProductsController.getAllProducts (D:\BackendCoderhouse\ProyectoFinal\controllers\products.controller.js:8:56)
+    at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:37:48
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+[2022-07-20T20:24:16.590] [ERROR] error - CustomError {
+  status: 500,
+  message: 'Error fetching cart with id 0a98a677-fb21-4995-a236-0eb6498e222f',
+  details: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:67:23)
+      at ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:26:20)
+      at CartMongoDAO.getCartById (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMongoDao.js:49:61)
+      at CartServices.getCartByIdService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:33:40)
+      at CartController.getCartById (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:13:45)
+      at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:41:48
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+}
+[2022-07-20T20:24:53.358] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'findOne')
+    at UserMongoDAO.getUserByEmail (D:\BackendCoderhouse\ProyectoFinal\models\daos\users\userMongoDao.js:39:47)
+    at UserServices.getUserByEmailService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:45:40)
+    at UserControllers.getUserByEmailController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:20:42)
+    at D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:57:39
+    at pass (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\authenticator.js:354:9)
+    at Authenticator.deserializeUser (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\authenticator.js:359:5)
+    at SessionStrategy.authenticate (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\strategies\session.js:61:10)
+    at attempt (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-20T20:25:34.433] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ProyectoFinal.users index: email_1 dup key: { email: "asdf@asdf" }
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\mongodb\lib\cmap\connection_pool.js:273:25
+    at D:\BackendCoderhouse\ProyectoFinal\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (D:\BackendCoderhouse\ProyectoFinal\node_modules\mongodb\lib\sdam\server.js:335:20)
+    at Connection.onMessage (D:\BackendCoderhouse\ProyectoFinal\node_modules\mongodb\lib\cmap\connection.js:214:9)
+    at MessageStream.<anonymous> (D:\BackendCoderhouse\ProyectoFinal\node_modules\mongodb\lib\cmap\connection.js:62:60)
+    at MessageStream.emit (node:events:390:28)
+    at processIncomingData (D:\BackendCoderhouse\ProyectoFinal\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (D:\BackendCoderhouse\ProyectoFinal\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'asdf@asdf' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-20T20:25:34.436] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_id')
+    at UserServices.createUserService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:58:95)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async UserControllers.createUserController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:30:23)
+    at async Strategy._verify (D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:40:25)
+[2022-07-20T20:26:42.640] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'findOne')
+    at UserMongoDAO.getUserByEmail (D:\BackendCoderhouse\ProyectoFinal\models\daos\users\userMongoDao.js:39:47)
+    at UserServices.getUserByEmailService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:45:40)
+    at UserControllers.getUserByEmailController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:20:42)
+    at D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:57:39
+    at pass (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\authenticator.js:354:9)
+    at Authenticator.deserializeUser (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\authenticator.js:359:5)
+    at SessionStrategy.authenticate (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\strategies\session.js:61:10)
+    at attempt (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (D:\BackendCoderhouse\ProyectoFinal\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (D:\BackendCoderhouse\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-20T20:26:56.752] [ERROR] error - CustomError {
+  status: 500,
+  message: 'Error fetching cart with id e4dd55c0-2824-4fe1-8513-bbd7ff603db0',
+  details: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:67:23)
+      at ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:26:20)
+      at CartMongoDAO.getCartById (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMongoDao.js:49:61)
+      at CartServices.getCartByIdService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:33:40)
+      at CartController.getCartById (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:13:45)
+      at D:\BackendCoderhouse\ProyectoFinal\routers\indexRoutes.js:41:48
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+}
+[2022-07-20T20:33:24.257] [ERROR] error - Invalid user or password
+[2022-07-20T20:34:27.945] [ERROR] error - TypeError: Cannot read properties of null (reading 'products')
+    at CartServices.addProductToCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:59:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async postNewProduct (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:39:7)
+[2022-07-20T20:35:55.038] [ERROR] error - TypeError: Cannot read properties of null (reading 'products')
+    at CartServices.addProductToCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:60:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async postNewProduct (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:39:7)
+[2022-07-20T20:36:31.347] [ERROR] error - TypeError: Cannot read properties of null (reading 'products')
+    at CartServices.addProductToCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:60:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async postNewProduct (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:39:7)
+[2022-07-20T20:36:56.496] [ERROR] error - BSONTypeError: Argument passed in does not match the accepted types
+    at new BSONTypeError (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\error.js:41:28)
+    at new ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:71:19)
+    at ObjectId (D:\BackendCoderhouse\ProyectoFinal\node_modules\bson\lib\objectid.js:26:20)
+    at CartMongoDAO.updateCartById (D:\BackendCoderhouse\ProyectoFinal\models\daos\cart\CartMongoDao.js:70:12)
+    at CartServices.addProductToCartService (D:\BackendCoderhouse\ProyectoFinal\services\cart.services.js:61:44)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async postNewProduct (D:\BackendCoderhouse\ProyectoFinal\controllers\cart.controller.js:39:7)
+[2022-07-20T21:38:08.390] [ERROR] error - Error: Wrong username or password
+    at UserMongoDAO.getUserByEmail (D:\BackendCoderhouse\ProyectoFinal\models\daos\users\userMongoDao.js:41:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async UserServices.getUserByEmailService (D:\BackendCoderhouse\ProyectoFinal\services\user.services.js:45:21)
+    at async UserControllers.getUserByEmailController (D:\BackendCoderhouse\ProyectoFinal\controllers\user.controllers.js:20:23)
+    at async D:\BackendCoderhouse\ProyectoFinal\middlewares\passport.js:57:18

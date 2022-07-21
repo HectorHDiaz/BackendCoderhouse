@@ -4,18 +4,18 @@ class ProductsController{
     constructor(){
         this.productsService = new ProductsService()
     }
-    getAllProducts = async(req,res)=>{
+    getAllProducts = async()=>{
         const allProducts = await this.productsService.getAllProductsService()
         return allProducts
     };
     getProductById = async(req,res)=>{
-        const { productId } = req.params
+        const productId = req.params.productId;
         const searchedProduct = await this.productsService.getProductByIdService(productId)
-        return res.json(searchedProduct);
+        return searchedProduct;
     };
     saveNewProduct = async(req,res)=>{
-        const { name, desc, image, price, stock} = req.body;
-        if (!name || !desc || !image || !price || !stock ) return res.json({ error: 'Todos los campos son obligatorios!' });
+        const { name, desc, image, price, stock } = req.body;
+        if (!name || !desc || !image || !price || !stock ) return ({ error: 'Todos los campos son obligatorios!' });
         const newProduct = {
             name: req.body.name, 
             desc: req.body.desc, 
@@ -27,9 +27,9 @@ class ProductsController{
         return savedProduct
     };
     updateProduct = async (req,res)=>{
-        const {productId} = req.params
-        const {name,desc,price,image,stock} = req.body
-        const newProduct = {name,desc,price,image,stock}
+        const {productId} = req.params;
+        const {name,desc,price,image,stock} = req.body;
+        const newProduct = {name,desc,price,image,stock};
         if (!name || !desc || !image || !price || !stock) return res.json({ error: 'Todos los campos son obligatorios!' });
 
         const updatedProduct = await this.productsService.updateProductService(productId, newProduct)

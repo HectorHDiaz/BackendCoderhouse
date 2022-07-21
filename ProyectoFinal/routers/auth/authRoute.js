@@ -1,5 +1,5 @@
 const express = require('express');
-const passport = require('../../controllers/passport');
+const passport = require('../../middlewares/passport');
   
 const multer = require('multer');
 const storage = multer.diskStorage({
