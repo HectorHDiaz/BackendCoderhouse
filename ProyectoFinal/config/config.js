@@ -18,9 +18,9 @@ module.exports = {
   COOKIE_SECRET: process.env.COOKIE_SECRET || 'ProyectoFinal',
   DATABASE: process.env.DATABASE || 'ProyectoFinal',
   ADMIN_EMAIL: process.env.ADMIN_EMAIL,
-  ADMIN_PHONE: process.env.ADMIN_PHONE,
-  TWILIO_ID: process.env.TWILIO_ID,
-  TWILIO_TOKEN: process.env.TWILIO_TOKEN,
+  // ADMIN_PHONE: process.env.ADMIN_PHONE,
+  // TWILIO_ID: process.env.TWILIO_ID,
+  // TWILIO_TOKEN: process.env.TWILIO_TOKEN,
   DB_URL: `mongodb+srv://${DB_URI}.knuiz.mongodb.net/${database = 'ProyectoFinal'}?retryWrites=true&w=majority`,
 
   mongodb: {

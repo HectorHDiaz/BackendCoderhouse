@@ -112,7 +112,8 @@ router.get('/config', (req, res, next) => {
 
 router.get('*', (req, res, next) => {
   try {
-    res.status(404).send('no bueno. Mal ahí: 404')
+    const error = '404! La página solicitada no existe!'
+    res.status(404).render('errorpage.ejs', {error})
   } catch (error) {
     next(error)
   }
