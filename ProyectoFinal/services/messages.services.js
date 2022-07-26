@@ -1,9 +1,6 @@
 const config = require('../config/config');
-const { v4: uuid } = require('uuid');
 const DAOSFactory = require('../models/daos/daos.factory');
 const MessageSchema = require('../models/schemas/message.schema');
-const { errorLogger, infoLogger } = require('../utils/logger/index')
-const CustomError = require('../utils/errors/customError');
 
 
 class MessageServices {
@@ -12,30 +9,45 @@ class MessageServices {
       return await MessageSchema.validate(message);
     }
     catch (error) {
-      return error
+      throw new Error('Service Validation Error')
     }
   }
   constructor() {
-    this.messageDAO = DAOSFactory.getDAOS(config.DATA_SOURCE).messageDao;
+    DAOSFactory.getDAOS(config.DATA_SOURCE).then((daos) => {
+      if (config.DATA_SOURCE.toLowerCase() === 'mongo') {
+        this.messageDAO = daos.messageDao[config.DATABASE]
+      } else {
+        this.messageDAO = daos.messageDao
+      }
+    })
   }
 
   async getAllMessagesService() {
-    return await this.messageDAO.getAllMessages()
-  }
-  
-  async getMessageByIdService(id) {
-    if (!id) {
-      throw new CustomError(
-        STATUS.BAD_REQUEST,
-        'The id param is a required field'
-      )
+    try {
+      return await this.messageDAO.getAllMessages()
+    } catch (error) {
+      throw new Error(`Getting all Messages. ${error}`)
     }
-    return await this.messageDAO.getMessageById(id)
+  }
+
+  async getMessageByIdService(id) {
+    try {
+      if (!id) {
+        throw new Error(`Message does not exist`)
+      }
+      return await this.messageDAO.getMessageById(id)
+    } catch (error) {
+      throw new Error(`Getting the message. ${error}`)
+    }
   }
 
   async createMessageService(messagePayload) {
-    const newMessage = await MessageServices.#validateMessage(messagePayload);
-    return await this.messageDAO.createMessage(newMessage, uuid());
+    try {
+      const newMessage = await MessageServices.#validateMessage(messagePayload);
+      return await this.messageDAO.createMessage(newMessage);
+    } catch (error) {
+      throw new Error(`Creating message. ${error}`)
+    }
   }
 }
 

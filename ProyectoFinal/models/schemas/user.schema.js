@@ -7,24 +7,26 @@ class UserSchema {
     password: yup.string().required(),
     name: yup.string().required(),
     phone: yup.string().required(),
+    address: yup.string(),
     image: yup.string(),
     cart: yup.string(yup.ref('carts')),
   });
 
-  constructor(email, password, name,phone, image, cart) {
+  constructor(email, password, name, phone, address, image, cart) {
     this.email = email,
-    this.password = password,
-    this.name = name,
-    this.phone = phone,
-    this.image = image,
-    this.cart = cart
+      this.password = password,
+      this.name = name,
+      this.phone = phone,
+      this.address = address,
+      this.image = image,
+      this.cart = cart
   }
 
   static async validate(userItem) {
     try {
       return await UserSchema.#Schema.validate(userItem);
     }
-    catch(error) {
+    catch (error) {
       throw error;
     }
   }

@@ -10,15 +10,15 @@ class CartSchema {
 
   constructor(owner, timastamp, products) {
     this.owner = owner,
-    this.timestamp = timestamp,
-    this.products = products
+      this.timestamp = timestamp,
+      this.products = products
   }
 
   static async validate(cartItem) {
     try {
       return await CartSchema.#Schema.validate(cartItem);
     }
-    catch(error) {
+    catch (error) {
       throw error;
     }
   }

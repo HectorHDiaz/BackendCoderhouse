@@ -1,37 +1,26 @@
-const mongodb = require('mongodb')
 const uuid = require('uuid').v4;
-const config = require('../../../config/config')
 const UserDTO = require('../../../models/dtos/user.dto')
-const { errorLogger, consoleLogger } = require('../../../utils/logger/index')
-const { STATUS } = require('../../../utils/constants/api.constants')
-
-const {
-  MongoClient
-} = mongodb;
+const { consoleLogger } = require('../../../utils/logger/index');
 
 class UserMongoDAO {
   static #dbInstance = {};
 
-  constructor(database) {
+  constructor(database, connection) {
     if (!UserMongoDAO.#dbInstance[database]) {
-      consoleLogger.info(`Connecting to ${database} database...`);
-
-      MongoClient.connect(config.mongodb.connectTo('ProyectoFinal'))
-        .then((connection) => {
-          const db = connection.db(database);
-          this._collection = db.collection('users');
-          consoleLogger.info(`Connected to ${database}: Users!`);
-          UserMongoDAO.#dbInstance[database] = this;
-          //console.log(UserMongoDAO.#dbInstance[database])
-        })
-    }
-    else {
-      //console.log('Validó el Singleton!')
+      const db = connection.db(database);
+      this._collection = db.collection('users');
+      consoleLogger.info(`Connected to ${database}: Users!`);
+      UserMongoDAO.#dbInstance[database] = this;
+    } else {
       return UserMongoDAO.#dbInstance;
     }
   }
   async getAllUsers() {
-    return await this._collection.find().toArray()
+    try {
+      return await this._collection.find().toArray()
+    } catch (error) {
+      throw error
+    }
   }
   async getUserByEmail(email) {
     try {
@@ -42,7 +31,7 @@ class UserMongoDAO {
       } else return document;
 
     } catch (error) {
-      errorLogger.error(error);
+      throw error
     }
   }
   async getUserById(id) {
@@ -54,7 +43,7 @@ class UserMongoDAO {
       } else return document;
 
     } catch (error) {
-      errorLogger.error(error);
+      throw error
     }
   }
 
@@ -65,19 +54,19 @@ class UserMongoDAO {
       return newUser;
     }
     catch (error) {
-      errorLogger.error(error);
+      throw error
     }
   };
 
   async updateUserById(id, userInfo) {
     try {
       const document = await this._collection.updateOne({ _id: id }, { $set: { ...userInfo } });
-      if (!document) {
+      if (!document.acknowledged) {
         const errorMessage = `Wrong username or password`;
         throw new Error(errorMessage);
-      } else return document;
+      } else return userInfo;
     } catch (error) {
-      errorLogger.error(error);
+      throw error
     }
   }
   async connect() {
@@ -91,7 +80,7 @@ class UserMongoDAO {
         throw new Error(errorMessage);
       } else return document;
     } catch (error) {
-      errorLogger.error(error);
+      throw error
     }
   }
 }

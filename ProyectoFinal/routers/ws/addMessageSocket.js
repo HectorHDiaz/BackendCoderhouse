@@ -1,6 +1,5 @@
 const MessagesControllers = require('../../controllers/message.controller');
 const UserControllers = require('../../controllers/user.controllers');
-
 const messageController = new MessagesControllers();
 const userControllers = new UserControllers()
 
@@ -10,8 +9,8 @@ async function messageSocket(socket, sockets) {
 
   socket.on('newUserMessage', async (text, email) => {
     const theUser = await userControllers.getUserByEmailController(email)
-    const verifiedUser = connectedList.find(user=> user.email === email)
-    if(!verifiedUser){
+    const verifiedUser = connectedList.find(user => user.email === email)
+    if (!verifiedUser) {
       newUser(email, theUser.name)
     }
     const actualUser = connectedList.find(user => user.socketId === socket.id)
@@ -24,6 +23,7 @@ async function messageSocket(socket, sockets) {
     sockets.emit('allMessages', await messageController.getAllMessages());
   })
 
+  
   const newUser = async (email, name) => {
     const sessionUser = {
       email: email,
@@ -39,8 +39,6 @@ async function messageSocket(socket, sockets) {
     await messageController.createMessage(botWelcome)
     socket.emit('allMessages', await messageController.getAllMessages());
   }
-
-  
 }
 
 module.exports = messageSocket

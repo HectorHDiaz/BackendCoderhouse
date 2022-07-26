@@ -9,9 +9,10 @@ class ProductSchema {
     price: yup.number().min(0).required(),
     image: yup.string().required(),
     stock: yup.number().min(0).required(),
+    category: yup.string()
   });
 
-  constructor(id,code,timestamp,name,price,desc,stock) {
+  constructor(id, code, timestamp, name, price, desc, stock, category) {
     this.id = id;
     this.code = code;
     this.timestamp = timestamp;
@@ -20,13 +21,14 @@ class ProductSchema {
     this.image = image;
     this.desc = desc;
     this.stock = stock;
+    this.category = category;
   }
 
   static async validate(productItem) {
     try {
       return await ProductSchema.#Schema.validate(productItem);
     }
-    catch(error) {
+    catch (error) {
       throw error;
     }
   }

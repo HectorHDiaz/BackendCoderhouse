@@ -11,48 +11,72 @@ class ProductsMemDAO {
       fs.writeFileSync(dataPath, JSON.stringify(this.products, null, 3))
     }
   }
-  readFileDAO(){
-    this.products =  JSON.parse(fs.readFileSync(dataPath,'utf-8'));
+  readFileDAO() {
+    try {
+      this.products = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+    } catch (error) {
+      throw new Error('While reading file.')
+    }
   }
   getAllProducts() {
-    this.readFileDAO()
-    return this.products;
+    try {
+      this.readFileDAO()
+      return this.products;
+    } catch (error) {
+      throw error
+    }
   };
 
   getProductById(id) {
-    this.readFileDAO()
-    const product = this.products.find((prod) => prod._id === id);
-    return product || { error: `el producto ${id} no fué encontrado!` };
+    try {
+      this.readFileDAO()
+      const product = this.products.find((prod) => prod._id === id);
+      return product || { error: `el producto ${id} no fué encontrado!` };
+    } catch (error) {
+      throw error
+    }
   };
 
   async createProduct(productPayload) {
-    this.readFileDAO()
-    const newProduct = new ProductsDTO(productPayload)
-    this.products.push(newProduct)
-    this.saveProductsFile()
-    return newProduct;
+    try {
+      this.readFileDAO()
+      const newProduct = new ProductsDTO(productPayload)
+      this.products.push(newProduct)
+      this.saveProductsFile()
+      return newProduct;
+    } catch (error) {
+      throw error
+    }
   };
 
   updateProductById(id, productPayload) {
-    this.readFileDAO()
-    const index = this.products.findIndex(product => product._id === id);
-    if (index < 0) return { error: `No se encontró un Producto con el id: ${id}!` };
-    const updatedProduct = {
-      ...this.products[index],
-      ...productPayload
+    try {
+      this.readFileDAO()
+      const index = this.products.findIndex(product => product._id === id);
+      if (index < 0) return { error: `No se encontró un Producto con el id: ${id}!` };
+      const updatedProduct = {
+        ...this.products[index],
+        ...productPayload
+      }
+      const replacedProduct = new ProductsDTO(updatedProduct)
+      this.products[index] = replacedProduct
+      this.saveProductsFile()
+      return replacedProduct;
+    } catch (error) {
+      throw error
     }
-    const replacedProduct = new ProductsDTO(updatedProduct)
-    this.products[index] = replacedProduct
-    this.saveProductsFile()
-    return replacedProduct;
   };
   deleteProductById(id) {
-    this.readFileDAO()
-    const index = this.products.findIndex(product => product._id === id);
-    if (index < 0) return { error: `No se encontró un Producto con el id: ${id}!` };
-    const newList = this.products.splice(index, 1);
-    this.saveProductsFile()
-    return newList
+    try {
+      this.readFileDAO()
+      const index = this.products.findIndex(product => product._id === id);
+      if (index < 0) return { error: `No se encontró un Producto con el id: ${id}!` };
+      const newList = this.products.splice(index, 1);
+      this.saveProductsFile()
+      return newList
+    } catch (error) {
+      throw error
+    }
   };
 }
 

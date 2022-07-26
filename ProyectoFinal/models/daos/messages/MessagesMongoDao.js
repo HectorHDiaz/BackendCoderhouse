@@ -1,31 +1,20 @@
-const mongodb = require('mongodb');
 const uuid = require('uuid').v4;
-const config = require('../../../config/config')
 const MessageDTO = require('../../../models/dtos/message.dto')
-const CustomError = require('../../../utils/errors/customError');
-const { STATUS } = require('../../../utils/constants/api.constants')
-const { errorLogger, consoleLogger } = require('../../../utils/logger/index')
+const { consoleLogger } = require('../../../utils/logger/index')
 
-const {
-  MongoClient
-} = mongodb;
 
 class MessagesMongoDAO {
 
   static #dbinstances = {}
 
-  constructor(database) {
+  constructor(database, connection) {
     if (!MessagesMongoDAO.#dbinstances[database]) {
-      consoleLogger.info(`Connecting to ${database} database...`);
-      MongoClient.connect(config.mongodb.connectTo('ProyectoFinal'))
-        .then((connection) => {
-          const db = connection.db(database);
-          this._collection = db.collection('messages');
-          consoleLogger.info(`Connected to ${database}: Messages!`);
-          MessagesMongoDAO.#dbinstances[database] = this;
-        })
+      const db = connection.db(database);
+      this._collection = db.collection('messages');
+      consoleLogger.info(`Connected to ${database}: Messages!`);
+      MessagesMongoDAO.#dbinstances[database] = this;
     } else {
-      return MessagesMongoDAO.#dbinstances[database]
+      return MessagesMongoDAO.#dbinstances;
     }
   }
 
@@ -33,12 +22,7 @@ class MessagesMongoDAO {
     try {
       return await this._collection.find().toArray();
     } catch (error) {
-      errorLogger.error(new Error(error));
-      throw new CustomError(
-        STATUS.SERVER_ERROR,
-        'Error fetching all messages',
-        error
-      )
+      throw error
     }
   }
 
@@ -47,11 +31,7 @@ class MessagesMongoDAO {
       return await this._collection.findOne({ _id: id });
     }
     catch (error) {
-      throw new CustomError(
-        STATUS.SERVER_ERROR,
-        `Error fetching messages with id ${id}`,
-        error
-      )
+      throw error
     }
   }
 
@@ -62,12 +42,7 @@ class MessagesMongoDAO {
       return newMessage;
     }
     catch (err) {
-      errorLogger.error(new Error(error));
-      throw new CustomError(
-        STATUS.SERVER_ERROR,
-        'Error creating message',
-        error
-      )
+      throw error
     }
   }
 
@@ -79,7 +54,7 @@ class MessagesMongoDAO {
         throw new Error(errorMessage);
       } else return document;
     } catch (error) {
-      errorLogger.error(error);
+      throw error
     }
   }
   async deleteById(id) {
@@ -90,7 +65,7 @@ class MessagesMongoDAO {
         throw new Error(errorMessage);
       } else return document;
     } catch (error) {
-      errorLogger.error(error);
+      throw error
     }
   }
 }

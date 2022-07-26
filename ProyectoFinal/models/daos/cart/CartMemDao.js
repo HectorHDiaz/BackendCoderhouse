@@ -1,7 +1,7 @@
 const path = require('path')
 const fs = require('fs')
 const uuid = require('uuid').v4;
-const CartsDTO = require('../../dtos/cart.dto')
+const CartsDTO = require('../../dtos/cart.dto');
 const dataPath = path.resolve(__dirname, "./cartsData.txt")
 
 
@@ -13,47 +13,71 @@ class CartsMemDAO {
     }
   }
   readFileDAO() {
-    this.carts = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+    try {
+      this.carts = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+    } catch (error) {
+      throw new Error('While reading file.')
+    }
   }
   getAllCarts() {
-    this.readFileDAO()
-    return this.carts;
+    try {
+      this.readFileDAO()
+      return this.carts;
+    } catch (error) {
+      throw error
+    }
   };
 
   getCartById(id) {
-    this.readFileDAO()
-    const theCart = this.carts.find((cart) => cart._id === id);
-    return theCart || { error: `La cart ${id} no fué encontrada!` };
+    try {
+      this.readFileDAO()
+      const theCart = this.carts.find((cart) => cart._id === id);
+      return theCart || { error: `La cart ${id} no fué encontrada!` };
+    } catch (error) {
+      throw error
+    }
   };
 
   createCart(cartPayload) {
-    this.readFileDAO()
-    const newCart = new CartsDTO(cartPayload, uuid())
-    this.carts.push(newCart)
-    this.saveCartsFile()
-    return newCart;
+    try {
+      this.readFileDAO()
+      const newCart = new CartsDTO(cartPayload, uuid())
+      this.carts.push(newCart)
+      this.saveCartsFile()
+      return newCart;
+    } catch (error) {
+      throw error
+    }
   };
 
   updateCartById(id, cartPayload) {
-    this.readFileDAO()
-    const index = this.carts.findIndex(cart => cart._id === id);
-    if (index < 0) return { error: `No se encontró una Cart con el id: ${id}!` };
-    const updatedCart = {
-      ...this.carts[index],
-      ...cartPayload
+    try {
+      this.readFileDAO()
+      const index = this.carts.findIndex(cart => cart._id === id);
+      if (index < 0) return { error: `No se encontró una Cart con el id: ${id}` };
+      const updatedCart = {
+        ...this.carts[index],
+        ...cartPayload
+      }
+      const replacedCart = new CartsDTO(updatedCart)
+      this.carts[index] = replacedCart
+      this.saveCartsFile()
+      return replacedCart;
+    } catch (error) {
+      throw error
     }
-    const replacedCart = new CartsDTO(updatedCart)
-    this.carts[index] = replacedCart
-    this.saveCartsFile()
-    return replacedCart;
   };
   deleteCartById(id) {
-    this.readFileDAO()
-    const index = this.carts.findIndex(cart => cart._id === id);
-    if (index < 1) throw new Error(`No se encontró una Cart con el id: ${id}!`);
-    const newList = this.carts.splice(index, 1);
-    this.saveCartsFile()
-    return newList
+    try {
+      this.readFileDAO()
+      const index = this.carts.findIndex(cart => cart._id === id);
+      if (index < 0) throw new Error(`No se encontró una Cart con el id: ${id}`);
+      const newList = this.carts.splice(index, 1);
+      this.saveCartsFile()
+      return newList
+    } catch (error) {
+      throw error
+    }
   };
 }
 

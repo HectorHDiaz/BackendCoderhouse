@@ -1,10 +1,9 @@
-const nodemailer = require('nodemailer')
-const {adminWppMessage, smsClient} = require('./whatsapp')
-const adminConfig = require('../config/config')
-const handlebars = require("handlebars")
 const fs = require("fs")
 const path = require("path")
-const {infoLogger, errorLogger, consoleLogger} = require('./logger/index')
+const nodemailer = require('nodemailer')
+const handlebars = require("handlebars")
+const adminConfig = require('../config/config')
+//const {adminWppMessage, smsClient} = require('./whatsapp')
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -26,30 +25,29 @@ async function newRegisterNodemailer(newUser){
                 <body>
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                            <h5 class="card-title">${newUser.name}</h5>
-                            <p class="card-text">${newUser.email}</p>
+                            <h5 class="card-title"> Nombre: ${newUser.name}</h5>
+                            <p class="card-text"> Email: ${newUser.email}</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">${newUser.address}</li>
-                            <li class="list-group-item">${newUser.age}</li>
-                            <li class="list-group-item">${newUser.phone}</li>
+                            <li class="list-group-item"> Direccion: ${newUser.address}</li>
+                            <li class="list-group-item"> Carrito ID: ${newUser.cart}</li>
+                            <li class="list-group-item">Telefono: ${newUser.phone}</li>
                         </ul>
                     </div>
                 </body>
             </html>`,
         };
-        const mailInfo = await transporter.sendMail(mailPayload);
-        infoLogger.info(mailInfo)
+        await transporter.sendMail(mailPayload);
     } catch (error) {
-        errorLogger.error(error)
+        throw error
     }
 }
 
-async function newPurchaseNodemailer(user,cart){
+async function newPurchaseNodemailer(user,purchase){
     try {
         const emailTemplateSource = fs.readFileSync(path.join(__dirname, "/cartList.hbs"), "utf8")
         const template = handlebars.compile(emailTemplateSource)
-        const htmlToSend = template({cart})
+        const htmlToSend = template({purchase, user})
 
         const subjectString = `Nuevo pedido de ${user.name}. Email: ${user.email}`
         const mailPayload = {
@@ -58,12 +56,12 @@ async function newPurchaseNodemailer(user,cart){
             subject: subjectString,
             html:htmlToSend,
         };
-        const mailInfo = await transporter.sendMail(mailPayload);
-        const wppInfo = await adminWppMessage(subjectString)
-        const customerSms = await smsClient(user.phone, `Hola ${user.name}! Su pedido ha sido recibido y está ahora en proceso. Gracias!`)
+        await transporter.sendMail(mailPayload);
+        //await adminWppMessage(subjectString)
+        //await smsClient(user.phone, `Hola ${user.name}! Su pedido ha sido recibido y está ahora en proceso. Gracias!`)
         return true
     } catch (error) {
-        errorLogger.error(error)
+        throw error
     }
 }
 

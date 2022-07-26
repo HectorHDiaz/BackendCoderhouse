@@ -6,16 +6,15 @@ const passport = require('passport');
 const path = require('path');
 const cluster = require('cluster')
 const os = require('os');
-const {Server} = require('socket.io');
+const { Server } = require('socket.io');
 const http = require('http');
 const { engine } = require('express-handlebars');
-const ejs = require('ejs');
-const pug = require('pug');
 
-const apiRoutes = require('./routers/indexRoutes')
-const { infoLogger, errorLogger, consoleLogger } = require('./utils/logger/index')
 const config = require('./config/config');
+const apiRoutes = require('./routers/indexRoutes')
+const { errorHandler } = require('./middlewares/errorHandler')
 const addMessagesHandlers = require('./routers/ws/addMessageSocket');
+const { infoLogger, errorLogger, consoleLogger } = require('./utils/logger/index')
 
 
 
@@ -39,7 +38,7 @@ function allServer() {
   const app = express();
   const httpServer = http.createServer(app);
   const io = new Server(httpServer);
-  io.on('connection', async(socket)=>{
+  io.on('connection', async (socket) => {
     addMessagesHandlers(socket, io.sockets);
   })
 
@@ -61,17 +60,18 @@ function allServer() {
   //Template Engines
   app.set('view engine', 'pug');
   app.set('view engine', 'ejs');
+  app.set('view engine', 'hbs');
   app.engine('hbs', engine({
     extname: 'hbs',
     layoutsDir: path.resolve(__dirname, "./views/layouts"),
     partialDir: path.resolve(__dirname, "./views/partials")
   }))
-  app.set('view engine', 'hbs');
   app.set('views', './views/');
 
 
   //Routes
   app.use(apiRoutes);
+  app.use(errorHandler)
 
   //Inicio de Server
   httpServer.listen(config.PORT, () => {

@@ -1,86 +1,121 @@
 const express = require('express')
+const os = require('os');
+const config = require('../config/config')
 const productsRouter = require('./products/products.router')
 const cartsRouter = require('./carts/cart.router')
 const usersRouter = require('./users/user.router')
 const authRouter = require('./auth/authRoute')
 const fileRouter = require('./file/fileRoute')
 const messagesRouter = require('./message/message.routes')
+const purchasesRouter = require('./purchases/purchase.routes')
 const CartController = require('../controllers/cart.controller')
 const ProductsController = require('../controllers/products.controller')
-const { infoLogger, errorLogger, consoleLogger } = require('../utils/logger/index')
-
 
 const router = express.Router()
 
 router.use(express.json())
 router.use(express.urlencoded({ extended: true }))
-
-router.use((req, res, next) => {
-  const router = req.url;
-  const method = req.method;
-  consoleLogger.warn(`Route: ${router} Method: ${method}`);
-  next()
-})
-
 router.use('/products', productsRouter)
 router.use('/carts', cartsRouter)
 router.use('/auth', authRouter)
 router.use('/file', fileRouter)
 router.use('/users', usersRouter)
 router.use('/messages', messagesRouter)
+router.use('/purchases', purchasesRouter)
 
 const cartController = new CartController()
 const productsController = new ProductsController()
 
-router.get('/', async (req, res) => {
+router.get('/', async (req, res, next) => {
   const sessionName = req.user;
-  const allProducts = await productsController.getAllProducts()
+  const allProducts = await productsController.getAllProducts(req, res, next)
   try {
     if (sessionName) {
-      const sessionCart = await cartController.getCartById(sessionName.cart)
+      const sessionCart = await cartController.getCartById(sessionName.cart, next)
       return res.render('index', { sessionName, sessionCart, allProducts })
     }
     res.render('index', { sessionName, allProducts })
   }
   catch (error) {
-    errorLogger.error(error);
+    next(error)
   }
 })
 
-router.get('/desloguear', (req, res) => {
-  const deslogueoName = req.user
-  req.logout();
-  infoLogger.info('User logued out!');
-  res.render('index', { deslogueoName })
+router.get('/desloguear', (req, res, next) => {
+  try {
+    const deslogueoName = req.user
+    req.logout();
+    res.render('index', { deslogueoName })
+  } catch (error) {
+    next(error)
+  }
 });
 
-router.get('/login', (req, res) => {
-  res.render('login.html')
+router.get('/login', (req, res, next) => {
+  try {
+    res.render('login.html')
+  } catch (error) {
+    next(error)
+  }
 })
 
-router.get('/register-error', (req, res) => {
-  res.render('index', { titleError: "register-error", message: "USER ERROR SIGNUP" });
+router.get('/register-error', (req, res, next) => {
+  try {
+    res.render('index', { titleError: "register-error", message: "USER ERROR SIGNUP" });
+  } catch (error) {
+    next(error)
+  }
 });
 
-router.get('/login-error', (req, res) => {
-  res.render('index', { titleError: "login-error", message: "USER ERROR LOGIN" });
+router.get('/login-error', (req, res, next) => {
+  try {
+    res.render('index', { titleError: "login-error", message: "USER ERROR LOGIN" });
+  } catch (error) {
+    next(error)
+  }
 });
 
-router.get('/pug', (req, res) => {
-  //Vista de Configuracion de Servidor
-  const config = 'Estadio Bernabeu';
-  res.render('serverconfig.pug', { config })
+router.get('/exconfig', (req, res, next) => {
+  try {
+    let sessionTime
+    let sessionUser
+    try {
+      sessionTime = req.session.cookie.expires.toUTCString()
+      sessionUser = req.session.passport.user
+      res.render('index', { config, sessionTime, sessionUser })
+    } catch (error) {
+      sessionTime = 'No hay usuario en sesión'
+      sessionUser = 'No hay usuario en sesión'
+      res.render('index', { config, sessionTime, sessionUser })
+    }
+  } catch (error) {
+    next(error)
+  }
 })
-router.get('/ejs', (req, res) => {
-  //Vista para Errores con Id y Detalles
-  const error = 'Error 09.12.18';
-  res.render('errorpage.ejs', { error })
+
+router.get('/config', (req, res, next) => {
+  try {
+    const info = {
+      cpuNumber: os.cpus().length,
+      platformName: process.platform,
+      versionNode: process.version,
+      rss: process.memoryUsage().rss,
+      path: process.argv[0],
+      processId: process.pid,
+      projectFolder: `${process.cwd()}`
+    }
+    res.render('serverconfig.pug', { info })
+  } catch (error) {
+    next(error)
+  }
 })
-router.get('*', (req, res) => {
-  const router = req.url;
-  const method = req.method;
-  errorLogger.warn(`Route: ${router}. Method: ${method}`);
-  res.status(404).send('no bueno. Mal ahí: 404')
+
+router.get('*', (req, res, next) => {
+  try {
+    res.status(404).send('no bueno. Mal ahí: 404')
+  } catch (error) {
+    next(error)
+  }
 });
 
 

@@ -17,7 +17,7 @@ class MessageSchema {
     try {
       return await MessageSchema.#Schema.validate(messageItem);
     }
-    catch(error) {
+    catch (error) {
       throw error;
     }
   }

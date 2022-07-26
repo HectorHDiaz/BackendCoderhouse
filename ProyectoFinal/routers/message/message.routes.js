@@ -7,8 +7,8 @@ const messageController = new MessageController()
 router.use(express.json())
 router.use(express.urlencoded({extended:true}))
 
-router.get('/', async (req, res)=>{
-  res.json( await messageController.getAllMessages)
+router.get('/', async (req, res, next)=>{
+  res.json( await messageController.getAllMessages(req, res, next))
 })
 
 router.post('/',async (req, res)=>{

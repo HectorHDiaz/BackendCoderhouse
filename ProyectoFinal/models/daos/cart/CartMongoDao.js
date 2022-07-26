@@ -1,33 +1,17 @@
-const mongodb = require('mongodb')
 const uuid = require('uuid').v4;
-const config = require('../../../config/config')
 const CartDTO = require('../../../models/dtos/user.dto')
-const CustomError = require('../../../utils/errors/customError');
-const { errorLogger, consoleLogger } = require('../../../utils/logger/index')
-const { STATUS } = require('../../../utils/constants/api.constants')
-
-const {
-  MongoClient
-} = mongodb;
+const { consoleLogger } = require('../../../utils/logger/index')
 
 class CartMongoDAO {
   static #dbInstance = {};
 
-  constructor(database) {
+  constructor(database, connection) {
     if (!CartMongoDAO.#dbInstance[database]) {
-      consoleLogger.info(`Connecting to ${database} database...`);
-
-      MongoClient.connect(config.mongodb.connectTo('ProyectoFinal'))
-        .then((connection) => {
-          const db = connection.db(database);
-          this._collection = db.collection('carts');
-          consoleLogger.info(`Connected to ${database}: Carts!`);
-          CartMongoDAO.#dbInstance[database] = this;
-          //console.log(CartMongoDAO.#dbInstance[database])
-        })
-    }
-    else {
-      //console.log('Validó el Singleton!')
+      const db = connection.db(database);
+      this._collection = db.collection('carts');
+      consoleLogger.info(`Connected to ${database}: Carts!`);
+      CartMongoDAO.#dbInstance[database] = this;
+    } else {
       return CartMongoDAO.#dbInstance;
     }
   }
@@ -35,12 +19,7 @@ class CartMongoDAO {
     try {
       return await this._collection.find().toArray();
     } catch (error) {
-      errorLogger.error(new Error(error));
-      throw new CustomError(
-        STATUS.SERVER_ERROR,
-        'Error fetching all products',
-        error
-      )
+      throw error
     }
   }
   async getCartById(id) {
@@ -48,11 +27,7 @@ class CartMongoDAO {
       const theCart = await this._collection.findOne({ _id: id });
       return theCart;
     } catch (error) {
-      throw new CustomError(
-        STATUS.SERVER_ERROR,
-        `Error fetching cart with id ${id}`,
-        error
-      )
+      throw error
     }
   }
   async createCart(cart) {
@@ -61,12 +36,10 @@ class CartMongoDAO {
       await this._collection.insertOne(newCart)
       return newCart
     } catch (error) {
-      errorLogger.error(error);
+      throw error
     }
   }
   async updateCartById(id, cart) {
-    id = id;
-    cart = cart;
     try {
       const document = await this._collection.updateOne({ _id: id }, { $set: { ...cart } });
       if (!document) {
@@ -74,7 +47,7 @@ class CartMongoDAO {
         throw new Error(errorMessage);
       } else return document;
     } catch (error) {
-      errorLogger.error(error);
+      throw error
     }
   }
   async deleteCartById(id) {
@@ -85,7 +58,7 @@ class CartMongoDAO {
         throw new Error(errorMessage);
       } else return document;
     } catch (error) {
-      errorLogger.error(error);
+      throw error
     }
   }
 }
